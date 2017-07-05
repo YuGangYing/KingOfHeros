@@ -1,0 +1,140 @@
+fileFormatVersion: 2
+guid: 4871abf96e0e15042a034edffd7bcee6
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Eagle_01
+    100002: Eagle_B
+    100004: Eagle_H
+    100006: Eagle_L
+    100008: Eagle_L_02
+    100010: Eagle_R
+    100012: Eagle_R_02
+    100014: //RootNode
+    400000: Eagle_01
+    400002: Eagle_B
+    400004: Eagle_H
+    400006: Eagle_L
+    400008: Eagle_L_02
+    400010: Eagle_R
+    400012: Eagle_R_02
+    400014: //RootNode
+    2300000: Eagle_01
+    2300002: Eagle_B
+    2300004: Eagle_H
+    2300006: Eagle_L
+    2300008: Eagle_L_02
+    2300010: Eagle_R
+    2300012: Eagle_R_02
+    3300000: Eagle_01
+    3300002: Eagle_B
+    3300004: Eagle_H
+    3300006: Eagle_L
+    3300008: Eagle_L_02
+    3300010: Eagle_R
+    3300012: Eagle_R_02
+    4300000: Eagle_01
+    4300002: Eagle_R
+    4300004: Eagle_R_02
+    4300006: Eagle_L
+    4300008: Eagle_L_02
+    4300010: Eagle_H
+    4300012: Eagle_B
+    7400000: StandBy01
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: StandBy01
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Eagle_01
+        weight: 1
+      - path: Eagle_01/Eagle_B
+        weight: 1
+      - path: Eagle_01/Eagle_H
+        weight: 1
+      - path: Eagle_01/Eagle_L
+        weight: 1
+      - path: Eagle_01/Eagle_L/Eagle_L_02
+        weight: 1
+      - path: Eagle_01/Eagle_R
+        weight: 1
+      - path: Eagle_01/Eagle_R/Eagle_R_02
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

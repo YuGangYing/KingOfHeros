@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOf_msg>
+<!-- MsgAchievement.xml --> 
+    <_msg _code="10056" _type="Packet.MSG_CLIENT_ACHIEVEMENT_INFO_QUERY_REQUEST" />
+    <_msg _code="10057" _type="Packet.MSG_CLIENT_ACHIEVEMENT_INFO" />
+    <_msg _code="10058" _type="Packet.MSG_CLIENT_ACHIEVEMENT_GET_REWARD_REQUEST" />
+    <_msg _code="10058" _type="Packet.MSG_CLIENT_ACHIEVEMENT_GET_REWARD_RESPONSE" />
+    <_msg _code="10059" _type="Packet.MSG_CLIENT_ACHIEVEMENT_INFO_UPDATE" />
+<!-- MsgBattle.xml --> 
+    <_msg _code="10066" _type="Packet.MSG_CLIENT_BATTLE_PVE_ENTERTIMES_REQUEST" />
+    <_msg _code="10066" _type="Packet.MSG_CLIENT_BATTLE_PVE_ENTERTIMES_RESPONSE" />
+    <_msg _code="10063" _type="Packet.MSG_CLIENT_BATTLE_PVE_START_REQUEST" />
+    <_msg _code="10063" _type="Packet.MSG_CLIENT_BATTLE_PVE_START_RESPONSE" />
+    <_msg _code="10064" _type="Packet.MSG_CLIENT_BATTLE_PVE_END_REQUEST" />
+    <_msg _code="10065" _type="Packet.MSG_CLIENT_BATTLE_PVE_REWARD_EVENT" />
+<!-- MsgBuilding.xml --> 
+    <_msg _code="10011" _type="Packet.MSG_BUILDING_BUILD_REQUEST" />
+    <_msg _code="10011" _type="Packet.MSG_BUILDING_BUILD_RESPONSE" />
+    <_msg _code="10012" _type="Packet.MSG_BUILDING_UPLEV_REQUEST" />
+    <_msg _code="10012" _type="Packet.MSG_BUILDING_UPLEV_RESPONSE" />
+    <_msg _code="10013" _type="Packet.MSG_BUILDING_ACCELERATE_UPLEV_REQUEST" />
+    <_msg _code="10013" _type="Packet.MSG_BUILDING_ACCELERATE_UPLEV_RESPONSE" />
+    <_msg _code="10014" _type="Packet.MSG_BUILDING_MOVE_REQUEST" />
+    <_msg _code="10014" _type="Packet.MSG_BUILDING_MOVE_RESPONSE" />
+    <_msg _code="10015" _type="Packet.MSG_BUILDING_LIST_EVENT" />
+    <_msg _code="10050" _type="Packet.MSG_BUILDING_OTHER_LIST_EVENT" />
+    <_msg _code="10016" _type="Packet.MSG_BUILDING_UPDATE_EVENT" />
+    <_msg _code="10035" _type="Packet.MSG_BUILDING_UPLEV_CANCEL_REQUEST" />
+    <_msg _code="10035" _type="Packet.MSG_BUILDING_UPLEV_CANCEL_RESPONSE" />
+    <_msg _code="10038" _type="Packet.MSG_BUILDING_LEVY_REQUEST" />
+    <_msg _code="10038" _type="Packet.MSG_BUILDING_LEVY_RESPONSE" />
+    <_msg _code="10062" _type="Packet.MSG_BUILDING_OTHER_ENTER" />
+<!-- MsgClientAuth.xml --> 
+    <_msg _code="10002" _type="Packet.MSG_CLIENT_AUTH_REQUEST" />
+    <_msg _code="10002" _type="Packet.MSG_CLIENT_AUTH_RESPONSE" />
+    <_msg _code="10004" _type="Packet.MSG_CLIENT_DISCONNECT_REQUEST" />
+    <_msg _code="10034" _type="Packet.MSG_CLIENT_VERSION_CHK_REQUEST" />
+    <_msg _code="10034" _type="Packet.MSG_CLIENT_VERSION_CHK_RESPONSE" />
+    <_msg _code="10036" _type="Packet.MSG_CLIENT_KICKOUT_EVENT" />
+<!-- MsgClientLogin.xml --> 
+    <_msg _code="10003" _type="Packet.MSG_CLIENT_LOGIN_REQUEST" />
+    <_msg _code="10003" _type="Packet.MSG_CLIENT_LOGIN_RESPONSE" />
+    <_msg _code="10028" _type="Packet.MSG_CLIENT_SERVER_TIME_EVENT" />
+<!-- MsgFriend.xml --> 
+    <_msg _code="10041" _type="Packet.MSG_CLIENT_FRIEND_INFO" />
+    <_msg _code="10042" _type="Packet.MSG_CLIENT_FRIEND_INFO_UPDATE" />
+    <_msg _code="10043" _type="Packet.MSG_CLIENT_FRIEND_APPLY_REQUEST" />
+    <_msg _code="10043" _type="Packet.MSG_CLIENT_FRIEND_APPLY_RESPONSE" />
+    <_msg _code="10044" _type="Packet.MSG_CLIENT_FRIEND_REFUSE_APPLY_REQUEST" />
+    <_msg _code="10044" _type="Packet.MSG_CLIENT_FRIEND_REFUSE_APPLY_RESPONSE" />
+    <_msg _code="10045" _type="Packet.MSG_CLIENT_FRIEND_ACCEPT_APPLY_REQUEST" />
+    <_msg _code="10045" _type="Packet.MSG_CLIENT_FRIEND_ACCEPT_APPLY_RESPONSE" />
+    <_msg _code="10046" _type="Packet.MSG_CLIENT_FRIEND_DEL_REQUEST" />
+    <_msg _code="10046" _type="Packet.MSG_CLIENT_FRIEND_DEL_RESPONSE" />
+    <_msg _code="10047" _type="Packet.MSG_CLIENT_FRIEND_INFO_QUERY_REQUEST" />
+    <_msg _code="10048" _type="Packet.MSG_CLIENT_FRIEND_ENTER_CITY_REQUEST" />
+    <_msg _code="10048" _type="Packet.MSG_CLIENT_FRIEND_ENTER_CITY_RESPONSE" />
+    <_msg _code="10049" _type="Packet.MSG_CLIENT_FRIEND_LEVY_RESOURCE_REQUEST" />
+    <_msg _code="10049" _type="Packet.MSG_CLIENT_FRIEND_LEVY_RESOURCE_RESPONSE" />
+<!-- MsgHero.xml --> 
+    <_msg _code="10006" _type="Packet.MSG_CLIENT_HERO_LST_EVENT" />
+    <_msg _code="10007" _type="Packet.MSG_ACQUIRE_HERO_REQUEST" />
+    <_msg _code="10007" _type="Packet.MSG_ACQUIRE_HERO_RESPONSE" />
+    <_msg _code="10010" _type="Packet.MSG_IMPROVE_STAR_REQUEST" />
+    <_msg _code="10010" _type="Packet.MSG_IMPROVE_STAR_RESPONSE" />
+    <_msg _code="10018" _type="Packet.MSG_HERO_LVLUP_EVENT" />
+    <_msg _code="10017" _type="Packet.MSG_HERO_ATTR_EVENT" />
+    <_msg _code="10024" _type="Packet.MSG_HERO_FIGHT_REQUEST" />
+    <_msg _code="10024" _type="Packet.MSG_HERO_FIGHT_RESPONSE" />
+    <_msg _code="10026" _type="Packet.MSG_HERO_SET_BATTLE_POS_REQUEST" />
+    <_msg _code="10026" _type="Packet.MSG_HERO_SET_BATTLE_POS_RESPONSE" />
+    <_msg _code="10040" _type="Packet.MSG_WAITER_REQUEST" />
+    <_msg _code="10040" _type="Packet.MSG_WAITER_RESPONSE" />
+    <_msg _code="10039" _type="Packet.MSG_HERO_CHANGE_EVENT" />
+    <_msg _code="10060" _type="Packet.MSG_CLIENT_HERO_TRAIN_REQUEST" />
+    <_msg _code="10060" _type="Packet.MSG_CLIENT_HERO_TRAIN_RESPONSE" />
+    <_msg _code="10061" _type="Packet.MSG_CLIENT_HERO_TRAIN_CLEAR_REQUEST" />
+    <_msg _code="10061" _type="Packet.MSG_CLIENT_HERO_TRAIN_CLEAR_RESPONSE" />
+    <_msg _code="10067" _type="Packet.MSG_CLIENT_HERO_PANTHEON_EXP_SHARE_REQUEST" />
+    <_msg _code="10067" _type="Packet.MSG_CLIENT_HERO_PANTHEON_EXP_SHARE_RESPONSE" />
+<!-- MsgMail.xml --> 
+    <_msg _code="10053" _type="Packet.MSG_CLIENT_MAIL_INFO" />
+    <_msg _code="10054" _type="Packet.MSG_CLIENT_MAIL_INFO_DEL" />
+    <_msg _code="10051" _type="Packet.MSG_CLIENT_SENDMAIL_REQUEST" />
+    <_msg _code="10051" _type="Packet.MSG_CLIENT_SENDMAIL_RESPONSE" />
+    <_msg _code="10052" _type="Packet.MSG_CLIENT_DELMAIL_REQUEST" />
+    <_msg _code="10052" _type="Packet.MSG_CLIENT_DELMAIL_RESPONSE" />
+<!-- MsgOther.xml --> 
+    <_msg _code="10037" _type="Packet.MSG_DAY_CHANGE_EVENT" />
+    <_msg _code="10055" _type="Packet.MSG_CLIENT_DAY_LOGIN_AWARD" />
+<!-- MsgQueue.xml --> 
+    <_msg _code="10019" _type="Packet.MSG_QUEUE_LIST" />
+    <_msg _code="10020" _type="Packet.MSG_QUEUE_UPDATE" />
+<!-- MsgSkill.xml --> 
+    <_msg _code="10021" _type="Packet.MSG_ACQUIRE_SKILL_EXP_REQUEST" />
+    <_msg _code="10021" _type="Packet.MSG_ACQUIRE_SKILL_EXP_RESPONSE" />
+<!-- MsgSoldier.xml --> 
+    <_msg _code="10068" _type="Packet.MSG_CLIENT_RECRUIT_ARMY_REQUEST" />
+    <_msg _code="10068" _type="Packet.MSG_CLIENT_RECRUIT_ARMY_RESPONSE" />
+    <_msg _code="10069" _type="Packet.MSG_CLIENT_DISMISS_ARMY_REQUEST" />
+    <_msg _code="10069" _type="Packet.MSG_CLIENT_DISMISS_ARMY_RESPONSE" />
+<!-- MsgTalk.xml --> 
+    <_msg _code="10025" _type="Packet.MSG_CLIENT_TALK" />
+<!-- MsgTechnology.xml --> 
+    <_msg _code="10029" _type="Packet.MSG_TECHNOLOGY_LEARND_REQUEST" />
+    <_msg _code="10029" _type="Packet.MSG_TECHNOLOGY_LEARND_RESPONSE" />
+    <_msg _code="10030" _type="Packet.MSG_TECHNOLOGY_UPLEV_REQUEST" />
+    <_msg _code="10030" _type="Packet.MSG_TECHNOLOGY_UPLEV_RESPONSE" />
+    <_msg _code="10031" _type="Packet.MSG_TECHNOLOGY_ACCELERATE_UPLEV_REQUEST" />
+    <_msg _code="10031" _type="Packet.MSG_TECHNOLOGY_ACCELERATE_UPLEV_RESPONSE" />
+    <_msg _code="10032" _type="Packet.MSG_TECHNOLOGY_LIST" />
+    <_msg _code="10033" _type="Packet.MSG_TECHNOLOGY_UPDATE" />
+<!-- MsgUser.xml --> 
+    <_msg _code="10005" _type="Packet.MSG_CLIENT_USER_INFO_EVENT" />
+    <_msg _code="10022" _type="Packet.MSG_CLIENT_USER_ATTR_EVENT" />
+    <_msg _code="10027" _type="Packet.MSG_CLIENT_QUERY_USER_INFO_AFTER_LOGIN_REQUEST" />
+    <_msg _code="10027" _type="Packet.MSG_CLIENT_QUERY_USER_INFO_AFTER_LOGIN_RESPONSE" />
+</ArrayOf_msg>

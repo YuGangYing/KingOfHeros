@@ -1,0 +1,116 @@
+fileFormatVersion: 2
+guid: 5b99ed6103468d34da645702f0c0f189
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Effect_Root
+    100002: Level02_LOD1_Soldier_Archers
+    100004: //RootNode
+    100006: LOD1_Soldier_Archers_L_Hands
+    100008: LOD1_Soldier_Archers_L_Legs
+    100010: LOD1_Soldier_Archers_R_Hands
+    100012: LOD1_Soldier_Archers_R_Legs
+    100014: Soldier_Archers_L_Hands
+    100016: Soldier_Archers_L_Legs
+    100018: Soldier_Archers_R_Hands
+    100020: Soldier_Archers_R_Legs
+    100022: Soldier_Archers_Torso
+    400000: Effect_Root
+    400002: Level02_LOD1_Soldier_Archers
+    400004: //RootNode
+    400006: LOD1_Soldier_Archers_L_Hands
+    400008: LOD1_Soldier_Archers_L_Legs
+    400010: LOD1_Soldier_Archers_R_Hands
+    400012: LOD1_Soldier_Archers_R_Legs
+    400014: Soldier_Archers_L_Hands
+    400016: Soldier_Archers_L_Legs
+    400018: Soldier_Archers_R_Hands
+    400020: Soldier_Archers_R_Legs
+    400022: Soldier_Archers_Torso
+    2300000: Level02_LOD1_Soldier_Archers
+    2300002: LOD1_Soldier_Archers_L_Hands
+    2300004: LOD1_Soldier_Archers_L_Legs
+    2300006: LOD1_Soldier_Archers_R_Hands
+    2300008: LOD1_Soldier_Archers_R_Legs
+    2300010: Soldier_Archers_L_Hands
+    2300012: Soldier_Archers_L_Legs
+    2300014: Soldier_Archers_R_Hands
+    2300016: Soldier_Archers_R_Legs
+    2300018: Soldier_Archers_Torso
+    3300000: Level02_LOD1_Soldier_Archers
+    3300002: LOD1_Soldier_Archers_L_Hands
+    3300004: LOD1_Soldier_Archers_L_Legs
+    3300006: LOD1_Soldier_Archers_R_Hands
+    3300008: LOD1_Soldier_Archers_R_Legs
+    3300010: Soldier_Archers_L_Hands
+    3300012: Soldier_Archers_L_Legs
+    3300014: Soldier_Archers_R_Hands
+    3300016: Soldier_Archers_R_Legs
+    3300018: Soldier_Archers_Torso
+    4300000: Level02_LOD1_Soldier_Archers
+    4300002: LOD1_Soldier_Archers_L_Legs
+    4300004: LOD1_Soldier_Archers_R_Legs
+    4300006: LOD1_Soldier_Archers_R_Hands
+    4300008: LOD1_Soldier_Archers_L_Hands
+    4300010: Soldier_Archers_Torso
+    4300012: Soldier_Archers_L_Legs
+    4300014: Soldier_Archers_R_Legs
+    4300016: Soldier_Archers_R_Hands
+    4300018: Soldier_Archers_L_Hands
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

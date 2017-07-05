@@ -1,0 +1,6 @@
+编号主键|是否拥有1拥有 0 没有|用户ID|建筑物编号|建筑物编号名字|建筑物编号编号序号|建筑物具体ID|是否在建造状态|开始建造时间|预计结束时间|建筑物位置|库存状态(士兵id,num）或者（法术id,num）|是否在生产状态|生产开始时间|生产列表
+id_INT|isHaving_BOOL|userID_INT|buildingTypeID_INT|buildingName_STRING|buildingTypeNUM_INT|buildingItemID_INT|isBuilding_BOOL|beginBuildingTime_INT|predictEndingTime_INT|buildingPosition_VECTOR3|resourceState_LIST|isOutput_BOOL|beginProduceTime_INT|productList_LIST
+1000101001|1|101000100|10050100|WO |1|10060101|0|0|0|100.1,222,300|0|0|0|0
+1000102001|1|101000100|10050200|A|1|10060201|0|0|0|200.1,222,301|0|0|0|0
+1000103001|1|101000100|10050300|A|1|10060301|0|0|0|300.1,222,302|1001,1,10;1500,2,200|0|0|0
+1000103002|1|101000100|10050300|D|2|10060302|1|0|0|500.1,222,303|0|0|0|0

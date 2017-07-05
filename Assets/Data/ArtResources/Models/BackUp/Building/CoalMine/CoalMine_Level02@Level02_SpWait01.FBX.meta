@@ -1,0 +1,145 @@
+fileFormatVersion: 2
+guid: 34835a496809ab641a07973cb411238e
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: CoalMine_Level004
+    100002: //RootNode
+    100004: Mine_043
+    100006: Mine_044
+    100008: Mine_045
+    100010: Mine_046
+    100012: Mine_047
+    100014: Mine_048
+    100016: Mine_049
+    100018: Object010
+    100020: Object045
+    100022: Object046
+    100024: Object047
+    100026: Object048
+    100028: Object049
+    100030: Object050
+    100032: Object051
+    100034: Root004
+    400000: CoalMine_Level004
+    400002: //RootNode
+    400004: Mine_043
+    400006: Mine_044
+    400008: Mine_045
+    400010: Mine_046
+    400012: Mine_047
+    400014: Mine_048
+    400016: Mine_049
+    400018: Object010
+    400020: Object045
+    400022: Object046
+    400024: Object047
+    400026: Object048
+    400028: Object049
+    400030: Object050
+    400032: Object051
+    400034: Root004
+    2300000: CoalMine_Level004
+    2300002: Mine_043
+    2300004: Mine_044
+    2300006: Mine_045
+    2300008: Mine_046
+    2300010: Mine_047
+    2300012: Mine_048
+    2300014: Mine_049
+    2300016: Object010
+    2300018: Object045
+    2300020: Object046
+    2300022: Object047
+    2300024: Object048
+    2300026: Object049
+    2300028: Object050
+    2300030: Object051
+    3300000: CoalMine_Level004
+    3300002: Mine_043
+    3300004: Mine_044
+    3300006: Mine_045
+    3300008: Mine_046
+    3300010: Mine_047
+    3300012: Mine_048
+    3300014: Mine_049
+    3300016: Object010
+    3300018: Object045
+    3300020: Object046
+    3300022: Object047
+    3300024: Object048
+    3300026: Object049
+    3300028: Object050
+    3300030: Object051
+    4300000: CoalMine_Level004
+    4300002: Object051
+    4300004: Object010
+    4300006: Mine_049
+    4300008: Object050
+    4300010: Object049
+    4300012: Object048
+    4300014: Object047
+    4300016: Object046
+    4300018: Mine_047
+    4300020: Mine_048
+    4300022: Mine_046
+    4300024: Mine_045
+    4300026: Mine_044
+    4300028: Object045
+    4300030: Mine_043
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

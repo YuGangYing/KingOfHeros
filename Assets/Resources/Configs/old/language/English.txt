@@ -1,0 +1,12 @@
+money = money
+stone = stone
+diamond = diamond
+login = Login
+ip = Serv IP
+port = Port
+iggid = Iggid
+relogin = ReLogin
+
+
+17597 = Cancel
+17598 = OK

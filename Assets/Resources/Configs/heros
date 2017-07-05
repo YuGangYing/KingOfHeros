@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.Collections;
+using UnityEngine;
+namespace BattleFramework.Data{
+    [System.Serializable]
+    public class D:\SLG\Assets\Resources\Configs\heros {
+        public static string csvFilePath = "sets\Resources\Configs\heros";
+        public List<D:\SLG\Assets\Resources\Configs\heros> LoadDatas(){
+            CSVFile csvFile = new CSVFile();
+            csvFile.Open (csvFilePath);
+            List<D:\SLG\Assets\Resources\Configs\heros> dataList = new List<D:\SLG\Assets\Resources\Configs\heros>();
+            for(int i = 0;i < csvFile.mapData.Count;i ++){
+                D:\SLG\Assets\Resources\Configs\heros data = new D:\SLG\Assets\Resources\Configs\heros();
+                dataList.Add(data);
+            }
+            return dataList;
+        }
+    }
+}

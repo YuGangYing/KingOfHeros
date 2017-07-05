@@ -1,0 +1,134 @@
+fileFormatVersion: 2
+guid: 53b0f7ee403dd5b47afa332e9e8ca7cd
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: LOD1_Level03_Soldier_Peltast_Lhand
+    100004: LOD1_Level03_Soldier_Peltast_Lleg
+    100006: LOD1_Level03_Soldier_Peltast_Rhand
+    100008: LOD1_Level03_Soldier_Peltast_Rleg
+    100010: LOD1_Level03_Soldier_Peltast_Torso
+    100012: Soldier_Peltast_L_hands
+    100014: Soldier_Peltast_L_legs
+    100016: Soldier_Peltast_R_hands
+    100018: Soldier_Peltast_R_legs
+    100020: Soldier_Peltast_Torso
+    100022: Soldier_Peltast_L_Hands
+    100024: Soldier_Peltast_L_Legs
+    100026: Soldier_Peltast_R_Hands
+    100028: Soldier_Peltast_R_Legs
+    400000: //RootNode
+    400002: LOD1_Level03_Soldier_Peltast_Lhand
+    400004: LOD1_Level03_Soldier_Peltast_Lleg
+    400006: LOD1_Level03_Soldier_Peltast_Rhand
+    400008: LOD1_Level03_Soldier_Peltast_Rleg
+    400010: LOD1_Level03_Soldier_Peltast_Torso
+    400012: Soldier_Peltast_L_hands
+    400014: Soldier_Peltast_L_legs
+    400016: Soldier_Peltast_R_hands
+    400018: Soldier_Peltast_R_legs
+    400020: Soldier_Peltast_Torso
+    400022: Soldier_Peltast_L_Hands
+    400024: Soldier_Peltast_L_Legs
+    400026: Soldier_Peltast_R_Hands
+    400028: Soldier_Peltast_R_Legs
+    2300000: LOD1_Level03_Soldier_Peltast_Lhand
+    2300002: LOD1_Level03_Soldier_Peltast_Lleg
+    2300004: LOD1_Level03_Soldier_Peltast_Rhand
+    2300006: LOD1_Level03_Soldier_Peltast_Rleg
+    2300008: LOD1_Level03_Soldier_Peltast_Torso
+    2300010: Soldier_Peltast_L_hands
+    2300012: Soldier_Peltast_L_legs
+    2300014: Soldier_Peltast_R_hands
+    2300016: Soldier_Peltast_R_legs
+    2300018: Soldier_Peltast_Torso
+    2300020: Soldier_Peltast_L_Hands
+    2300022: Soldier_Peltast_L_Legs
+    2300024: Soldier_Peltast_R_Hands
+    2300026: Soldier_Peltast_R_Legs
+    3300000: LOD1_Level03_Soldier_Peltast_Lhand
+    3300002: LOD1_Level03_Soldier_Peltast_Lleg
+    3300004: LOD1_Level03_Soldier_Peltast_Rhand
+    3300006: LOD1_Level03_Soldier_Peltast_Rleg
+    3300008: LOD1_Level03_Soldier_Peltast_Torso
+    3300010: Soldier_Peltast_L_hands
+    3300012: Soldier_Peltast_L_legs
+    3300014: Soldier_Peltast_R_hands
+    3300016: Soldier_Peltast_R_legs
+    3300018: Soldier_Peltast_Torso
+    3300020: Soldier_Peltast_L_Hands
+    3300022: Soldier_Peltast_L_Legs
+    3300024: Soldier_Peltast_R_Hands
+    3300026: Soldier_Peltast_R_Legs
+    4300000: LOD1_Level03_Soldier_Peltast_Torso
+    4300002: LOD1_Level03_Soldier_Peltast_Lhand
+    4300004: LOD1_Level03_Soldier_Peltast_Rhand
+    4300006: LOD1_Level03_Soldier_Peltast_Lleg
+    4300008: LOD1_Level03_Soldier_Peltast_Rleg
+    4300010: Soldier_Peltast_Torso
+    4300012: Soldier_Peltast_L_hands
+    4300014: Soldier_Peltast_R_hands
+    4300016: Soldier_Peltast_L_legs
+    4300018: Soldier_Peltast_R_legs
+    4300020: Soldier_Peltast_L_Hands
+    4300022: Soldier_Peltast_R_Hands
+    4300024: Soldier_Peltast_L_Legs
+    4300026: Soldier_Peltast_R_Legs
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

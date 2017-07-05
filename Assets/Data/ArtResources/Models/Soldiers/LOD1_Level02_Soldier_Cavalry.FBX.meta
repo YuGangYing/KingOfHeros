@@ -1,0 +1,119 @@
+fileFormatVersion: 2
+guid: 4be00f7f03c4d9d439850bf371b19639
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Hors_Head
+    100002: Horse_B_Legs
+    100004: Horse_F_Legs
+    100006: Horse_Tail
+    100008: Level02_LOD1_Soldier_Cavalry_Red
+    100010: //RootNode
+    100012: LOD1_Soldier_Cavalry_R_Hands
+    100014: Soldier_Cavalry
+    100016: Horse_Head
+    100018: Horse_Torso
+    100020: Soldier_Cavalry_R_Hands
+    100022: Soldier_Cavalry_Torso
+    400000: Hors_Head
+    400002: Horse_B_Legs
+    400004: Horse_F_Legs
+    400006: Horse_Tail
+    400008: Level02_LOD1_Soldier_Cavalry_Red
+    400010: //RootNode
+    400012: LOD1_Soldier_Cavalry_R_Hands
+    400014: Soldier_Cavalry
+    400016: Horse_Head
+    400018: Horse_Torso
+    400020: Soldier_Cavalry_R_Hands
+    400022: Soldier_Cavalry_Torso
+    2300000: Hors_Head
+    2300002: Horse_B_Legs
+    2300004: Horse_F_Legs
+    2300006: Horse_Tail
+    2300008: Level02_LOD1_Soldier_Cavalry_Red
+    2300010: LOD1_Soldier_Cavalry_R_Hands
+    2300012: Soldier_Cavalry
+    2300014: Horse_Head
+    2300016: Horse_Torso
+    2300018: Soldier_Cavalry_R_Hands
+    2300020: Soldier_Cavalry_Torso
+    3300000: Hors_Head
+    3300002: Horse_B_Legs
+    3300004: Horse_F_Legs
+    3300006: Horse_Tail
+    3300008: Level02_LOD1_Soldier_Cavalry_Red
+    3300010: LOD1_Soldier_Cavalry_R_Hands
+    3300012: Soldier_Cavalry
+    3300014: Horse_Head
+    3300016: Horse_Torso
+    3300018: Soldier_Cavalry_R_Hands
+    3300020: Soldier_Cavalry_Torso
+    4300000: Level02_LOD1_Soldier_Cavalry_Red
+    4300002: Soldier_Cavalry
+    4300004: LOD1_Soldier_Cavalry_R_Hands
+    4300006: Horse_Tail
+    4300008: Horse_F_Legs
+    4300010: Hors_Head
+    4300012: Horse_B_Legs
+    4300014: Horse_Torso
+    4300016: Soldier_Cavalry_Torso
+    4300018: Soldier_Cavalry_R_Hands
+    4300020: Horse_Head
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

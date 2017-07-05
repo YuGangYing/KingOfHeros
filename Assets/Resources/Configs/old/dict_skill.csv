@@ -1,0 +1,16 @@
+id,herotype,name,desc,icon,mode,getsure,animator,weapon,effect,audio,cost,duration,cdtime
+1,102, , ,skillIcon1,1,1,Skill01,0,,,25,2,1
+2,102,,,skillIcon2,1,2,Skill02,0,,,1,10,1
+3,102,,,skillIcon3,1,2,Skill03,0,,,1,10,1
+4,102,,,skillIcon4,1,2,Skill04,0,,,1,10,1
+5,102,,,skillIcon5,1,2,Skill05,0,,,1,10,1
+6,102,,,skillIcon6,1,2,Skill06,0,,,1,10,1
+7,102,,,skillIcon7,1,2,Skill07,0,,,1,10,1
+8,102,,,skillIcon8,1,2,Skill08,0,,,1,10,1
+9,102,,,skillIcon9,1,2,Skill09,0,,,1,10,1
+10,102,,,skillIcon10,1,2,Skill10,0,,,1,10,1
+11,102,,,skillIcon11,1,2,Skill11,0,,,1,10,1
+12,102,,,skillIcon12,1,2,Skill12,0,,,1,10,1
+13,102,,,skillIcon13,1,2,Skill13,0,,,1,10,1
+14,102,,,skillIcon14,1,2,Skill14,0,,,1,10,1
+15,102,,,skillIcon15,1,2,Skill15,0,,,1,10,1

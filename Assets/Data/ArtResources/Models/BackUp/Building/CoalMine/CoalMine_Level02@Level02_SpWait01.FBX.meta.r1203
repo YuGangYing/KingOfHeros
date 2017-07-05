@@ -1,0 +1,281 @@
+fileFormatVersion: 2
+guid: 34835a496809ab641a07973cb411238e
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Mine_01
+    100004: Mine_014
+    100006: Mine_02
+    100008: Mine_03
+    100010: Mine_04
+    100012: Mine_05
+    100014: Mine_06
+    100016: Object001
+    100018: Object002
+    100020: Object003
+    100022: Object004
+    100024: Object005
+    100026: Object006
+    100028: Object010
+    100030: Object011
+    100032: CoalMine_Level02
+    100034: CoalMine_Level004
+    100036: Mine_043
+    100038: Mine_044
+    100040: Mine_045
+    100042: Mine_046
+    100044: Mine_047
+    100046: Mine_048
+    100048: Mine_049
+    100050: Object045
+    100052: Object046
+    100054: Object047
+    100056: Object048
+    100058: Object049
+    100060: Object050
+    100062: Object051
+    100064: Root004
+    400000: //RootNode
+    400002: Mine_01
+    400004: Mine_014
+    400006: Mine_02
+    400008: Mine_03
+    400010: Mine_04
+    400012: Mine_05
+    400014: Mine_06
+    400016: Object001
+    400018: Object002
+    400020: Object003
+    400022: Object004
+    400024: Object005
+    400026: Object006
+    400028: Object010
+    400030: Object011
+    400032: CoalMine_Level02
+    400034: CoalMine_Level004
+    400036: Mine_043
+    400038: Mine_044
+    400040: Mine_045
+    400042: Mine_046
+    400044: Mine_047
+    400046: Mine_048
+    400048: Mine_049
+    400050: Object045
+    400052: Object046
+    400054: Object047
+    400056: Object048
+    400058: Object049
+    400060: Object050
+    400062: Object051
+    400064: Root004
+    2300000: //RootNode
+    2300002: Mine_01
+    2300004: Mine_014
+    2300006: Mine_02
+    2300008: Mine_03
+    2300010: Mine_04
+    2300012: Mine_05
+    2300014: Mine_06
+    2300016: Object001
+    2300018: Object002
+    2300020: Object003
+    2300022: Object004
+    2300024: Object005
+    2300026: Object006
+    2300028: Object010
+    2300030: Object011
+    2300032: CoalMine_Level02
+    2300034: CoalMine_Level004
+    2300036: Mine_043
+    2300038: Mine_044
+    2300040: Mine_045
+    2300042: Mine_046
+    2300044: Mine_047
+    2300046: Mine_048
+    2300048: Mine_049
+    2300050: Object045
+    2300052: Object046
+    2300054: Object047
+    2300056: Object048
+    2300058: Object049
+    2300060: Object050
+    2300062: Object051
+    3300000: //RootNode
+    3300002: Mine_01
+    3300004: Mine_014
+    3300006: Mine_02
+    3300008: Mine_03
+    3300010: Mine_04
+    3300012: Mine_05
+    3300014: Mine_06
+    3300016: Object001
+    3300018: Object002
+    3300020: Object003
+    3300022: Object004
+    3300024: Object005
+    3300026: Object006
+    3300028: Object010
+    3300030: Object011
+    3300032: CoalMine_Level02
+    3300034: CoalMine_Level004
+    3300036: Mine_043
+    3300038: Mine_044
+    3300040: Mine_045
+    3300042: Mine_046
+    3300044: Mine_047
+    3300046: Mine_048
+    3300048: Mine_049
+    3300050: Object045
+    3300052: Object046
+    3300054: Object047
+    3300056: Object048
+    3300058: Object049
+    3300060: Object050
+    3300062: Object051
+    4300000: CoalMine_Level02
+    4300002: Mine_06
+    4300004: Mine_05
+    4300006: Object002
+    4300008: Mine_03
+    4300010: Mine_04
+    4300012: Mine_01
+    4300014: Mine_02
+    4300016: Object003
+    4300018: Object001
+    4300020: Object005
+    4300022: Object006
+    4300024: Mine_014
+    4300026: Object004
+    4300028: Object010
+    4300030: Object011
+    4300032: CoalMine_Level004
+    4300034: Object051
+    4300036: Mine_049
+    4300038: Object050
+    4300040: Object049
+    4300042: Object048
+    4300044: Object047
+    4300046: Object046
+    4300048: Mine_047
+    4300050: Mine_048
+    4300052: Mine_046
+    4300054: Mine_045
+    4300056: Mine_044
+    4300058: Object045
+    4300060: Mine_043
+    7400000: Level02_SpWait01
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Level02_SpWait01
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 184
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CoalMine_Level02
+        weight: 1
+      - path: CoalMine_Level02/Mine_01
+        weight: 1
+      - path: CoalMine_Level02/Mine_01/Mine_02
+        weight: 1
+      - path: CoalMine_Level02/Mine_03
+        weight: 1
+      - path: CoalMine_Level02/Mine_04
+        weight: 1
+      - path: CoalMine_Level02/Mine_05
+        weight: 1
+      - path: CoalMine_Level02/Mine_05/Object002
+        weight: 1
+      - path: CoalMine_Level02/Mine_06
+        weight: 1
+      - path: CoalMine_Level02/Mine_014
+        weight: 1
+      - path: CoalMine_Level02/Mine_014/Object004
+        weight: 1
+      - path: CoalMine_Level02/Object001
+        weight: 1
+      - path: CoalMine_Level02/Object003
+        weight: 1
+      - path: CoalMine_Level02/Object005
+        weight: 1
+      - path: CoalMine_Level02/Object006
+        weight: 1
+      - path: CoalMine_Level02/Object010
+        weight: 1
+      - path: CoalMine_Level02/Object011
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  userData: 

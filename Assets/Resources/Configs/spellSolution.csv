@@ -1,0 +1,6 @@
+法术药水编号|名称|需要法术工厂等级|半径|随机半径|数量|释放间隔时间|训练时间|最大等级|初始法术等级ID
+id_INT|name_STRING|needSpellFactoryLevel_INT|radius_FLOAT|randomRadius_FLOAT|NUM_INT|interval_FLOAT|TrainingTime_INT|maxLevel_INT|spellSolutionBeginID_INT
+10700100|雷电法术|1|2|3|6|0|3600|5|10800101
+10700200|疗伤法术|2|3|2|40|0|7200|5|10800201
+10700300|狂暴法术|3|5|4|60|0|10800|5|10800301
+10700400|冰冻法术|6|5|4|0|0|18000|5|10800401

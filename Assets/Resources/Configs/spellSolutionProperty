@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.Collections;
+using UnityEngine;
+namespace BattleFramework.Data{
+    [System.Serializable]
+    public class D:\SLG\Assets\Resources\Configs\spellSolutionProperty {
+        public static string csvFilePath = "sets\Resources\Configs\spellSolutionProperty";
+        public List<D:\SLG\Assets\Resources\Configs\spellSolutionProperty> LoadDatas(){
+            CSVFile csvFile = new CSVFile();
+            csvFile.Open (csvFilePath);
+            List<D:\SLG\Assets\Resources\Configs\spellSolutionProperty> dataList = new List<D:\SLG\Assets\Resources\Configs\spellSolutionProperty>();
+            for(int i = 0;i < csvFile.mapData.Count;i ++){
+                D:\SLG\Assets\Resources\Configs\spellSolutionProperty data = new D:\SLG\Assets\Resources\Configs\spellSolutionProperty();
+                dataList.Add(data);
+            }
+            return dataList;
+        }
+    }
+}

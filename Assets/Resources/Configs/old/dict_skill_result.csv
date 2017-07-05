@@ -1,0 +1,5 @@
+id,skillid,type,subtype,side,objtype,maxnumber,sorttype,rangtype,rangvalue1,rangvalue2,duration`,relaytime,conditionside,conditionobjtype,condition,conditionvalue,repeattype,repeateinterval
+1,1,7,1,1,1,1,1,1,5,1,2,1,,,0,0,0,2
+2,1,1,0,2,2,1,1,1,5,1,2,1,,,0,0,0,2
+3,2,7,2,1,1,1,1,1,5,1,1,0.01,,,0,0,1,1
+4,3,1,0,2,2,1,1,1,5,1,10,0.1,,,0,0,2,1

@@ -1,0 +1,103 @@
+//-------------   ”¢–€»ÀŒÔ√Ë ˆ 10000 - 20000  -----------------------
+
+110102=Robin Hood
+210102=Robin Hood, described as Earl of Huntington, is a heroic outlaw in English folklore. According to legend, he is a highly skilled archer and swordsman, and also a fighter for freedom from tyranny. He has become known for robbing from the rich and giving to the poor.
+
+110103=Richard the Lionheart
+210103=Richard I was King of England from 6 July 1189 until his death, and was known as Richard the Lionheart even before his accession, because of his reputation as a great military leader and warrior. Richard was a central Christian commander during the Third Crusade, leading the campaign after the departure of Philip II of France and scoring considerable victories against his Muslim counterpart, Saladin, although he did not reconquer Jerusalem from Saladin.
+
+110104=Spartacus
+210104=Spartacuswas one of the slave leaders in the Third Servile War, a major slave uprising against the Roman Republic. Little is known about Spartacus beyond the events of the war, and all sources agree that he was a former gladiator and an accomplished military leader. He has been sentenced to diein the gladiator arena as punishment for defying a Roman Legate.
+
+110109=King Arthur
+210109=Arthur is a legendary leader who defeated the Saxons and established an empire over Britain, Ireland, Iceland, Norway and Gaul. According to medieval tales, Arthur appears as a great warrior defending Britain from human and supernatural enemies or as a magical figure of folklore. Round Table is King Arthur's famed table in the Arthurian legend, around which were a group of greatest knights who had the honor to sit at King Arthur's court. 
+
+110111=Cleopatra
+210111=The last active pharaoh of Ancient Egypt. She took her own life by allowing a venomous snake to bite her. Henceforth, Egypt became a Roman province, until the rise of the Arab empire in the 7th century.
+
+
+//-------------   Interface of Hero 14000 - 14999  -----------------------
+14000=Tavern
+14001=5times/day
+14002=Draw for free
+14003=Gold Draw
+14004=Diamond Draw
+14005=Card List
+14006=Choose One Card
+14007=Other Ways
+14008=Keep on Drawing
+
+14009=Hero Character
+14010=Damage:
+14011=Defense:
+14012=Health:
+14013=Exp:
+14014=Leadership:
+
+14015=Upgrade
+14016=Companion
+
+14017=Choose a Companion
+14018=Confirm
+
+14019=Change a Card
+14020=Choose Hero
+14021=Upgrade Cost:
+14022=Upgrade Instruction...
+
+14023=Achievement
+14024=Acquire
+
+14025=Sign In
+14206= Gold Coin{0} Aureustone{1} Diamond{2} 
+14207= Gold Coin{0} Aureustone{1} Diamond{2} Items{3}[{4}]
+14208= Gold Coin{0} Aureustone{1} Diamond{2} Items {3}[{4}] Items{5}[{6}]
+
+14026=Settings
+14027=BGM
+14028=Sound Effect
+14029=Purchase
+14030=Notifications
+14031=On
+14032=Off
+
+14033=Feedback
+14034=Forum
+14035=Help 
+14036=Submit
+14037=Back
+
+310101=Ragnar
+310102=RobinHood
+310103=Richard
+310104=Sparta
+310105=Lancelot
+310106=Attila
+310107=Phrygian
+310108=Saladin
+310109=KingArthur
+310110=Merlin
+310111=DeVivar
+310112=Dracula
+310201=Goblin
+310202=DeVivar
+310203=Garonne
+310204=Gawain
+310205=Barbarossa
+310206=Thunder
+310207=Ballister
+310208=William
+310209=Pinger
+310210=Salique
+310211=Jotun
+310212=Soloman
+310213=Lomo
+310214=Amber
+310215=Genevieve
+310216=Quasimodo
+
+14038=City Start Animation
+14039=Battle Start Animation
+
+
+

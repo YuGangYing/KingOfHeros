@@ -1,0 +1,176 @@
+fileFormatVersion: 2
+guid: a55e32ed40eca4642a673094a598bcef
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: LOD1_Level01_Hors_Head
+    100002: LOD1_Level01_Horse_B_Legs
+    100004: LOD1_Level01_Horse_F_Legs
+    100006: LOD1_Level01_Horse_Tail
+    100008: LOD1_Level01_Horse_Torso
+    100010: //RootNode
+    100012: LOD1_Level01_Soldier_Cavalry_R_Hands
+    100014: LOD1_Level01_Soldier_Cavalry_Torso
+    100016: Horse_B_Legs
+    100018: Horse_F_Legs
+    100020: Horse_Head
+    100022: Horse_Tail
+    100024: Horse_Torso
+    100026: Soldier_Cavalry_R_Hands
+    100028: Soldier_Cavalry_Torso
+    400000: LOD1_Level01_Hors_Head
+    400002: LOD1_Level01_Horse_B_Legs
+    400004: LOD1_Level01_Horse_F_Legs
+    400006: LOD1_Level01_Horse_Tail
+    400008: LOD1_Level01_Horse_Torso
+    400010: //RootNode
+    400012: LOD1_Level01_Soldier_Cavalry_R_Hands
+    400014: LOD1_Level01_Soldier_Cavalry_Torso
+    400016: Horse_B_Legs
+    400018: Horse_F_Legs
+    400020: Horse_Head
+    400022: Horse_Tail
+    400024: Horse_Torso
+    400026: Soldier_Cavalry_R_Hands
+    400028: Soldier_Cavalry_Torso
+    2300000: LOD1_Level01_Hors_Head
+    2300002: LOD1_Level01_Horse_B_Legs
+    2300004: LOD1_Level01_Horse_F_Legs
+    2300006: LOD1_Level01_Horse_Tail
+    2300008: LOD1_Level01_Horse_Torso
+    2300010: LOD1_Level01_Soldier_Cavalry_R_Hands
+    2300012: LOD1_Level01_Soldier_Cavalry_Torso
+    2300014: Horse_B_Legs
+    2300016: Horse_F_Legs
+    2300018: Horse_Head
+    2300020: Horse_Tail
+    2300022: Horse_Torso
+    2300024: Soldier_Cavalry_R_Hands
+    2300026: Soldier_Cavalry_Torso
+    3300000: LOD1_Level01_Hors_Head
+    3300002: LOD1_Level01_Horse_B_Legs
+    3300004: LOD1_Level01_Horse_F_Legs
+    3300006: LOD1_Level01_Horse_Tail
+    3300008: LOD1_Level01_Horse_Torso
+    3300010: LOD1_Level01_Soldier_Cavalry_R_Hands
+    3300012: LOD1_Level01_Soldier_Cavalry_Torso
+    3300014: Horse_B_Legs
+    3300016: Horse_F_Legs
+    3300018: Horse_Head
+    3300020: Horse_Tail
+    3300022: Horse_Torso
+    3300024: Soldier_Cavalry_R_Hands
+    3300026: Soldier_Cavalry_Torso
+    4300000: LOD1_Level01_Horse_Torso
+    4300002: LOD1_Level01_Hors_Head
+    4300004: LOD1_Level01_Horse_F_Legs
+    4300006: LOD1_Level01_Horse_B_Legs
+    4300008: LOD1_Level01_Horse_Tail
+    4300010: LOD1_Level01_Soldier_Cavalry_Torso
+    4300012: LOD1_Level01_Soldier_Cavalry_R_Hands
+    4300014: Horse_Torso
+    4300016: Horse_Head
+    4300018: Horse_F_Legs
+    4300020: Horse_B_Legs
+    4300022: Horse_Tail
+    4300024: Soldier_Cavalry_Torso
+    4300026: Soldier_Cavalry_R_Hands
+    7400000: Run01
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Run01
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Horse_Torso
+        weight: 1
+      - path: Horse_Torso/Horse_B_Legs
+        weight: 1
+      - path: Horse_Torso/Horse_F_Legs
+        weight: 1
+      - path: Horse_Torso/Horse_Head
+        weight: 1
+      - path: Horse_Torso/Horse_Tail
+        weight: 1
+      - path: Horse_Torso/Soldier_Cavalry_Torso
+        weight: 1
+      - path: Horse_Torso/Soldier_Cavalry_Torso/Soldier_Cavalry_R_Hands
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

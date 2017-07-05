@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.Collections;
+using UnityEngine;
+namespace BattleFramework.Data{
+    [System.Serializable]
+    public class D:\SLG\Assets\Resources\Configs\castleLimits {
+        public static string csvFilePath = "sets\Resources\Configs\castleLimits";
+        public List<D:\SLG\Assets\Resources\Configs\castleLimits> LoadDatas(){
+            CSVFile csvFile = new CSVFile();
+            csvFile.Open (csvFilePath);
+            List<D:\SLG\Assets\Resources\Configs\castleLimits> dataList = new List<D:\SLG\Assets\Resources\Configs\castleLimits>();
+            for(int i = 0;i < csvFile.mapData.Count;i ++){
+                D:\SLG\Assets\Resources\Configs\castleLimits data = new D:\SLG\Assets\Resources\Configs\castleLimits();
+                dataList.Add(data);
+            }
+            return dataList;
+        }
+    }
+}

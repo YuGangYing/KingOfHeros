@@ -1,0 +1,2 @@
+id,heroid,name,desc,mode,getsure,animator,weapon,atkrangtype,atkrangvalue,icon,effect,audio,cost,duration,cdtime,repeateinterval
+1,1,战争旋风,战争旋风,1,1,skill01,0,,1,,,,100,10,20,2

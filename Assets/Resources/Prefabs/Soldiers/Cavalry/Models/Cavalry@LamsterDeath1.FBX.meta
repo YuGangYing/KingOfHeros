@@ -1,0 +1,138 @@
+fileFormatVersion: 2
+guid: 38a7c50692ee9c9488d7d4c2f3d218a1
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Bip001
+    100002: Bip001 Head
+    100004: Bip001 L Clavicle
+    100006: Bip001 L Forearm
+    100008: Bip001 L UpperArm
+    100010: Bip001 Neck
+    100012: Bip001 Pelvis
+    100014: Bip001 R Clavicle
+    100016: Bip001 R Forearm
+    100018: Bip001 R Hand
+    100020: Bip001 R UpperArm
+    100022: Bip001 Spine
+    100024: Bip001 Spine1
+    100026: Bip002
+    100028: Bip002 Head
+    100030: Bip002 L Calf
+    100032: Bip002 L Clavicle
+    100034: Bip002 L Forearm
+    100036: Bip002 L HorseLink
+    100038: Bip002 L Thigh
+    100040: Bip002 L UpperArm
+    100042: Bip002 Neck
+    100044: Bip002 Pelvis
+    100046: Bip002 R Calf
+    100048: Bip002 R Clavicle
+    100050: Bip002 R Forearm
+    100052: Bip002 R HorseLink
+    100054: Bip002 R Thigh
+    100056: Bip002 R UpperArm
+    100058: Bip002 Spine
+    100060: Bip002 Spine1
+    100062: Bone001
+    100064: Bone002
+    100066: Bone003
+    100068: Level02_Soldier_Cavalry
+    100070: //RootNode
+    100072: root
+    400000: Bip001
+    400002: Bip001 Head
+    400004: Bip001 L Clavicle
+    400006: Bip001 L Forearm
+    400008: Bip001 L UpperArm
+    400010: Bip001 Neck
+    400012: Bip001 Pelvis
+    400014: Bip001 R Clavicle
+    400016: Bip001 R Forearm
+    400018: Bip001 R Hand
+    400020: Bip001 R UpperArm
+    400022: Bip001 Spine
+    400024: Bip001 Spine1
+    400026: Bip002
+    400028: Bip002 Head
+    400030: Bip002 L Calf
+    400032: Bip002 L Clavicle
+    400034: Bip002 L Forearm
+    400036: Bip002 L HorseLink
+    400038: Bip002 L Thigh
+    400040: Bip002 L UpperArm
+    400042: Bip002 Neck
+    400044: Bip002 Pelvis
+    400046: Bip002 R Calf
+    400048: Bip002 R Clavicle
+    400050: Bip002 R Forearm
+    400052: Bip002 R HorseLink
+    400054: Bip002 R Thigh
+    400056: Bip002 R UpperArm
+    400058: Bip002 Spine
+    400060: Bip002 Spine1
+    400062: Bone001
+    400064: Bone002
+    400066: Bone003
+    400068: Level02_Soldier_Cavalry
+    400070: //RootNode
+    400072: root
+    4300000: Level02_Soldier_Cavalry
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Level02_Soldier_Cavalry
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

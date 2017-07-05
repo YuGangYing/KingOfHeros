@@ -1,0 +1,247 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 136: {fileID: 13600000}
+  - 195: {fileID: 19500000}
+  - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
+  - 114: {fileID: 11400004}
+  - 114: {fileID: 11400006}
+  - 114: {fileID: 11400008}
+  - 114: {fileID: 11400010}
+  m_Layer: 0
+  m_Name: MeleeAttacker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5fd20f239657aa42b3507f3368383c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Alignment: 0
+  UnitTroop: 0
+  GlobleScanMode: 0
+  Attacker: {fileID: 0}
+  MeleeAttacker: {fileID: 0}
+  Attribute: {fileID: 0}
+  Anim: {fileID: 0}
+  Move: {fileID: 0}
+  Skill: {fileID: 0}
+  NavAgent: {fileID: 0}
+  UMatrix: {fileID: 0}
+  Line: 0
+  Matrix: 0
+  EnemyLayer: 0
+  EnemyLayer1: 0
+  EnemyLayer2: 0
+  Enemys: []
+  IsReGrouped: 0
+  UnitStatus: 0
+  IsHero: 0
+  HeroId: 0
+  HeroTypeId: 0
+  WayPoints: []
+  dist: 0
+  WayPointMove: 0
+  tempPos: {x: 0, y: 0, z: 0}
+  WayPointMoveDone: 0
+  disperseFrequency: 2
+  DestroyAble: 1
+  Hide: 1
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d907995811b44ae40982221843300e2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Anim: {fileID: 0}
+  AnimMode: 0
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817bb69730bec2747b719b21b52f88ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHP: 100
+  BaseMaxHP: 0
+  HP: 100
+  BaseHP: 0
+  BaseDef: 0
+  Def: 0
+  DefaultMoveSpeed: 3.5
+  BaseMoveSpeed: 3.5
+  AdjustMoveSpeed: 0
+  RealAdjustSpeed: 0
+  BaseAttackSpeed: 0
+  Damage: 0
+  BaseDamage: 0
+  SkillDamage: 0
+  AttackRadius: 0
+  ScanRadius: 40
+  m_eFigherType: 0
+  HitTargets: []
+  OverlayPrefab: {fileID: 0}
+  OverlayBar: {fileID: 0}
+  MainCamera: {fileID: 0}
+  NGUICamera: {fileID: 0}
+  isParry: 0
+  parryRate: 4
+  IsDeadlyThrowed: 0
+  IsRangerMarked: 0
+  RangerMarkedDuration: 0
+  EffectMarkPrefab: {fileID: 0}
+  IsImmuneDamage: 0
+  ImmuneDuration: 0
+  IsBleed: 0
+  BleedDamage: 0
+  IsSurviveSongByFriend: 0
+  SurviveSongDamageByFriend: 0
+  SurviveSongDurationByFriend: 0
+  IsSurviveSongByEnemy: 0
+  SurviveSongDamageByEnemy: 0
+  SurviveSongDurationByEnemy: 0
+  isPromoteDamage: 0
+  priorDamage: 0
+  PromoteDuration: 0
+  isOnHeroMournfulSong: 0
+  priorHeroMournfulSongDamage: 0
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a111916463bfc6240a8f055abe3781f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AttackTarget: {fileID: 0}
+  animEvent: []
+  GlobleScanMode: 0
+  m_DefaultScaneRadius: 0
+  hitClip: {fileID: 0}
+  Attackable: 1
+  DiscardList: []
+  Attacking: 0
+  cols: []
+  cols1: []
+  CurrentTargetDist: 0
+  ChargeDist: 10
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 089641395cb39f84bba3383b91173984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveMode: 0
+  m_Nav: {fileID: 0}
+  ArrayForwardDist: 40
+  DefaultMoveTarget: {x: 0, y: 0, z: 0}
+  IsMoving: 0
+  StopDistance: 2
+  MoveType: 0
+  speed: 0
+  Velocity: 0
+  BlockTimeDur: 0
+  RemainDist: 0
+  CurrentTargetPos: {x: 0, y: 0, z: 0}
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1a5925ae43e88c49a48de1a9fb70ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LineGizmosCubeSize: .5
+--- !u!136 &13600000
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: .5
+  m_Height: 1.87
+  m_Direction: 1
+  m_Center: {x: 0, y: .910000026, z: 0}
+--- !u!195 &19500000
+NavMeshAgent:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_Radius: .5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

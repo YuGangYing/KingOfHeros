@@ -1,0 +1,16 @@
+ID,SKILLID,NAMEID,DESCID,NAME,ICON,MAXCOOLDOWN,EFFECTDURATION,ANIMDURATION,COST,DAMAGE,ADDITIONDAMAGE,CONDITION,CONDITIONVALUE,ATTACKRADIUS,MAXHITCOUNT,ISACTIVE,SKILLPREFAB,SHOOTEFFECTCPREFAB,SHOOTSTANDBYEFFECTCPREFAB,HITEFFECTCPREFAB,CASTAUDIOCLIP,SHOOTAUDIOCLIP,HITAUDIOCLIP,TYPE,SUBSKILL,FINGERTYPE,OPERCOUNT,ISGLOBAL,SKILLANIMINDEX
+1,20003,120003,220003,游侠印记,skillIcon1,5,10,3,150,3000,0,0,0,20,1,0,Effect_Hero/Effect_RobinHood_Skill01_Body,Effect_Hero/RobinsonSkill01_new,Effect_Hero/Effect_Robinhood_Ready,Effect_Hero/Effect_RobinHood_Skill02_HIT,Audio/SE_skillsound_robinhan01_attack,Audio/SE_skillsound_robinhan01_shoot,Audio/SE_skillsound_robinhan01_hit,332,,1,0,0,1
+2,20004,120004,220004,急速狙击,skillIcon2,50,0,3,160,500,50,0,0,20,1,0,Effect_Hero/Effect_RobinHood_Skill02_Body,Effect_Hero/Effect_RobinHood_Attack_Track,,Effect_Hero/Effect_RobinHood_Skill02_HIT,Audio/bf233_se_skill_action,Audio/SE_skillsound_robinhan02_attack,Audio/SE_skillsound_robinhan02_hit,2,,5,0,1,2
+3,20005,120005,220005,游侠风采,skillIcon3,0,0,3,0,0.3,0,0,0,0,1,1,,,,,Audio/SE_skillsound_robinhan02,,,,,0,0,0,1
+4,20006,120006,220006,翼狮,skillIcon4,45,10,3,150,0,0,0,0,0,1,0,Effect_Hero/Richard_Skill02,,,,Audio/SE_skillsound_shixin01,,Audio/EtherealHeavyHit3,,,4,0,0,1
+5,20007,120007,220007,光翼恩赐,skillIcon5,50,0,3,160,0.8,50,0,0,8,1,0,Effect_Hero/Effect_Richard_Skill02,,,Effect_Hero/Richard_Skill02_Input,Audio/SE_skillsound_shixin02,,Audio/ResurrectTarget,,,5,0,0,2
+6,20008,120008,220008,狮心不朽,skillIcon6,0,0,3,0,0.25,0,1,0,0,1,0,Effect_Hero/Effect_Richard_Skill03,,,,Audio/SE_skillsound_shixin03,,,,,0,1,0,1
+7,20009,120009,220009,夺命投掷,skillIcon7,50,100000,3,160,5000,0,0,0,20,1,0,Effect_Hero/Effect_Sparta_Skill01,Effect_Hero/Sparta_Skill01_Gun,,Effect_Hero/Sparta_Skill01_Hit,Audio/SE_skillsound_sibada01_attack,Audio/SE_skillsound_sibada01_shoot,Audio/SE_skillsound_sibada01_hit,,,1,0,0,1
+8,20010,120010,220010,要害打击,skillIcon8,50,0,3,160,5000,50,0,0,4,1,0,Effect_Hero/Sparta_Skill02,Effect_Hero/Sparta_Skill01_Gun,,,Audio/SE_skillsound_sibada02,,,,,5,0,0,2
+9,20011,120011,220011,战争渴望,skillIcon9,0,100000,3,0,0.05,0,1,0,0,1,0,Effect_Hero/Effect_Sparta_Skill02,,,,Audio/SE_skillsound_sibada02,,,,,0,0,0,1
+10,20024,120024,220024,众志成城,skillIcon10,0,0,3,0,0.2,0,0,0,0,5,1,Effect_Hero/Effect_KingArthur_Skill03,,,,Audio/SE_skillsound_yase02,,,,,0,0,0,1
+11,20025,120025,220025,王者牺牲,skillIcon11,45,40,3,150,2000,0,2,0,5,1,0,Effect_Hero/KingArthur_Skill01_new,,,,Audio/SE_skillsound_shixin03,,,,,4,0,0,2
+12,20026,120026,220026,英雄哀歌,skillIcon12,0,10,3,0,0.3,0,1,0,0,5,0,Effect_Hero/Effect_KingArthur_Skill03,,,,Audio/SE_skillsound_yase03,,,,,0,1,0,1
+13,20030,120030,220030,存亡之歌,skillIcon1,55,5,3,160,800,80,0,0,10,8,0,Effect_Hero/Effect_Cleopatra_Skill01,,,,Audio/SE_skillsound_yanhou01,,,,,3,0,0,1
+14,20031,120031,220031,石化凝视,skillIcon2,45,20,3,130,0,0,0,0,8,1,0,Effect_Hero/Effect_Cleopatra_Skill02,,,,Audio/SE_skillsound_yanhou01,,,,,0,0,0,2
+15,20032,120032,220032,剧毒之触,skillIcon3,50,10,3,140,2000,0,0,0,10,10,0,Effect_Hero/Effect_Cleopatra_Skill03,,,,Audio/SE_skillsound_yanhou02,,,,,4,0,0,1

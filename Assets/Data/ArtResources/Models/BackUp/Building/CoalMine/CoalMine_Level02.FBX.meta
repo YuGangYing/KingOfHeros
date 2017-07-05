@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: 18f297cb2bc134b44908304fb207dedf
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: CoalMine_Level02
+    100004: CoalMine_Level02_a
+    100006: CoalMine_Level02_b
+    100008: CoalMine_Level02_c
+    100010: CoalMine_Level02_d
+    100012: CoalMine_Level02_e
+    100014: CoalMine_Level02_f
+    100016: CoalMine_Level02_g
+    100018: CoalMine_Level02_h
+    100020: CoalMine_Level02_i
+    100022: CoalMine_Level02_j
+    100024: CoalMine_Level02_k
+    100026: CoalMine_Level02_l
+    100028: CoalMine_Level02_m
+    100030: CoalMine_Level02_n
+    100032: CoalMine_Level02_o
+    400000: CoalMine_Level02
+    400002: //RootNode
+    400004: CoalMine_Level02_a
+    400006: CoalMine_Level02_b
+    400008: CoalMine_Level02_c
+    400010: CoalMine_Level02_d
+    400012: CoalMine_Level02_e
+    400014: CoalMine_Level02_f
+    400016: CoalMine_Level02_g
+    400018: CoalMine_Level02_h
+    400020: CoalMine_Level02_i
+    400022: CoalMine_Level02_j
+    400024: CoalMine_Level02_k
+    400026: CoalMine_Level02_l
+    400028: CoalMine_Level02_m
+    400030: CoalMine_Level02_n
+    400032: CoalMine_Level02_o
+    2300000: CoalMine_Level02
+    2300002: CoalMine_Level02_a
+    2300004: CoalMine_Level02_b
+    2300006: CoalMine_Level02_c
+    2300008: CoalMine_Level02_d
+    2300010: CoalMine_Level02_e
+    2300012: CoalMine_Level02_f
+    2300014: CoalMine_Level02_g
+    2300016: CoalMine_Level02_h
+    2300018: CoalMine_Level02_i
+    2300020: CoalMine_Level02_j
+    2300022: CoalMine_Level02_k
+    2300024: CoalMine_Level02_l
+    2300026: CoalMine_Level02_m
+    2300028: CoalMine_Level02_n
+    2300030: CoalMine_Level02_o
+    3300000: CoalMine_Level02
+    3300002: CoalMine_Level02_a
+    3300004: CoalMine_Level02_b
+    3300006: CoalMine_Level02_c
+    3300008: CoalMine_Level02_d
+    3300010: CoalMine_Level02_e
+    3300012: CoalMine_Level02_f
+    3300014: CoalMine_Level02_g
+    3300016: CoalMine_Level02_h
+    3300018: CoalMine_Level02_i
+    3300020: CoalMine_Level02_j
+    3300022: CoalMine_Level02_k
+    3300024: CoalMine_Level02_l
+    3300026: CoalMine_Level02_m
+    3300028: CoalMine_Level02_n
+    3300030: CoalMine_Level02_o
+    4300000: CoalMine_Level02
+    4300002: CoalMine_Level02_a
+    4300004: CoalMine_Level02_b
+    4300006: CoalMine_Level02_c
+    4300008: CoalMine_Level02_d
+    4300010: CoalMine_Level02_e
+    4300012: CoalMine_Level02_f
+    4300014: CoalMine_Level02_g
+    4300016: CoalMine_Level02_h
+    4300018: CoalMine_Level02_i
+    4300020: CoalMine_Level02_j
+    4300022: CoalMine_Level02_k
+    4300024: CoalMine_Level02_l
+    4300026: CoalMine_Level02_m
+    4300028: CoalMine_Level02_n
+    4300030: CoalMine_Level02_o
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

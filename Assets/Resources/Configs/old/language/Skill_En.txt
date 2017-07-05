@@ -1,0 +1,38 @@
+//¼¼ÄÜSkills		20000-24999
+
+120003=Ranger's imprint
+120004=Rapid sniper
+120005=Ranger's presence
+120006=Winged lion
+120007=Wings of light
+120008=Eternal lionheart
+120009=Lethal hurl
+120010=Fatal strike
+120011=Hunger for war
+120024=Union is strength
+120025=Lord's sacrifice
+120026=Hero's melancholy
+120030=Song of survival
+120031=Petrifying gaze
+120032=Toxic touch
+
+
+220003=Fire an arrow rapidly, which causes certain damage to enemy heros (take no cognizance to enemy's defense),  and also impose a Ranger's imprint.
+220004=Cause damage to certain hero,  damage increases by 50% if the hero has a Ranger's imprint.
+220005=Attack speed increase passively.
+220006= Immune to all damage for some time. 
+220007=Regain friendly hero's HP,  more effective with lower HP. Effect will increase by 50% when apply to yourself.
+220008=Richard will revive automatically, such effect occurs only once in a battle.
+220009=Hurl a pike and cause an enemy hero bleed until he dies.
+220010=Cause damage to a certain hero. Effect will increase by 50% to the hero with bleed effects.
+220011=Damage increases for every enemy hero's death, such effect lasts until the end of a battle. 
+220024=Increases maximum health by 10% of King Arthur's maximum health.
+220025=When skill activated,  if some other hero should die, King Arthur will die for him.
+220026=When died, all friendly hero's damage increase.
+220030=Within a specified range, all friendly units gain health while hostile units lost their lives.
+220031=Petrify target enemy hero.
+220032=Within a specified range, friendly units get Toxic touch.
+
+
+
+

@@ -1,0 +1,3 @@
+编号|登陆账号ID|用户名字|等级|当前经验|拥有钻石|拥有金币|拥有魔法|注册时间|上次登录时间
+id_INT|loginID_INT|name_STRING|level_INT|currentExp_INT|diamond_INT|gold_INT|magic_INT|regTime_INT|lastLoginTime_INT
+101000100|1|布加迪|1|0|100|200|300|0|0

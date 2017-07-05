@@ -1,0 +1,12 @@
+﻿AUDIO_ID,NAME,DESCRIPTION,SEQUENCE,AUTOLOOP,INTERVAL,FADETIME,TYPE,SUB_TYPE,DIMENSIONS
+1,loginbak,loginbak,1,2,1,10,1,0,2
+2,uiok,uiok,1,2,1,0,2,0,2
+3,uicancel,uicancel,1,2,1,0,2,0,2
+4,uisucc,uisucc,1,2,1,0,2,0,2
+5,uifailed,uifailed,1,2,1,0,2,0,2
+6,uiopen,uiopen,1,2,1,0,2,0,2
+7,uiclose,uiclose,1,2,1,0,2,0,2
+8,uiupdate,uiupdate,1,2,1,0,2,0,2
+9,uiwarn,uiwarn,1,2,1,0,2,0,2
+10,mainCityBak,主城背景,1,1,2,5,1,0,2
+11,battleFieldBak,布阵背景,1,2,1,10,1,0,2

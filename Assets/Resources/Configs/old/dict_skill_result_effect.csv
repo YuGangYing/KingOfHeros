@@ -1,0 +1,3 @@
+id,name,desc,type,resource,moveflag,atkflag,skillflg,damageflag,bufflag,absorb,resist,chgpoint
+1,游侠标记,,1,assets/data/artresources/effects/prefabs/effect_hero/Effect_RobinHoon_Skill02.prefab,,,,,,0,20%
+2,游侠标记,,1,assets/data/artresources/effects/prefabs/effect_hero/Effect_Attila_Skill01.prefab,,,,,,0,20%

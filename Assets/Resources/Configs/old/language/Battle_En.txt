@@ -1,0 +1,48 @@
+//¼¼ÄÜSkills		20000-24999
+
+135000=No Man's Land
+235000=No Man's Land
+
+13500001=Dark Wood
+13500002=Longlake Village
+13500003=Oakenshield 
+13500004=Grey Wizard
+13500005=Armoured Dwarf
+13500006=Union force
+
+23500001=In Dark Wood, you encounter a group of elf archers. Although you try to make peace with them, the elves seem more barbarous than orcs. A battle is going to explode.
+23500002=Bard, the new mayor of Longlake Village, has barricaded the entrance. You try to move through, but the guards ask you to show your pass. Things simply weren¡¯t what you had expected.
+23500003=A group of dwarf cavalry go on rampages and panic your troop, you decide to teach a lesson to those homeless but outrageous dwarves.
+23500004=A mystic wizard gets in your way, and tells you it is the way to darkness and evil. Now that the journey would be over,  you have to go ahead either way. Sensing your thoughts, he turns into many wizards to stop you.
+23500005=The barbarous drawves are unconvinced. They rally their companions to challenge you.
+23500006=On your way to Lonely Mountain, you encounter Thranduil the Elven-king, who's leading the coalition of Dwarves, Humans and Elves. Also as a hunter of the treasure, he asserts that if you could defeat him, he would get back with the coalition.
+
+33500001=Thranduil
+33500002=Bard
+33500003=Thorin Oakenshield
+33500004=Gandalf
+33500005=Dain II Ironfoot
+33500006=Thranduil
+
+66360000=Confirm
+66360001=Level Select
+66360002=Level Reward
+66360003=Not Opening
+66360004=Heroes
+66360005=Combat Power
+66360006=Start Battle
+66360007=Please drag the heroes to set a formation
+66360008=All Heroes
+66360009=Grade
+66360010=Star Rate
+66360011=Quality
+66360012=All Units
+66360013=Infantry
+66360014=Pikeman
+66360015=Archer
+66360016=Cavalry 
+66360017=Supporter
+66360018=Need to spend
+
+
+

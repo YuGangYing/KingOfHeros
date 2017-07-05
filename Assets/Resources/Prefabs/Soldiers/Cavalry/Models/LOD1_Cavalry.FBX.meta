@@ -1,0 +1,134 @@
+fileFormatVersion: 2
+guid: d1bc5c434f2c5fe4080d0b10e38b9490
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: LOD1_Level03_Hors_Head001
+    100002: LOD1_Level03_Horse_B_Legs001
+    100004: LOD1_Level03_Horse_F_Legs001
+    100006: LOD1_Level03_Horse_Tail001
+    100008: LOD1_Level03_Horse_Torso
+    100010: //RootNode
+    100012: LOD1_Level03_Soldier_Cavalry_R_Hands001
+    100014: LOD1_Level03_Soldier_Cavalry_Torso001
+    100016: Horse_B_Legs
+    100018: Horse_F_Legs
+    100020: Horse_Head
+    100022: Horse_Tail
+    100024: Horse_Torso
+    100026: Soldier_Cavalry_R_Hands
+    100028: Soldier_Cavalry_Torso
+    400000: LOD1_Level03_Hors_Head001
+    400002: LOD1_Level03_Horse_B_Legs001
+    400004: LOD1_Level03_Horse_F_Legs001
+    400006: LOD1_Level03_Horse_Tail001
+    400008: LOD1_Level03_Horse_Torso
+    400010: //RootNode
+    400012: LOD1_Level03_Soldier_Cavalry_R_Hands001
+    400014: LOD1_Level03_Soldier_Cavalry_Torso001
+    400016: Horse_B_Legs
+    400018: Horse_F_Legs
+    400020: Horse_Head
+    400022: Horse_Tail
+    400024: Horse_Torso
+    400026: Soldier_Cavalry_R_Hands
+    400028: Soldier_Cavalry_Torso
+    2300000: LOD1_Level03_Hors_Head001
+    2300002: LOD1_Level03_Horse_B_Legs001
+    2300004: LOD1_Level03_Horse_F_Legs001
+    2300006: LOD1_Level03_Horse_Tail001
+    2300008: LOD1_Level03_Horse_Torso
+    2300010: LOD1_Level03_Soldier_Cavalry_R_Hands001
+    2300012: LOD1_Level03_Soldier_Cavalry_Torso001
+    2300014: Horse_B_Legs
+    2300016: Horse_F_Legs
+    2300018: Horse_Head
+    2300020: Horse_Tail
+    2300022: Horse_Torso
+    2300024: Soldier_Cavalry_R_Hands
+    2300026: Soldier_Cavalry_Torso
+    3300000: LOD1_Level03_Hors_Head001
+    3300002: LOD1_Level03_Horse_B_Legs001
+    3300004: LOD1_Level03_Horse_F_Legs001
+    3300006: LOD1_Level03_Horse_Tail001
+    3300008: LOD1_Level03_Horse_Torso
+    3300010: LOD1_Level03_Soldier_Cavalry_R_Hands001
+    3300012: LOD1_Level03_Soldier_Cavalry_Torso001
+    3300014: Horse_B_Legs
+    3300016: Horse_F_Legs
+    3300018: Horse_Head
+    3300020: Horse_Tail
+    3300022: Horse_Torso
+    3300024: Soldier_Cavalry_R_Hands
+    3300026: Soldier_Cavalry_Torso
+    4300000: LOD1_Level03_Horse_Torso
+    4300002: LOD1_Level03_Soldier_Cavalry_Torso001
+    4300004: LOD1_Level03_Soldier_Cavalry_R_Hands001
+    4300006: LOD1_Level03_Horse_B_Legs001
+    4300008: LOD1_Level03_Horse_Tail001
+    4300010: LOD1_Level03_Horse_F_Legs001
+    4300012: LOD1_Level03_Hors_Head001
+    4300014: Horse_Torso
+    4300016: Soldier_Cavalry_Torso
+    4300018: Soldier_Cavalry_R_Hands
+    4300020: Horse_B_Legs
+    4300022: Horse_Tail
+    4300024: Horse_F_Legs
+    4300026: Horse_Head
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

@@ -1,0 +1,344 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: UIFightAtlas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: fb00796642c2e33449c420b260a82167, type: 2}
+  mSprites:
+  - name: fight001
+    x: 1912
+    y: 1954
+    width: 125
+    height: 94
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 351
+    paddingRight: 324
+    paddingTop: 144
+    paddingBottom: 242
+  - name: fight002
+    x: 1589
+    y: 1205
+    width: 227
+    height: 168
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 300
+    paddingRight: 273
+    paddingTop: 107
+    paddingBottom: 205
+  - name: fight003
+    x: 956
+    y: 1125
+    width: 333
+    height: 248
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 247
+    paddingRight: 220
+    paddingTop: 67
+    paddingBottom: 165
+  - name: fight004
+    x: 478
+    y: 1694
+    width: 477
+    height: 354
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 175
+    paddingRight: 148
+    paddingTop: 14
+    paddingBottom: 112
+  - name: fight005
+    x: 0
+    y: 1693
+    width: 477
+    height: 355
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 175
+    paddingRight: 148
+    paddingTop: 13
+    paddingBottom: 112
+  - name: fight006
+    x: 1434
+    y: 1724
+    width: 477
+    height: 324
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 175
+    paddingRight: 148
+    paddingTop: 44
+    paddingBottom: 112
+  - name: fight007
+    x: 956
+    y: 1714
+    width: 477
+    height: 334
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 175
+    paddingRight: 148
+    paddingTop: 34
+    paddingBottom: 112
+  - name: fight008
+    x: 0
+    y: 98
+    width: 477
+    height: 318
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 175
+    paddingRight: 148
+    paddingTop: 50
+    paddingBottom: 112
+  - name: fight009
+    x: 478
+    y: 1374
+    width: 477
+    height: 318
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 175
+    paddingRight: 148
+    paddingTop: 50
+    paddingBottom: 112
+  - name: fight010
+    x: 956
+    y: 1374
+    width: 477
+    height: 318
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 175
+    paddingRight: 148
+    paddingTop: 50
+    paddingBottom: 112
+  - name: fight011
+    x: 1434
+    y: 1374
+    width: 477
+    height: 318
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 175
+    paddingRight: 148
+    paddingTop: 50
+    paddingBottom: 112
+  - name: fight012
+    x: 478
+    y: 1055
+    width: 477
+    height: 318
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 175
+    paddingRight: 148
+    paddingTop: 50
+    paddingBottom: 112
+  - name: fight013
+    x: 478
+    y: 736
+    width: 477
+    height: 318
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 175
+    paddingRight: 148
+    paddingTop: 50
+    paddingBottom: 112
+  - name: fight014
+    x: 478
+    y: 417
+    width: 477
+    height: 318
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 175
+    paddingRight: 148
+    paddingTop: 50
+    paddingBottom: 112
+  - name: fight015
+    x: 0
+    y: 1374
+    width: 477
+    height: 318
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 175
+    paddingRight: 148
+    paddingTop: 50
+    paddingBottom: 112
+  - name: fight016
+    x: 0
+    y: 417
+    width: 477
+    height: 318
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 175
+    paddingRight: 148
+    paddingTop: 50
+    paddingBottom: 112
+  - name: fight017
+    x: 0
+    y: 1055
+    width: 477
+    height: 318
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 175
+    paddingRight: 148
+    paddingTop: 50
+    paddingBottom: 112
+  - name: fight018
+    x: 0
+    y: 736
+    width: 477
+    height: 318
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 175
+    paddingRight: 148
+    paddingTop: 50
+    paddingBottom: 112
+  - name: fight019
+    x: 478
+    y: 152
+    width: 395
+    height: 264
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 216
+    paddingRight: 189
+    paddingTop: 77
+    paddingBottom: 139
+  - name: fight020
+    x: 1290
+    y: 1175
+    width: 298
+    height: 198
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 265
+    paddingRight: 237
+    paddingTop: 110
+    paddingBottom: 172
+  - name: fight021
+    x: 478
+    y: 40
+    width: 167
+    height: 111
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 330
+    paddingRight: 303
+    paddingTop: 153
+    paddingBottom: 216
+  - name: fight022
+    x: 1912
+    y: 1906
+    width: 71
+    height: 47
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 378
+    paddingRight: 351
+    paddingTop: 185
+    paddingBottom: 248
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+  mCoordinates: 0
+  sprites: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

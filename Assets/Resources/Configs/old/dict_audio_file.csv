@@ -1,0 +1,12 @@
+AUDIO_ID,INDEX,FILE,DURATION,DESC
+1,1,BGM/BGM_login,75,1
+2,1,SE/SE_UI_Click_AssignOK,1,uiok
+3,1,SE/SE_UI_Click_Cancel_Up01,1,uicancel
+4,1,SE/SE_UI_Elite,1,uisucc
+5,1,SE/SE_UI_Error,1,uifailed
+6,1,SE/SE_UI_DoorOpen,1,uiopen
+7,1,SE/SE_UI_DoorClose,1,uiclose
+8,1,SE/ME_UI_LevelUp,1,uiupdate
+9,1,SE/SE_UI_Notification01,1,uiwarn
+10,1,BGM/BGM_menu01,112,maincity
+11,1,BGM/BGM_battle01,33,battle
