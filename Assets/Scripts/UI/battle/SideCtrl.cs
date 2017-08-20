@@ -14,7 +14,7 @@ public class SideCtrl : UITweener
     {
         GameObject side = transform.parent.gameObject;
         TweenPosition tp = side.gameObject.GetComponent<TweenPosition>();
-        Transform sprite = transform.FindChild("Sprite");
+        Transform sprite = transform.Find("Sprite");
 
         if (tp != null)
         {

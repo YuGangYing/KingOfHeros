@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 4a0e30a0f8797e64d8bbb65ff787e4b7
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 15
   fileIDToRecycleName:
     100000: LOD1_Level01_Hors_Head
     100002: LOD1_Level01_Horse_B_Legs
@@ -75,7 +75,7 @@ ModelImporter:
     4300022: Horse_Tail
     4300024: Soldier_Cavalry_Torso
     4300026: Soldier_Cavalry_R_Hands
-    7400000: StandBy01
+    7400000: Take 001
     9500000: //RootNode
     11100000: //RootNode
   materials:
@@ -86,56 +86,13 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
-    motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: StandBy01
-      takeName: Take 001
-      firstFrame: 0
-      lastFrame: 30
-      wrapMode: 2
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Horse_Torso
-        weight: 1
-      - path: Horse_Torso/Horse_B_Legs
-        weight: 1
-      - path: Horse_Torso/Horse_F_Legs
-        weight: 1
-      - path: Horse_Torso/Horse_Head
-        weight: 1
-      - path: Horse_Torso/Horse_Tail
-        weight: 1
-      - path: Horse_Torso/Soldier_Cavalry_Torso
-        weight: 1
-      - path: Horse_Torso/Soldier_Cavalry_Torso/Soldier_Cavalry_R_Hands
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -172,5 +129,4 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 1
-  additionalBone: 0
   userData: 

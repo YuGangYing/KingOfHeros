@@ -47,7 +47,7 @@ static public class ToolEditorMenu
             Debug.Log("Path:"+path);
             path = path.Replace(".prefab", ".assets");
             Debug.Log("Path:" + path);
-            BuildPipeline.BuildAssetBundle(Selection.objects[i], null, path, BuildAssetBundleOptions.CollectDependencies);
+//            BuildPipeline.BuildAssetBundle(Selection.objects[i], null, path, BuildAssetBundleOptions.CollectDependencies);
         }
     }
 }

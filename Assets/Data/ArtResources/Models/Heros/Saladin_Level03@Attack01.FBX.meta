@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 8d4456ce30b4fbf43a05bf354b47e1f6
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 15
   fileIDToRecycleName:
     100000: Bip01
     100002: Bip01 Footsteps
@@ -96,7 +96,6 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
-    motionNodeName: 
     animationCompression: 3
     animationRotationError: .5
     animationPositionError: .5
@@ -257,5 +256,4 @@ ModelImporter:
   lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 462bda9b927852946846db344eedaa74,
     type: 3}
   animationType: 1
-  additionalBone: 0
   userData: 

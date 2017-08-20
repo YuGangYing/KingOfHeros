@@ -12,15 +12,15 @@ namespace UI
 {
     public class PanelInit : MonoBehaviour
     {
-//        [System.Serializable]
-//        public class PanelData
-//        {
-//            public PanelID panelid;
-//
-//            public List<GameObject> prefabs; // 面板资源
-//        }
+        [System.Serializable]
+        public class PanelData
+        {
+            public PanelID panelid;
 
-//        Dictionary<PanelID, List<string>> m_panelResource = new Dictionary<PanelID, List<string>>();
+            public List<GameObject> prefabs; // 面板资源
+        }
+
+        Dictionary<PanelID, List<string>> m_panelResource = new Dictionary<PanelID, List<string>>();
 
         void Start()
         {
@@ -54,8 +54,7 @@ namespace UI
             PanelManage.me.AddPanelFactory(PanelID.ShopPanel, new PanelFactory<ShopPanel>());
             PanelManage.me.AddPanelFactory(PanelID.BuildMallPanel, new PanelFactory<BuildMallPanel>());
             PanelManage.me.AddPanelFactory(PanelID.SoldierRecruitPanel, new PanelFactory<UISoldierPanel>());
-            //TODO
-//            PanelManage.me.AddPanelFactory(PanelID.CardHeroListPanel, new PanelFactory<CardHeroListPanel>());
+            PanelManage.me.AddPanelFactory(PanelID.CardHeroListPanel, new PanelFactory<CardHeroListPanel>());
             PanelManage.me.AddPanelFactory(PanelID.CardHeroDetailPanel, new PanelFactory<CardHeroDetailPanel>());
             PanelManage.me.AddPanelFactory(PanelID.CardIllustratedListPanel, new PanelFactory<CardIllustratedListPanel>());
             PanelManage.me.AddPanelFactory(PanelID.CardIllustratedDetailPanel, new PanelFactory<CardIllustratedDetailPanel>());

@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 44f2b1f987d39384b84b33347027815e
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 15
   fileIDToRecycleName:
     100000: //RootNode
     100002: LOD1_Level01_Soldier_Archers_L_Hands
@@ -57,7 +57,7 @@ ModelImporter:
     4300014: Soldier_Archers_R_Hands
     4300016: Soldier_Archers_L_Legs
     4300018: Soldier_Archers_R_Legs
-    7400000: StandBy01
+    7400000: Take 001
     9500000: //RootNode
     11100000: //RootNode
   materials:
@@ -68,54 +68,13 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
-    motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: StandBy01
-      takeName: Take 001
-      firstFrame: 0
-      lastFrame: 30
-      wrapMode: 2
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Soldier_Archers_Torso
-        weight: 1
-      - path: Soldier_Archers_Torso/Soldier_Archers_L_Hands
-        weight: 1
-      - path: Soldier_Archers_Torso/Soldier_Archers_L_Hands/Effect_Root
-        weight: 1
-      - path: Soldier_Archers_Torso/Soldier_Archers_L_Legs
-        weight: 1
-      - path: Soldier_Archers_Torso/Soldier_Archers_R_Hands
-        weight: 1
-      - path: Soldier_Archers_Torso/Soldier_Archers_R_Legs
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -152,5 +111,4 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 1
-  additionalBone: 0
   userData: 

@@ -109,7 +109,7 @@ namespace UI
             }
             else
             {
-                m_upgradeBtn.UpdateColor(false);
+                m_upgradeBtn.UpdateColor(false, false);
                 m_upgradeBtn.isEnabled = false;
                 m_upgradeLabel.text = "663500010";
                 m_upgradeLabel.text = DataManager.getLanguageMgr().getString(m_upgradeLabel.text);

@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 4ad46d12b53d26d47a7b5b639b3d288d
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 15
   fileIDToRecycleName:
     100000: LOD1_Level03_Hors_Head001
     100002: LOD1_Level03_Horse_B_Legs001
@@ -86,7 +86,6 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
-    motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -130,5 +129,4 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 1
-  additionalBone: 0
   userData: 

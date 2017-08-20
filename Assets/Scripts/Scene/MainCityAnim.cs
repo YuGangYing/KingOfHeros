@@ -45,7 +45,7 @@ public class MainCityAnim : MonoBehaviour
                 if (parent != null)
                     _camera.transform.parent = parent;
             }
-//            MainController.me.showCameraPath = false;
+            MainController.me.showCameraPath = false;
             this._bInit = true;
         }
     }

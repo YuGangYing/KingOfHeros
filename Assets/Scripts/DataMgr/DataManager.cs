@@ -1,54 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using SLG;
-using BattleFramework.Data;
 
 namespace DataMgr
 {
-	public enum DataModel{Net,Local};
     public class DataManager : SingletonMonoBehaviourNoCreate<DataManager>
 	{
         public static int OPER_SUCC = 100000; 
 
-        public BattleFramework.Data.UserData userData;
-		public List<BattleFramework.Data.HeroData> playerHeros;
-		public List<BattleFramework.Data.HeroData> enemyHeros;
-
-		public List<BattleFramework.Data.HeroData> fightPlayerHeros;
-		public List<BattleFramework.Data.HeroData> fightEnemyHeros;
-
-		public DataModel dataModel = DataModel.Local;
-
-		#region local data
-        //TODO
-        public void InitLocalUserData()
-        {
-            userData = new BattleFramework.Data.UserData();
-            userData.name = "臣妾做不到啊";
-            userData.coin = 2000;
-            userData.crystal = 100;
-            userData.dollor = 10;
-            userData.level = 1;
-            userData.exp = 10;
-            userData.upgradeExp = 20;
-        }
-
-		public void InitPlayerHeroDatas(){
-			playerHeros = SimpleLocalData.InitLocalPlayerHeros ();
-			ConfigBase configBase = _config.getCfg (CONFIG_MODULE.CFG_CVS_HERO_BASE);
-			for(int i=0;i < playerHeros.Count;i ++)
-			{
-
-			}
-		}
-
-		#endregion
-
-
         LoginData _loginData = null;
         ConfigMgr _config = null;
 		UserData _userData = null;
-        HeroData _heroData = null;
+		HeroData _heroData = null;
 		TechData _techData = null;
 		BuildData _buildData = null;
 		ChatmsgData _chatmsgData = null;
@@ -69,7 +32,7 @@ namespace DataMgr
         {
             DontDestroyOnLoad(this.gameObject);
             base.Init();
-           
+
             _loginData = new LoginData();
             _config = new ConfigMgr();
             _userData = new UserData();
@@ -106,11 +69,7 @@ namespace DataMgr
             _msgHeroCard.init();
 			_skillData.Init();
             _sysCfg.init();
-
-
-			InitLocalUserData();//TODO
-			InitPlayerHeroDatas ();//TODO
-		}
+        }
 
         bool ChangeScene(SLG.EventArgs obj)
         {

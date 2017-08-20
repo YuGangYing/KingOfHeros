@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: f18e7e04f78f6444e9fd4bf4fa5d2895
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 15
   fileIDToRecycleName:
     100000: Bip01
     100002: Bip01 Footsteps
@@ -61,7 +61,6 @@ ModelImporter:
     100110: bone15
     100112: //RootNode
     100114: Root
-    100116: KingArthur_Level03
     400000: Bip01
     400002: Bip01 Footsteps
     400004: Bip01 Head
@@ -120,11 +119,9 @@ ModelImporter:
     400110: bone15
     400112: //RootNode
     400114: Root
-    400116: KingArthur_Level03
     4300000: KingArthur_Level03
     7400000: Take 001
     11100000: //RootNode
-    13700000: KingArthur_Level03
   materials:
     importMaterials: 1
     materialName: 0
@@ -133,7 +130,6 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
-    motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -177,5 +173,4 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 1
-  additionalBone: 0
   userData: 

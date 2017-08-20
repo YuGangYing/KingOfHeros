@@ -425,7 +425,7 @@ public class SkillShowMgr : MonoBehaviour
         chkFan.value = false;
         if (flag)
         {
-            execBtn.isEnabled = flag;
+			execBtn.enabled = flag;
             if (nType == SkillShow.ConfigMgr.RANG_FAN)
             {
                 if (!_OnCheckBtnByGesture(mCurHero.skill.strGesture))

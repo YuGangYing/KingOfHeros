@@ -76,10 +76,10 @@ public class SpawnManager : MonoBehaviour
 
 	public GameObject BaseCastSkillEffect;
 
-	public GameObject bowTrail;
-	public GameObject magicBall;
-	public GameObject robinhoodTrack;
-	public GameObject debuffPoison;
+	public GameObject ShootObject;
+	public GameObject ShootObject1;
+	public GameObject ShootObject2;
+	public GameObject ShootObject3;
 	public Pool ArrowPool;
 	public Pool MagicBallPool;
 	public Pool HeroSOPool0;
@@ -87,74 +87,34 @@ public class SpawnManager : MonoBehaviour
 
 	#endregion
 
-	public string defaultShootObjectResourcePath = "ShootObject/Effect_Bow_Trail";
-	public GameObject defaultShootObject;
-
-	public BattleFramework.PoolManager poolManager;
-
 	void Awake()
 	{
-		if(instance==null)
-			instance=this;
+		if(instance==null)instance=this;
+		//InstantiateMatirxs();
+		//if(!IsSingleMode)
+        //   GetHeroInfo();//TODO
+		//LoadResource();
+		InitPools();
 	}
 
-	public Dictionary<string, GameObject> pooledGameObjects = new Dictionary<string, GameObject>();
-	public GameObject LoadShootObject(string resourcePath,int num)
+	void InitPools()
 	{
-		GameObject prefab = null;
-		if (pooledGameObjects.ContainsKey (resourcePath)) {
-			prefab = pooledGameObjects [resourcePath];
-		} else {
-			prefab = Resources.Load<GameObject> (resourcePath);	
-			if(prefab == null)
-			{
-				prefab = GetDefaultShootObject();
-			}
-			pooledGameObjects.Add(resourcePath,prefab);
-		}
-		poolManager.AddPool (prefab,num);
-		return prefab;
+		if(ShootObject==null)ShootObject = Resources.Load<GameObject>("ShootObject/Effect_Bow_Trail");
+		if(ShootObject1==null)ShootObject1 = Resources.Load<GameObject>("ShootObject/Magic_ball");
+		if(ShootObject2==null)ShootObject2 = Resources.Load<GameObject>("ShootObject/Effect_RobinHood_Track");
+		if(ShootObject3==null)ShootObject3 = Resources.Load<GameObject>("ShootObject/Debuff_Poison");
+		ArrowPool = new Pool(ShootObject,32,0);
+		MagicBallPool = new Pool(ShootObject1,32,1);
+		HeroSOPool0 = new Pool(ShootObject2,4,2);
+		HeroSOPool1 = new Pool(ShootObject3,4,3);
 	}
-
-	GameObject GetDefaultShootObject()
-	{
-		if (defaultShootObject == null) {
-			defaultShootObject = Resources.Load<GameObject>(defaultShootObjectResourcePath);
-			if (defaultShootObject == null) {
-				defaultShootObject = GameObject.CreatePrimitive(PrimitiveType.Cube);
-			}
-		}
-		return defaultShootObject;
-	}
-
-//	void InitPools()
-//	{
-//		if(bowTrail==null)bowTrail = Resources.Load<GameObject>("ShootObject/Effect_Bow_Trail");
-//		poolManager.AddPool (bowTrail,32);
-//		if(magicBall==null)magicBall = Resources.Load<GameObject>("ShootObject/Magic_ball");
-//		poolManager.AddPool (magicBall,32);
-//		if(robinhoodTrack==null)robinhoodTrack = Resources.Load<GameObject>("ShootObject/Effect_RobinHood_Track");
-//		poolManager.AddPool (magicBall,10);
-//		if(debuffPoison==null)debuffPoison = Resources.Load<GameObject>("ShootObject/Debuff_Poison");
-//		poolManager.AddPool (debuffPoison,10);
-//	}
 
 	public void InitBattleData()
 	{ 
-
-		if(IsSingleMode)
-		{
-//			if(DataManager.getBattleUIData().dicFightHero==null)
-//			{
-//				SpawnUtility.InitTmpPlayerHeroList();
-//			}
-//			if (DataManager.getBattleUIData().EnemyHeroList==null)
-//			{
-//				SpawnUtility.InitTmpEnemyHeroList();
-//			}
-		}
-		InitMyMatrixList(); 
-        InitEnemyMatrixList(); 
+		//if(!IsSingleMode)
+            InitMyMatrixList(); //TODO
+		//if(!IsSingleMode)
+            InitEnemyMatrixList(); //TODO
 		InitMyMatrixLocation(); 
 		InitEnemyMatrixLocation();
 		InitMatrixId();
@@ -504,7 +464,10 @@ public class SpawnManager : MonoBehaviour
 
 	private void InitMyMatrixList()
 	{
-        
+        if(IsSingleMode)
+        {
+            SpawnUtility.InitTmpPlayerHeroList();
+        }
 		if (DataManager.getBattleUIData().HeroList != null)
 		{
 			List<HeroSelect> tmp_herolist = DataManager.getBattleUIData().HeroList;
@@ -582,7 +545,11 @@ public class SpawnManager : MonoBehaviour
    
 	private void InitEnemyMatrixList()
 	{
-        
+        if (IsSingleMode)
+        {
+            Debug.Log("InitTmpEnemyHeroList");
+            SpawnUtility.InitTmpEnemyHeroList();
+        }
 		if (DataManager.getBattleUIData().EnemyHeroList != null)
 		{
 			List<EnemyHero> tmp_herolist = DataManager.getBattleUIData().EnemyHeroList;

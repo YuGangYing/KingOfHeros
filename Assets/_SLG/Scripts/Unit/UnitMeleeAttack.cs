@@ -54,7 +54,7 @@ public class UnitMeleeAttack : MonoBehaviour {
         }
 		if(RushFX==null)
 		{
-			if(transform.FindChild("RushFX")!=null)RushFX = transform.FindChild("RushFX").gameObject;
+			if(transform.Find("RushFX")!=null)RushFX = transform.Find("RushFX").gameObject;
 		}
         this.enabled = false;
 

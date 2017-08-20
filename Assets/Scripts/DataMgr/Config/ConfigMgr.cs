@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace DataMgr
 {
-    public class ConfigMgr
+    class ConfigMgr
 	{
         Dictionary<CONFIG_MODULE,ConfigBase> _cfgList = new Dictionary<CONFIG_MODULE,ConfigBase>();
 

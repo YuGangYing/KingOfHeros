@@ -1,5 +1,0 @@
-编号(自增长）|用户名字|用户密码|状态(1在线 0不在线)|创建时间
-id_INT|userName_STRING|passWord_STRING|status_BOOL|createTime_INT
-1|yao001|123|0|1
-2|yao002|123|0|1
-3|yao003|123|0|1

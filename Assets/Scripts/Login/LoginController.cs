@@ -7,7 +7,7 @@ using DataMgr;
 using Login;
 using UI;
 
-public class LoginController : MonoBehaviour {
+public class loginController : MonoBehaviour {
 
     public string ip = "192.168.1.152";
     public int port = 8100;

@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 4b1af0dc7d3229b44a36d2987c7f2542
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 15
   fileIDToRecycleName:
     100000: Bip01
     100002: Bip01 Footsteps
@@ -40,7 +40,6 @@ ModelImporter:
     100068: Bone10
     100070: //RootNode
     100072: Root
-    100074: RobinHood_Level03
     400000: Bip01
     400002: Bip01 Footsteps
     400004: Bip01 Head
@@ -78,11 +77,9 @@ ModelImporter:
     400068: Bone10
     400070: //RootNode
     400072: Root
-    400074: RobinHood_Level03
     4300000: RobinHood_Level03
     7400000: Take 001
     11100000: //RootNode
-    13700000: RobinHood_Level03
   materials:
     importMaterials: 1
     materialName: 0
@@ -91,7 +88,6 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
-    motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -135,5 +131,4 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 1
-  additionalBone: 0
   userData: 

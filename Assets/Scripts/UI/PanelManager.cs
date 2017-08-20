@@ -76,7 +76,6 @@ namespace UI
 
         public PanelBase getPanel(PanelID id)
         {
-            Debug.Log("getPanel");
             PanelBase panel = null;
             if (m_panelList.TryGetValue(id, out panel))
                 return panel;

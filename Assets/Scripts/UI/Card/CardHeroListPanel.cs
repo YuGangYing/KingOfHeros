@@ -291,9 +291,9 @@ public class CardHeroListPanel : PanelBase
 
     void _OnCloseClick(GameObject go)
     {
-        Debug.Log("_OnCloseClick");
-//        this.SetVisible(false);
-//        UICardLogic.resetCurSelect(UICardLogic.enItemSource.enIS_HeroList);
+        this.SetVisible(false);
+
+        UICardLogic.resetCurSelect(UICardLogic.enItemSource.enIS_HeroList);
     }
 
     bool _OnAddRewardItem(SLG.EventArgs obj)

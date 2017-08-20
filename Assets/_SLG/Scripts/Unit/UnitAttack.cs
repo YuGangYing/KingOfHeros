@@ -22,10 +22,6 @@ public class UnitAttack : MonoBehaviour {
  
     public AnimEventCall[] animEvent; 
 	 
-	public string shootObjectResourcePath;
-	public int shootOjectNum = 1;//the shoot object shoot frequency;
-	public GameObject shootObjectPrefab;
-
 	//skill addition damage
 	public float SkillDamage = 30f; 
 
@@ -56,8 +52,13 @@ public class UnitAttack : MonoBehaviour {
 			animEvent[i].onAttacking += PlaySound;
         } 
 
-		shootObjectPrefab = SpawnManager.SingleTon ().LoadShootObject (shootObjectResourcePath,shootOjectNum);
-		shootOjectNum = Mathf.Max(shootOjectNum,1);
+//        ShootPoint = transform.FindChild("ShootPoint");
+//
+//        if (ShootPoint == null)
+//        {
+//            Logger.LogError(gameObject.name + "ShootPoint is null");
+//            return;
+//        }
 
         this.enabled = false;
 	} 
@@ -126,12 +127,29 @@ public class UnitAttack : MonoBehaviour {
 		}
 		if(AttackTarget!=null)
 		{
-
-			GameObject go = SpawnManager.SingleTon().poolManager.Spawn(shootObjectPrefab,ShootPoint.position,ShootPoint.rotation);
+			GameObject go = null;
+			if(m_Unit.UnitTroop == ARMY_TYPE.ARCHER)
+			{
+				go = SpawnManager.SingleTon().ArrowPool.Spawn(ShootPoint.position,ShootPoint.rotation);
+			}
+			else if(m_Unit.UnitTroop == ARMY_TYPE.MAGIC )
+			{
+				go = SpawnManager.SingleTon().MagicBallPool.Spawn(ShootPoint.position,ShootPoint.rotation);
+			}
+			else if(m_Unit.UnitTroop == ARMY_TYPE.HERO)
+			{
+				if(m_Unit.HeroTypeId == 10111)
+				{
+					go = SpawnManager.SingleTon().HeroSOPool1.Spawn(ShootPoint.position,ShootPoint.rotation);
+				}
+				else if(m_Unit.HeroTypeId == 10102)
+				{
+					go = SpawnManager.SingleTon().HeroSOPool0.Spawn(ShootPoint.position,ShootPoint.rotation);
+				}
+			}
 			ShootObject shootObj = go.GetComponent<ShootObject>();
             shootObj.Damage = m_UnitAtb.BaseDamage;
-            
-			if (AttackTarget.Attribute.HitTargets.Count > 0)
+            if (AttackTarget.Attribute.HitTargets.Count > 0)
             {
                 shootObj.Shoot(AttackTarget.Attribute.HitTargets, AttackTarget, m_Unit);
             }

@@ -5,7 +5,7 @@ using SLG;
 
 namespace UI
 {
-    public abstract class PanelBase 
+    public abstract class PanelBase
     {
         const PanelID id = PanelID.Null;
 
@@ -53,11 +53,12 @@ namespace UI
             // ������Դ
             //             string url = BasePath + GetResPath();
             //             ResDownLoad.me.loadRes(url, ResLoadEnd, new System.Object[2] { fun, user_data });
-
+			#if UNITY_EDITOR
             UnityEngine.Object t = UnityEditor.AssetDatabase.LoadAssetAtPath("Data/ArtResources/UI/BuildListPanel", typeof(GameObject));
             Root = (GameObject)GameObject.Instantiate(t);
 
             Root.transform.parent = PanelManage.me.getRoot().transform;
+			#endif
 
             Initimp(null);
 

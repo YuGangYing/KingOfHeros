@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: b15b271104ed1c4418d36b0cc28c43ff
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 15
   fileIDToRecycleName:
     100000: LOD1_Level01_Soldier_Spearmen_L_Hands
     100002: LOD1_Level01_Soldier_Spearmen_L_Legs
@@ -66,7 +66,6 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
-    motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -110,5 +109,4 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 1
-  additionalBone: 0
   userData: 

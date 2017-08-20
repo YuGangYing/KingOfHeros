@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 08a694b7a8d96fe41a9dd17c3256d1cf
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 15
   fileIDToRecycleName:
     100000: Bip01
     100002: Bip01 Footsteps
@@ -61,7 +61,6 @@ ModelImporter:
     100110: bone18
     100112: //RootNode
     100114: Root
-    100116: CleopatraVII_Level02_red
     400000: Bip01
     400002: Bip01 Footsteps
     400004: Bip01 Head
@@ -120,11 +119,9 @@ ModelImporter:
     400110: bone18
     400112: //RootNode
     400114: Root
-    400116: CleopatraVII_Level02_red
     4300000: CleopatraVII_Level02_red
     7400000: Run01
     11100000: //RootNode
-    13700000: CleopatraVII_Level02_red
   materials:
     importMaterials: 1
     materialName: 0
@@ -133,7 +130,6 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
-    motionNodeName: 
     animationCompression: 3
     animationRotationError: .5
     animationPositionError: .5
@@ -355,5 +351,4 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 1
-  additionalBone: 0
   userData: 

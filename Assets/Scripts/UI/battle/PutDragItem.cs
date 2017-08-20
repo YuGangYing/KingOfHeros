@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using UI;
-using System;
 
 //[AddComponentMenu("NGUI/Examples/Drag and Drop Item (Example)")]
 public class PutDragItem : UIDragDropItem
@@ -10,94 +9,118 @@ public class PutDragItem : UIDragDropItem
 	/// </summary>
 
 	public GameObject prefab;
-	public uint idHero;
+    public uint idHero;
 
-	//yao
-	private Transform nowParent;
-
-	//
-	protected  void OnPress (bool isPressed)
-	{
-		base.OnPress (isPressed);
-		nowParent = this.transform.parent;
-		//print (this.transform.parent.name + "lllllllllllllllllll");
-	}
-	
-	
 	/// <summary>
 	/// Drop a 3D game object onto the surface.
 	/// </summary>
 
 	protected override void OnDragDropRelease (GameObject surface)
 	{
-		base.OnDragDropRelease (surface);
-		string surfaceParentName = surface.transform.parent.tag; 
-		if (this.transform.parent.tag == "Cells") { //cells 内
-			if (surface.transform.tag == "Cells") {  //next cells
-				this.transform.parent = surface.transform;
-				this.transform.localPosition = Vector3.zero;
-				this.gameObject.SetActive (false);
-				this.gameObject.SetActive (true);
-			} else if (surface.transform.tag == "HerosList") { //hero上  分两类
-				if (surfaceParentName == "Cells") { //交换
-					this.transform.parent = surface.transform.parent;
-					this.transform.localPosition = Vector3.zero;
-					surface.transform.parent = nowParent;
-					surface.transform.localPosition = Vector3.zero;
-					this.gameObject.SetActive (false);
-					this.gameObject.SetActive (true);	
-				} else if (surfaceParentName == "HerosList") {//回到list里面  列表内
-					this.transform.parent = surface.transform.parent;
-					this.transform.localPosition = Vector3.zero;
-					this.transform.parent.gameObject.GetComponent<UIGrid> ().Reposition ();
-					this.gameObject.SetActive (false);
-					this.gameObject.SetActive (true);
-				} else {//返回原来位置
-					this.transform.parent = nowParent;
-					this.transform.localPosition = Vector3.zero;
-					this.gameObject.SetActive (false);
-					this.gameObject.SetActive (true);
-				}
-			} else {//返回原来位置
-				this.transform.parent = nowParent;
-				this.transform.localPosition = Vector3.zero;
-				this.gameObject.SetActive (false);
-				this.gameObject.SetActive (true);
-			}
-		} else {//list 内  
-			if (surface.transform.tag == "Cells") {  //next cells
-				this.transform.parent = surface.transform;
-				this.transform.localPosition = Vector3.zero;
-				this.gameObject.SetActive (false);
-				this.gameObject.SetActive (true);
-				print ("yaoz");
+		if (surface != null)
+		{
+            GroundDragItem gdi = surface.GetComponent<GroundDragItem>();
+            ManeuverPanel mp = UI.PanelManage.me.GetPanel<ManeuverPanel>(PanelID.ManeuverPanel);
 
-			} else if (surface.transform.tag == "HerosList") {  //其他三种情况   单元式   表外   自身list上
-				if (surfaceParentName == "Cells") {//交换  初始化grid
-					this.transform.parent = surface.transform.parent;
-					this.transform.localPosition = Vector3.zero;
-					surface.transform.parent = nowParent;
-					surface.transform.localPosition = Vector3.zero;
-					this.transform.localPosition = Vector3.zero;
+            if (gdi != null)
+            {
+                //数量限制
+                if (mp.IsOverCount() && gdi.idHero == 0)
+                {
+                    NGUITools.Destroy(gameObject);
+                    return;
+                }
 
-					nowParent.GetComponent<UIGrid> ().Reposition ();
-					this.gameObject.SetActive (false);
-					this.gameObject.SetActive (true);
+                //gdi.idHero = idHero;
+                UILabel idHeroLable = PanelTools.Find<UILabel>(surface, "idHero");
+                UILabel idLable = PanelTools.Find<UILabel>(gameObject, "idHero");
 
-				} else {  //返回 初始化
-					this.transform.parent = nowParent;
-					this.transform.localPosition = Vector3.zero;
-					nowParent.GetComponent<UIGrid> ().Reposition ();
-					this.gameObject.SetActive (false);
-					this.gameObject.SetActive (true);
-				}
-			} 
+                if (idLable != null && idHeroLable != null)
+                {
+                    uint nID = uint.Parse(idHeroLable.text);
+                    if (nID != 0)
+                    {
+                        mp.HeroLeaveGround(nID);
+                    }
+                    
+                    idHeroLable.text = idLable.text;
+                    idHero = uint.Parse(idLable.text);
+                    gdi.idHero = idHero;
+                }
+                
+                //英雄头像
+                UISprite positionIcon = PanelTools.Find<UISprite>(surface, "icon");
+                UISprite itemIcon = PanelTools.Find<UISprite>(gameObject, "icon");
+
+                if (positionIcon != null && itemIcon != null)
+                {
+                    positionIcon.atlas = itemIcon.atlas;
+                    positionIcon.spriteName = itemIcon.spriteName;
+                }
+
+                //军队类型
+                UISprite armyIcon = PanelTools.Find<UISprite>(surface, "army");
+                UISprite goItemIcon = PanelTools.Find<UISprite>(gameObject, "army");
+                UILabel armyLabel = PanelTools.Find<UILabel>(surface, "armyLabel");
+                UILabel goArmyLabel = PanelTools.Find<UILabel>(gameObject, "armyType");
+
+                if (armyIcon != null && goItemIcon != null)
+                {
+                    armyIcon.atlas = goItemIcon.atlas;
+                    armyIcon.spriteName = goItemIcon.spriteName;
+                    armyLabel.text = goArmyLabel.text;
+                }
+
+                //英雄等级
+                UILabel levelLable = PanelTools.Find<UILabel>(surface, "level");
+                UILabel goLevelLable = PanelTools.Find<UILabel>(gameObject, "level");
+
+                if (levelLable != null && goLevelLable != null)
+                {
+                    levelLable.text = goLevelLable.text;
+                }
+
+                //英雄品质
+                UISprite quality = PanelTools.Find<UISprite>(surface, "quality");
+                UISprite goQuality = PanelTools.Find<UISprite>(gameObject, "quality");
+
+                if (quality != null && goQuality != null)
+                {
+                    quality.atlas = goQuality.atlas;
+                    quality.spriteName = goQuality.spriteName;
+                }
+
+                //英雄星级
+                UILabel starLable = PanelTools.Find<UILabel>(surface, "starLable");
+                UILabel gostarLable = PanelTools.Find<UILabel>(gameObject, "starLable");
+
+                if (starLable != null && gostarLable != null)
+                {
+                    starLable.text = gostarLable.text;
+                }
+
+                UISprite starSprite = PanelTools.Find<UISprite>(surface, "starSprite");
+                UISprite goStarSprite = PanelTools.Find<UISprite>(gameObject, "starSprite");
+
+                if (starSprite != null && goStarSprite != null)
+                {
+                    starSprite.spriteName = goStarSprite.spriteName;
+                }
+
+                gdi.UpdateInfo();
+                mp.ShowArrow(int.Parse(armyLabel.text), gdi.position);
+
+                mp.HeroOnGround(idHero);
+
+                NGUITools.Destroy(gameObject);
+                return;
+            }
 		}
-	} 
-
-
-	public void RePutCloneItem (GameObject surface)
-	{
-		OnDragDropRelease (surface);
+		base.OnDragDropRelease(surface);
 	}
+
+    public void RePutCloneItem(GameObject surface)
+    {
+        OnDragDropRelease(surface);
+    }
 }

@@ -31,7 +31,7 @@ public class AnimatorTest :EditorWindow
 		animator = gameObj.GetComponentInChildren<Animator>();
 
 		AnimatorOverrideController controller = new AnimatorOverrideController();
-		//controller.runtimeAnimatorController = UnityEditor.Animations.AnimatorController.GetEffectiveAnimatorController(animator);
+		controller.runtimeAnimatorController = animator.runtimeAnimatorController;// UnityEditor.Animations.AnimatorController. .GetEffectiveAnimatorController(animator);
 		foreach(AnimationClipPair item in controller.clips)
 		{
 			clipList.Add(item.originalClip.name);

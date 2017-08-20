@@ -73,7 +73,7 @@ public class ResDownLoad : SingletonMonoBehaviour<ResDownLoad>
                             {
                                 if (www.assetBundle.Contains(itor.Key))
                                 {
-									itor.Value.first = www.assetBundle.LoadAssetAsync(itor.Key, itor.Value.second);
+                                    itor.Value.first = www.assetBundle.LoadAssetAsync(itor.Key, itor.Value.second);
                                 }
                                 else
                                 {
@@ -200,8 +200,8 @@ public class ResDownLoad : SingletonMonoBehaviour<ResDownLoad>
                 }
                 else if (value.m_dataList.Count != 0)
                 {
-                    // 资源回錾                    
-					for (int i = 0; i < value.m_dataList.Count; ++i)
+                    // 资源回调
+                    for (int i = 0; i < value.m_dataList.Count; ++i)
                     {
                         Res.Data data = value.m_dataList[i];
                         if (data.bcannel == false && data.fun != null)

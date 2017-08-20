@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 
-
 public class ShootObject : MonoBehaviour {
 
 	public delegate void OnHit();
@@ -122,7 +121,21 @@ public class ShootObject : MonoBehaviour {
 			StartCoroutine(InActiveObject(go,3));
 		}
 		gameObject.SetActive(false);
-		SpawnManager.SingleTon().poolManager.UnSpawn(gameObject);
+		ObjectID objID = gameObject.GetComponent<ObjectID>();
+		if(objID!=null)
+		{
+			if(objID.GetID()==0)
+			{
+				SpawnManager.SingleTon().ArrowPool.Unspawn(gameObject);
+			}else if(objID.GetID()==1)
+			{
+				SpawnManager.SingleTon().MagicBallPool.Unspawn(gameObject);
+			}
+		}
+		else
+		{
+			DestroyObject(gameObject);
+		}
 	}
 
 	IEnumerator InActiveObject(GameObject go,float delay)

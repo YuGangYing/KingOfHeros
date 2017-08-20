@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 90de43fe233e3864489a60bfab2b7b5f
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 15
   fileIDToRecycleName:
     100000: Bip01
     100002: Bip01  Pelvis
@@ -52,8 +52,6 @@ ModelImporter:
     100092: bone65
     100094: //RootNode
     100096: Root
-    100098: Richard_Body
-    100100: Richard_Level04
     400000: Bip01
     400002: Bip01  Pelvis
     400004: Bip01 Footsteps
@@ -103,14 +101,10 @@ ModelImporter:
     400092: bone65
     400094: //RootNode
     400096: Root
-    400098: Richard_Body
-    400100: Richard_Level04
     4300000: Richard_Level04
     4300002: Richard_Body
     7400000: Take 001
     11100000: //RootNode
-    13700000: Richard_Body
-    13700002: Richard_Level04
   materials:
     importMaterials: 1
     materialName: 0
@@ -119,7 +113,6 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
-    motionNodeName: 
     animationCompression: 3
     animationRotationError: .5
     animationPositionError: .5
@@ -163,5 +156,4 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 1
-  additionalBone: 0
   userData: 

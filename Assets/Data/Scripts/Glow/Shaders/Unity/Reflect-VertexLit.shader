@@ -1,3 +1,7 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+
 #warning Upgrade NOTE: unity_Scale shader variable was removed; replaced 'unity_Scale.w' with '1.0'
 
 Shader "Glow 11/Unity/Reflective/VertexLit" {
@@ -44,12 +48,12 @@ uniform float4 _MainTex_ST;
 v2f vert(appdata_tan v)
 {
 	v2f o;
-	o.pos = mul (UNITY_MATRIX_MVP, v.vertex);
+	o.pos = UnityObjectToClipPos (v.vertex);
 	o.uv = TRANSFORM_TEX(v.texcoord,_MainTex);
 
 	// calculate world space reflection vector	
 	float3 viewDir = WorldSpaceViewDir( v.vertex );
-	float3 worldN = mul((float3x3)_Object2World, v.normal * 1.0);
+	float3 worldN = mul((float3x3)unity_ObjectToWorld, v.normal * 1.0);
 	o.I = reflect( -viewDir, worldN );
 	
 	return o; 

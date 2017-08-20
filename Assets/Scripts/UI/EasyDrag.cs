@@ -220,13 +220,13 @@ namespace UI
         {
             mTrans = transform;
             mPanel = GetComponent<UIPanel>();
-//            if (Application.isPlaying) mPanel.onChange += OnPanelChange;
+            if (Application.isPlaying) mPanel.onChange += OnPanelChange;
         }
 
         void OnDestroy()
         {
-//            if (Application.isPlaying && mPanel != null)
-//                mPanel.onChange -= OnPanelChange;
+            if (Application.isPlaying && mPanel != null)
+                mPanel.onChange -= OnPanelChange;
         }
 
         void OnPanelChange() { UpdateScrollbars(true); }

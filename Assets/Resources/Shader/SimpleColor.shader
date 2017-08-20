@@ -1,4 +1,6 @@
-﻿//(yingyugang@gmail.com)
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+//(yingyugang@gmail.com)
 Shader "Custom/SimpleColor" {
 	Properties {
         _Color ("Color", Color) = (0.2, 0.3, 1 ,1)
@@ -32,7 +34,7 @@ Shader "Custom/SimpleColor" {
             v2f vert (appdata_t v)
             {
                 v2f o;
-                o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
+                o.vertex = UnityObjectToClipPos(v.vertex);
 //                o.color = v.color;
                // o.texcoord = TRANSFORM_TEX(v.texcoord,_HighLightTex);
 //                o.texcoord = v.texcoord;

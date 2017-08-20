@@ -102,7 +102,7 @@ public class SelectHero : UITweener
         GameObject battle = transform.parent.parent.gameObject;
         if (battle != null)
         {
-            GameObject skillState = battle.transform.FindChild("SkillState").gameObject;
+            GameObject skillState = battle.transform.Find("SkillState").gameObject;
 
             if (skillState != null)
             {

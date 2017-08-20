@@ -41,6 +41,123 @@ public class SpawnUtility
 		return heroPrefabStr1.Count > i ? heroPrefabStr1[i] : null;
 	}
 
+	public static void InitTmpEnemyHeroList()
+	{
+        //List<HeroSelect> playerHeroList = new List<HeroSelect>();
+        List<EnemyHero> tmp_herolist = new List<EnemyHero>();
+        EnemyHero hero = new EnemyHero();
+        hero.nHeroType = 10102;
+        //hero.nHeroType = 1;
+        hero.nLocation = 1;
+        hero.nSoldierArmyLevel = 1;
+        hero.nSoldierLevel = 1;
+        hero.nSoldierNum = 16;
+        tmp_herolist.Add(hero);
+
+        hero = new EnemyHero();
+        hero.nHeroType = 10103;
+        //hero.nHeroType = 1;
+        hero.nLocation = 2;
+        hero.nSoldierArmyLevel = 1;
+        hero.nSoldierLevel = 1;
+        hero.nSoldierNum = 16;
+        tmp_herolist.Add(hero);
+
+        hero = new EnemyHero();
+        hero.nHeroType = 10104;
+        //hero.nHeroType = 1;
+        hero.nLocation = 3;
+        hero.nSoldierArmyLevel = 1;
+        hero.nSoldierLevel = 1;
+        hero.nSoldierNum = 16;
+        tmp_herolist.Add(hero);
+
+        hero = new EnemyHero();
+        hero.nHeroType = 10109;
+        //hero.nHeroType = 1;
+        hero.nLocation = 4;
+        hero.nSoldierArmyLevel = 1;
+        hero.nSoldierLevel = 1;
+        hero.nSoldierNum = 16;
+        tmp_herolist.Add(hero);
+
+        hero = new EnemyHero();
+        hero.nHeroType = 10111;
+        //hero.nHeroType = 1;
+        hero.nLocation = 5;
+        hero.nSoldierArmyLevel = 1;
+        hero.nSoldierLevel = 1;
+        hero.nSoldierNum = 16;
+        tmp_herolist.Add(hero);
+
+        DataManager.getBattleUIData().EnemyHeroList = tmp_herolist;
+	} 
+
+    public static void InitTmpPlayerHeroList()
+    {
+        List<HeroSelect> tmp_herolist = new List<HeroSelect>();
+        Dictionary<uint, BattleUIData.FightHeroInfo> dicFightHero = new Dictionary<uint, BattleUIData.FightHeroInfo>();
+        
+        BattleUIData.FightHeroInfo heroInfo = new BattleUIData.FightHeroInfo();
+        heroInfo.armyType = 1;
+        heroInfo.icon = "RobinHood_Portrait";
+        heroInfo.idHero = 10102;
+        dicFightHero.Add(10102,heroInfo);
+        HeroSelect hero = new HeroSelect();
+        hero.nLocation = 1;
+        hero.nHeroId = 10102;
+        hero.nSoldierNum = 16;
+        tmp_herolist.Add(hero);
+
+        heroInfo = new BattleUIData.FightHeroInfo();
+        heroInfo.armyType = 2;
+        heroInfo.icon = "Richard_Portrait";
+        heroInfo.idHero = 10103;
+        dicFightHero.Add(10103,heroInfo);
+        hero = new HeroSelect();
+        hero.nLocation = 2;
+        hero.nHeroId = 10103;
+        hero.nSoldierNum = 16;
+        tmp_herolist.Add(hero);
+
+        heroInfo = new BattleUIData.FightHeroInfo();
+        heroInfo.armyType = 3;
+        heroInfo.icon = "Sparta_Portrait";
+        heroInfo.idHero = 10104;
+        dicFightHero.Add(10104, heroInfo);
+        hero = new HeroSelect();
+        hero.nLocation = 3;
+        hero.nHeroId = 10104;
+        hero.nSoldierNum = 16;
+        tmp_herolist.Add(hero);
+
+        heroInfo = new BattleUIData.FightHeroInfo();
+        heroInfo.armyType = 4;
+        heroInfo.icon = "KingArthur_Portrait";
+        heroInfo.idHero = 10109;
+        dicFightHero.Add(10109, heroInfo);
+        hero = new HeroSelect();
+        hero.nLocation = 4;
+        hero.nHeroId = 10109;
+        hero.nSoldierNum = 16;
+        tmp_herolist.Add(hero);
+
+        heroInfo = new BattleUIData.FightHeroInfo();
+        heroInfo.armyType = 5;
+        heroInfo.icon = "CleopatraVII_Portrait";
+        heroInfo.idHero = 10111;
+        dicFightHero.Add(10111, heroInfo);
+        hero = new HeroSelect();
+        hero.nLocation = 5;
+        hero.nHeroId = 10111;
+        hero.nSoldierNum = 16;
+        tmp_herolist.Add(hero);
+
+        DataManager.getBattleUIData().HeroList = tmp_herolist;
+        DataManager.getBattleUIData().dicFightHero = dicFightHero;
+    }
+
+
 	public static List<BattleMatrix> InitTestMyMatrixList(SIDE side)
 	{
 		List<BattleMatrix> battleMatrix = new List<BattleMatrix>();
