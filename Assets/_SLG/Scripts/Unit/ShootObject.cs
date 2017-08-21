@@ -30,7 +30,7 @@ public class ShootObject : MonoBehaviour {
 	{
         if (_attacker == null)
         {
-            Logger.LogError("_attacker is null");
+            Debug.LogError("_attacker is null");
             return;
         }
         
@@ -166,7 +166,7 @@ public class ShootObject : MonoBehaviour {
 		{
             if (Attacker == null)
             {
-                Logger.LogError("Attacker is null");
+                Debug.LogError("Attacker is null");
                 return;
             }
 

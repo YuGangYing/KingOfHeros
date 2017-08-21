@@ -73,22 +73,26 @@ public class Unit : MonoBehaviour {
 
 	void Awake () 
 	{  
-		m_Trans = transform;
-        Attacker = GetComponent<UnitAttack>();
-        Attribute = GetComponent<UnitAttribute>();
-        Anim = GetComponent<UnitAnim>();
-        Move = GetComponent<UnitMove>();
-        Skill = GetComponent<UnitSkill>();
-        MeleeAttacker = GetComponent<UnitMeleeAttack>();
-		UnitMat = GetComponent<UnitMaterial>();
-
-        InitOverEvent();
-        InitArriveEvent();
-        InitDeadEvent();
-        InitSkillEvent();
+		Init ();
 		StartCoroutine(_Disperse());
 	}  
- 
+
+	public void Init(){
+		m_Trans = transform;
+		Attacker = GetComponent<UnitAttack>();
+		Attribute = GetComponent<UnitAttribute>();
+		Anim = GetComponent<UnitAnim>();
+		Move = GetComponent<UnitMove>();
+		Skill = GetComponent<UnitSkill>();
+		MeleeAttacker = GetComponent<UnitMeleeAttack>();
+		UnitMat = GetComponent<UnitMaterial>();
+
+		InitOverEvent();
+		InitArriveEvent();
+		InitDeadEvent();
+		InitSkillEvent();
+	}
+ 	
     public UnitAnim CptUnitAnim
     {
         get

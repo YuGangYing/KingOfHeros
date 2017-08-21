@@ -104,7 +104,7 @@ public class UnitAttribute : MonoBehaviour {
     {
         if (_attacker == null)
         {
-            Logger.LogError("_attacker is null");
+            Debug.LogError("_attacker is null");
             return;
         } 
 		LastAttacker = _attacker;
@@ -130,7 +130,7 @@ public class UnitAttribute : MonoBehaviour {
 	{
 		if (_attacker == null)
 		{
-			Logger.LogError("_attacker is null");
+			 Debug.LogError("_attacker is null");
 			return;
 		} 
 		LastAttacker = _attacker;
@@ -156,7 +156,7 @@ public class UnitAttribute : MonoBehaviour {
     { 
         if (_attacker == null)
         {
-            Logger.LogError("_attacker is null");
+            Debug.LogError("_attacker is null");
             return;
         }
  
@@ -172,7 +172,7 @@ public class UnitAttribute : MonoBehaviour {
     {
         if (m_StaticData == null)
         {
-            Logger.LogError("m_StaticData is null");
+            Debug.LogError("m_StaticData is null");
             return;
         }
 

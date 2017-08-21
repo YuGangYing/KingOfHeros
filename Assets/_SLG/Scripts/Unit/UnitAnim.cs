@@ -56,7 +56,7 @@ public class UnitAnim : MonoBehaviour
 
         if (tmp_anims == null)
         {
-            Logger.LogError("tmp_anims is null");
+            Debug.LogError("tmp_anims is null");
 
             return;
         }
@@ -73,7 +73,7 @@ public class UnitAnim : MonoBehaviour
 
         if (m_Unit == null)
         {
-            Logger.LogError("m_Unit is null");
+            Debug.LogError("m_Unit is null");
 
             return;
         }
@@ -82,7 +82,7 @@ public class UnitAnim : MonoBehaviour
 
         if (m_UnitAtb == null)
         {
-            Logger.LogError("m_UnitAtb is null");
+            Debug.LogError("m_UnitAtb is null");
 
             return;
         }
@@ -91,7 +91,7 @@ public class UnitAnim : MonoBehaviour
 
         if (m_AnimEvent == null)
         {
-            Logger.LogError("m_AnimEvent is null");
+            Debug.LogError("m_AnimEvent is null");
 
             return;
         }
@@ -164,14 +164,14 @@ public class UnitAnim : MonoBehaviour
     {
         if (m_AnimationList == null)
         {
-            Logger.LogError("m_Animationlist is null");
+            Debug.LogError("m_Animationlist is null");
 
             return 0;
         } 
 
         if (!CheckAnimation(_name))
         {
-            Logger.LogError("not have this clip");
+            Debug.LogError("not have this clip");
 
             return 0 ;
         }
@@ -194,7 +194,7 @@ public class UnitAnim : MonoBehaviour
     {
         if (m_AnimationList == null)
         {
-            Logger.LogError("m_AnimationList is null");
+            Debug.LogError("m_AnimationList is null");
 
             return 0 ;
         }
@@ -210,7 +210,7 @@ public class UnitAnim : MonoBehaviour
 
         if (!m_AnimNumsDic.ContainsKey(m_AnimationTypeNames[tmp_type]))
         {
-            Logger.LogError("动作组件不包含" + m_AnimationTypeNames[tmp_type] + "动画");
+            Debug.LogError("动作组件不包含" + m_AnimationTypeNames[tmp_type] + "动画");
 
             return 0;
         }
@@ -221,7 +221,7 @@ public class UnitAnim : MonoBehaviour
 
         if (!CheckAnimation(tmp_clipname))
         {
-            Logger.LogError("not have this clip");
+            Debug.LogError("not have this clip");
 
             return 0;
         }
@@ -241,21 +241,21 @@ public class UnitAnim : MonoBehaviour
     {
         if (m_AnimationList == null)
         {
-            Logger.LogError("m_Animationlist is null");
+            Debug.LogError("m_Animationlist is null");
 
             return;
         }
  
         if (_name.Length <= 0)
         {
-            Logger.LogError("_name.length is 0");
+            Debug.LogError("_name.length is 0");
             
             return;
         }
 
         if (!CheckAnimation(_name))
         {
-            Logger.LogError("not have this clip");
+            Debug.LogError("not have this clip");
 
             return;
         }
@@ -275,21 +275,21 @@ public class UnitAnim : MonoBehaviour
     {
         if (m_AnimationList == null)
         {
-            Logger.LogError("m_Animationlist is null");
+            Debug.LogError("m_Animationlist is null");
 
             return;
         }
 
         if (_time < 0)
         {
-            Logger.LogError("SetAnimationTime Value can not is -0");
+            Debug.LogError("SetAnimationTime Value can not is -0");
 
             _time = 0;
         }
 
         if (!CheckAnimation(_name))
         {
-            Logger.LogError("not have this clip");
+            Debug.LogError("not have this clip");
 
             return ;
         }
@@ -323,7 +323,7 @@ public class UnitAnim : MonoBehaviour
     {
         if (_arrayindex == null)
         {
-            Logger.LogError("_arrayindex is null");
+            Debug.LogError("_arrayindex is null");
 
             return;
         }
@@ -389,7 +389,7 @@ public class UnitAnim : MonoBehaviour
 
         if (!m_AnimNumsDic.ContainsKey(tmp_animname))
         {
-            Logger.LogError(tmp_animname + "_name do not contain key in m_AnimNumsDic");
+            Debug.LogError(tmp_animname + "_name do not contain key in m_AnimNumsDic");
             return "";
         }
 
@@ -432,7 +432,7 @@ public class UnitAnim : MonoBehaviour
 
         if (!CheckAnimation(tmp_clipname))
         {
-            Logger.LogError("Error");
+            Debug.LogError("Error");
             return "";
         }
 
@@ -457,7 +457,7 @@ public class UnitAnim : MonoBehaviour
     {
         if (m_AnimationList == null)
         {
-            Logger.LogError("m_AnimationList is null");
+            Debug.LogError("m_AnimationList is null");
 
             return false; 
         } 

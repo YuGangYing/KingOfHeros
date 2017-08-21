@@ -119,7 +119,7 @@ public class TestUI : MonoBehaviour
     {
         if (_matrixui == null || _battlematrix == null)
         {
-            Logger.LogError("InitMatrixData function error!!!");
+             Debug.LogError("InitMatrixData function error!!!");
             return;
         }
 

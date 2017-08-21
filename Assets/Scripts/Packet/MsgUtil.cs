@@ -54,7 +54,7 @@ namespace Packet
             {
                 if (Type.GetType(v._type) == null)
                 {
-                    Logger.LogError("FATAL ERROR * unable to find designated type [{0}].", v._type);
+					Debug.LogError(string.Format("FATAL ERROR * unable to find designated type [{0}].", v._type));
                 }
 
                 try
@@ -65,7 +65,7 @@ namespace Packet
                 }
                 catch (ArgumentException e)
                 {
-                    Logger.LogError("FATAL ERROR * duplicate element {0} found in [Message.xml].", v._type);
+					Debug.LogError(string.Format("FATAL ERROR * duplicate element {0} found in [Message.xml].", v._type));
                 }
             }
         }
@@ -102,7 +102,7 @@ namespace Packet
             }
             else
             {
-                Logger.LogError("Message : Type & Code !!!MISMATCH!!!");
+                 Debug.LogError("Message : Type & Code !!!MISMATCH!!!");
 
                 return false;
             }
@@ -118,7 +118,7 @@ namespace Packet
             }
             else 
             {
-                Logger.LogError("Message : Code !!!UNKNOWN!!!");
+                 Debug.LogError("Message : Code !!!UNKNOWN!!!");
             }
         }
 

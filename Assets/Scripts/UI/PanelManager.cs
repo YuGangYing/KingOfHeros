@@ -125,7 +125,7 @@ namespace UI
             PanelFactoryBase factory = null;
             if (m_panelFactory.TryGetValue(id, out factory) == false)
             {
-                Logger.LogError(id.ToString() + " factory null!");
+                 Debug.LogError(id.ToString() + " factory null!");
                 throw new Exception(id.ToString() + "factory null!");
             }
 

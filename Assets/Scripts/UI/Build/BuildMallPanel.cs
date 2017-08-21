@@ -74,7 +74,7 @@ namespace UI
             UIEventListener listener = go.GetComponent<UIEventListener>();
             if (listener == null)
             {
-                Logger.LogError("OnItemClick! UIEventListener == null");
+                 Debug.LogError("OnItemClick! UIEventListener == null");
                 return;
             }
 
@@ -82,7 +82,7 @@ namespace UI
 
             if (item == null)
             {
-                Logger.LogError("OnItemClick! item == null");
+                 Debug.LogError("OnItemClick! item == null");
                 return;
             }
 

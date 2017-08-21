@@ -185,7 +185,7 @@ public class PutBuild : MonoBehaviour
         DataMgr.BuildConfig config = DataManager.getBuildData().GetBuildConfig(nBuildType);
         if (config == null)
         {
-            Logger.LogError("GetNewBuild index:{0} not find!", nBuildType);
+            Debug.LogError("GetNewBuild index:{0} not find!" + nBuildType);
             return null;
         }
 

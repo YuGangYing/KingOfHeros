@@ -34,7 +34,7 @@ public class UnitAttack : MonoBehaviour {
 
         if (m_UnitAtb == null)
         {
-            Logger.LogError("m_UnitAtb is null");
+            Debug.LogError("m_UnitAtb is null");
             return;
         }
 
@@ -42,7 +42,7 @@ public class UnitAttack : MonoBehaviour {
 
         if (animEvent == null)
         {
-            Logger.LogError("animEvent is null");
+            Debug.LogError("animEvent is null");
             return;
         }
 
@@ -56,7 +56,7 @@ public class UnitAttack : MonoBehaviour {
 //
 //        if (ShootPoint == null)
 //        {
-//            Logger.LogError(gameObject.name + "ShootPoint is null");
+//            Debug.LogError(gameObject.name + "ShootPoint is null");
 //            return;
 //        }
 
@@ -155,7 +155,7 @@ public class UnitAttack : MonoBehaviour {
             }
             else
             {
-                Logger.LogError(gameObject.name + "没有被攻击点HitPoint");
+                Debug.LogError(gameObject.name + "没有被攻击点HitPoint");
             } 
 		}
 	}

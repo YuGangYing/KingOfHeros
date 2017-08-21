@@ -35,7 +35,7 @@ namespace DataMgr
             string strOut;
             if (mDict.TryGetValue(strKey, out strOut))
                 return strOut;
-            Logger.LogError("language key {0} is not exist !", strKey);
+			Debug.LogError(string.Format("language key {0} is not exist !", strKey));
             return string.Empty;
         }
 

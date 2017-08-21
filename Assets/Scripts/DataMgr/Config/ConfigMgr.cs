@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace DataMgr
 {
@@ -40,7 +41,7 @@ namespace DataMgr
                 return null;
             if (config.checkColCount<T>())
             {
-                Logger.LogError("read config {0}  failed!", key);
+                Debug.LogError("read config {0}  failed!" + key);
                 return null;
             }
             return config;
@@ -63,7 +64,7 @@ namespace DataMgr
                 return config;
             }
             else
-                Logger.LogError("read config {0}  failed!", strFileName);
+                Debug.LogError("read config {0}  failed!" + strFileName);
             return null;
         }
 

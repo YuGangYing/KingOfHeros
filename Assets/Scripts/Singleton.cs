@@ -121,7 +121,7 @@ public abstract class SingletonMonoBehaviour<T> : MonoBehaviour where T : Single
             }
             else
             {
-                Logger.LogError("You have more than one " + typeof(T).Name + " in the scene. You only need 1, it's a singleton!");
+                 Debug.LogError("You have more than one " + typeof(T).Name + " in the scene. You only need 1, it's a singleton!");
                 foreach (T manager in managers)
                 {
                     Destroy(manager.gameObject);

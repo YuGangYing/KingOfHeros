@@ -90,7 +90,7 @@ public class HeroData
         {
             if (!isHaveItem(dwId))
             {
-                Logger.LogError("HeroItemData::this[{0}]", dwId);
+					Debug.LogError(string.Format("HeroItemData::this[{0}]", dwId));
                 return mErrorItem;
             }
 

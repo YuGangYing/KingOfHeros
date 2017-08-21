@@ -2,7 +2,10 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using Fight;
-using DataMgr; 
+using DataMgr;
+using KOH;
+
+ 
 #pragma warning disable 0168
 #pragma warning disable 0219
 #pragma warning disable 0414
@@ -182,8 +185,8 @@ public class SpawnManager : MonoBehaviour
 				Skill1 = cr.getIntValue(DataMgr.enCVS_HERO_BASE_ATTRIBUTE.BASE_SKILL1_TYPEID);
 				Skill2 = cr.getIntValue(DataMgr.enCVS_HERO_BASE_ATTRIBUTE.BASE_SKILL2_TYPEID);
 				Skill3 = cr.getIntValue(DataMgr.enCVS_HERO_BASE_ATTRIBUTE.BASE_SKILL3_TYPEID);
-				
 				DataMgr.Skill skillObj1 = DataManager.getSkillData().getSkillBySkillID(Skill1);
+				herolist [i].Init ();
 				herolist[i].Skill.HeroSkills.Add(skillObj1);
 				DataManager.getSkillData().setSkillEvent(herolist[i].Skill,skillObj1);
 				if(!skillObj1.IsActive)
@@ -280,7 +283,7 @@ public class SpawnManager : MonoBehaviour
 	{
 		if (_character == null || _obj == null )
 		{
-			Logger.LogError("AppendUnit function error"); 
+			 Debug.LogError("AppendUnit function error"); 
 			return null;
 		}  
 		Unit unit = Common.AddObjComponent<Unit>(_obj);
@@ -339,7 +342,7 @@ public class SpawnManager : MonoBehaviour
 	{
 		if (_obj == null || _character == null)
 		{
-			Logger.LogError("AppendUnitMove function error");
+			 Debug.LogError("AppendUnitMove function error");
 			return null;
 		}
 		UnitMove unitmove = Common.AddObjComponent<UnitMove>(_obj);
@@ -356,12 +359,14 @@ public class SpawnManager : MonoBehaviour
 	{
 		if (_obj == null || _character == null)
 		{
-			Logger.LogError("AppendUnitSkill function error");
+			 Debug.LogError("AppendUnitSkill function error");
 			return null;
 		}
 		UnitSkill skill = Common.AddObjComponent<UnitSkill>(_obj);
 		skill.HeroSkills = new List<DataMgr.Skill>();
-		GameObject tmp_heroobj = Common.CreateGameObject(_character.strResName);
+//		GameObject tmp_heroobj = Common.CreateGameObject(_character.strResName);
+		GameObject tmp_heroobj = ResourceManager.GetInstance.LoadHero (_character.strResName);
+		tmp_heroobj = Instantiate (tmp_heroobj) as GameObject;
 		tmp_heroobj.SetActive(false);
 		skill.GlobalSkillHero = tmp_heroobj;
 
@@ -670,7 +675,7 @@ public class SpawnManager : MonoBehaviour
     {
         if (_matrixlist == null || _diclocation == null)
         {
-            Logger.LogError("CreateMatrixs function error !!!");
+            Debug.LogError("CreateMatrixs function error !!!");
 
             return;
         }
@@ -695,8 +700,9 @@ public class SpawnManager : MonoBehaviour
                     {
                         _matrixlist[i].m_Hero.strResName += "_Blue";
                     }
-
-                    GameObject tmp_heroobj = Common.CreateGameObject(_matrixlist[i].m_Hero.strResName);
+					GameObject tmp_heroobj = ResourceManager.GetInstance.LoadHero (_matrixlist [i].m_Hero.strResName);
+					tmp_heroobj = Instantiate (tmp_heroobj) as GameObject;
+//                    GameObject tmp_heroobj = Common.CreateGameObject(_matrixlist[i].m_Hero.strResName);
                     tmp_heroobj.SetActive(false);
                     Common.AddChildObj(tmp_heroobj, matrix, (new Vector3(0, 0, (_rownum - 1) / 2.0f + 1)) * RowPadding);
                     //Set Tag 
@@ -762,7 +768,9 @@ public class SpawnManager : MonoBehaviour
                             }
 
                             //Instantiate Soldier GameObject
-                            GameObject tmp_soldier = Common.CreateGameObject(tmp_soldierlist[index].strResName);
+//                            GameObject tmp_soldier = Common.CreateGameObject(tmp_soldierlist[index].strResName);
+							GameObject tmp_soldier = ResourceManager.GetInstance.LoadSolider(tmp_soldierlist[index].strResName);//.CreateGameObject(tmp_soldierlist[index].strResName);
+							tmp_soldier = Instantiate(tmp_soldier) as GameObject;
                             tmp_soldier.SetActive(false);
                             Common.AddChildObj(tmp_soldier, Row, (new Vector3(m - (_colnum - 1) / 2.0f, 0, 0)) * ColumnPadding);
 							tmp_soldier.transform.position = tmp_soldier.transform.position + new Vector3(Random.Range(-0.3f,0.3f),0,Random.Range(-0.3f,0.3f));
@@ -862,14 +870,14 @@ public class SpawnManager : MonoBehaviour
 		if (m_MyMatrixList == null || m_MyDicLocation == null
 		  || m_EnemyMatrixList == null || m_EnemyDicLocation == null)
 		{
-			Logger.LogError("CreateBattleMatrixs function error !!!");
+			 Debug.LogError("CreateBattleMatrixs function error !!!");
 
 			return;
 		}
 
 		if (_rownums <= 0 || _colnums <= 0)
 		{
-			Logger.LogError("row and col parameter error !!!");
+			 Debug.LogError("row and col parameter error !!!");
 
 			return;
 		}
@@ -885,7 +893,7 @@ public class SpawnManager : MonoBehaviour
 	{
 		if (m_MyMatrixList == null)
 		{ 
-			Logger.LogError("m_MyMatrixList is null"); 
+			 Debug.LogError("m_MyMatrixList is null"); 
  
 			return null;
 		}
@@ -897,7 +905,7 @@ public class SpawnManager : MonoBehaviour
 	{
 		if (m_EnemyMatrixList == null)
 		{ 
-			Logger.LogError("m_EnemyMatrixList is null"); 
+			 Debug.LogError("m_EnemyMatrixList is null"); 
 
 			return null;
 		}
@@ -909,14 +917,14 @@ public class SpawnManager : MonoBehaviour
 	{
 		if (_list == null)
 		{ 
-			Logger.LogError("list is null");
+			 Debug.LogError("list is null");
  
 			return;
 		}
 
 		if (_matrix == null)
 		{ 
-			Logger.LogError("_matrix is null");
+			 Debug.LogError("_matrix is null");
  
 			return;
 		}

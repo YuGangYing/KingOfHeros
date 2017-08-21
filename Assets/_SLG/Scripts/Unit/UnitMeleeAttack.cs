@@ -29,7 +29,7 @@ public class UnitMeleeAttack : MonoBehaviour {
         m_UnitAbt = GetComponent<UnitAttribute>();
         if (m_UnitAbt == null)
         {
-            Logger.LogError("m_UnitAbt is null");
+            Debug.LogError("m_UnitAbt is null");
             return;
         }
         m_DefaultScaneRadius = m_UnitAbt.ScanRadius;
@@ -37,14 +37,14 @@ public class UnitMeleeAttack : MonoBehaviour {
         UnitAnim anim = GetComponent<UnitAnim>();
         if (anim == null)
         {
-            Logger.LogError("anim is null");
+            Debug.LogError("anim is null");
             return;
         } 
 
         animEvent = GetComponentsInChildren<AnimEventCall>();
         if (animEvent == null)
         {
-            Logger.LogError("animEvent is null");
+            Debug.LogError("animEvent is null");
             return;
         }
         for (int i = 0; i < animEvent.Length; ++i)

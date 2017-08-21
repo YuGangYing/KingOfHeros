@@ -105,7 +105,7 @@ public class UnitAnimEvent : MonoBehaviour
     { 
         if (EventInfomation == null)
         {
-            Logger.LogError("EventInfomation is null");
+            Debug.LogError("EventInfomation is null");
         }
 
         for (int i = 0; i < EventInfomation.Count; ++i)
@@ -122,7 +122,7 @@ public class UnitAnimEvent : MonoBehaviour
     { 
         //if (m_EventList == null)
         //{
-        //    Logger.LogError("m_EventList is null");
+        //    Debug.LogError("m_EventList is null");
 
         //    return;
         //}
@@ -133,7 +133,7 @@ public class UnitAnimEvent : MonoBehaviour
 
         if (_eventspeed <=0)
         {
-            Logger.LogError("动作事件更新速度异常");
+            Debug.LogError("动作事件更新速度异常");
 
             _eventspeed = 1;
         }
@@ -148,7 +148,7 @@ public class UnitAnimEvent : MonoBehaviour
 
         //if (tmp_list == null)
         //{
-        //    Logger.LogError("tmp_list is null");
+        //    Debug.LogError("tmp_list is null");
 
         //    return;
         //}

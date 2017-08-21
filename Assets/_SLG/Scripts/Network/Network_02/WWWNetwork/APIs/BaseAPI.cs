@@ -4,11 +4,13 @@ using UnityEngine;
 
 namespace WWWNetwork
 {
-	public class BaseAPI
+	public class BaseAPI:MonoBehaviour
 	{
 		public string api;
 		public byte[] bytedata;
-		public virtual void Send(UnityAction<WWW> complete){
+
+		public virtual void Send (UnityAction<WWW> complete)
+		{
 			WWWNetworkManager.GetInstance.Send (api, bytedata, complete);
 		}
 

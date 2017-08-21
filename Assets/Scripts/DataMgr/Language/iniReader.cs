@@ -37,7 +37,7 @@ namespace DataMgr
             strValue = strValue.TrimStart();
             strValue = strValue.TrimEnd();
             if (mDict.ContainsKey(strKey))
-                Logger.LogError("language key {0} already exists!", strKey);
+				Debug.LogError(string.Format("language key {0} already exists!", strKey));
             mDict[strKey] = strValue;
         }
 

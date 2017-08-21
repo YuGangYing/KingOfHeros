@@ -181,28 +181,28 @@ public class MoveTool : Singleton<MoveTool>
     {
         if (_info == null)
         {
-            Logger.LogError("_info is null");
+            Debug.LogError("_info is null");
 
             return false;
         }
 
         if (_src == null)
         {
-            Logger.LogError("_src is null");
+            Debug.LogError("_src is null");
 
             return false;
         }
 
         if (_movespeed == 0)
         {
-            Logger.LogError("_movespeed is Error");
+            Debug.LogError("_movespeed is Error");
 
             return false;
         }
 
         if (_info.m_iIndex < 0 || _info.m_iIndex > _info.m_WayPointArray.Count - 1)
         {
-            Logger.LogError("_info.m_iIndex is out of array!!! + index is " + _info.m_iIndex);
+            Debug.LogError("_info.m_iIndex is out of array!!! + index is " + _info.m_iIndex);
 
             return false;
         }

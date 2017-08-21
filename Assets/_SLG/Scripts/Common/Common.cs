@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
-using System.Collections; 
+using System.Collections;
+using KOH; 
  
 public class Common
 { 
@@ -7,14 +8,14 @@ public class Common
     { 
         if (_obj == null)
         {
-            Logger.LogError("_obj is null");
+            Debug.LogError("_obj is null");
 
             return;
         }
 
         if (_material == null)
         {
-            Logger.LogError("_material is null");
+            Debug.LogError("_material is null");
 
             return;
         } 
@@ -23,7 +24,7 @@ public class Common
 
         if (tmp_renderers == null)
         {
-            Logger.LogError("tmp_renderers is null");
+            Debug.LogError("tmp_renderers is null");
 
             return;
         }
@@ -41,7 +42,7 @@ public class Common
     {
         if (_obj == null)
         {
-            Logger.LogError("_obj is null");
+            Debug.LogError("_obj is null");
 
             return null;
         }
@@ -60,16 +61,15 @@ public class Common
     {
         if (_strPreb == null || _strPreb.Length == 0)
         {
-            Logger.LogError("_strPreb is null");
+            Debug.LogError("_strPreb is null");
 
             return null;
         }
-
+		Debug.Log ("_strPreb:" + _strPreb);
         Object probObj = Resources.Load(_strPreb);  //ResourcesMgr.LoadAsset<GameObject>(_strPreb);   
- 
         if (probObj == null)
         {
-            Logger.LogError("probObj si null");
+            Debug.LogError("probObj si null");
 
             return null;
         }
@@ -78,7 +78,7 @@ public class Common
 
         if (newObj == null)
         {
-            Logger.LogError("newObj is null");
+            Debug.LogError("newObj is null");
         }
 
         return newObj; 
@@ -88,7 +88,7 @@ public class Common
 	{
 		if (_strPreb == null || _strPreb.Length == 0)
 		{
-			Logger.LogError("_strPreb is null");
+			 Debug.LogError("_strPreb is null");
 			
 			return null;
 		}
@@ -99,7 +99,7 @@ public class Common
 		if (probObj == null)
 		{
 			
-			Logger.LogError("probObj si null");
+			 Debug.LogError("probObj si null");
 			
 			return null;
 		}
@@ -108,7 +108,7 @@ public class Common
 		
 		if (newObj == null)
 		{
-			Logger.LogError("newObj is null");
+			 Debug.LogError("newObj is null");
 		}
 		
 		return newObj; 
@@ -118,7 +118,7 @@ public class Common
     {
         if (_parent == null || _obj == null)
         {
-            Logger.LogError("AddChildObj function error !!!");
+            Debug.LogError("AddChildObj function error !!!");
 
             return;
         }

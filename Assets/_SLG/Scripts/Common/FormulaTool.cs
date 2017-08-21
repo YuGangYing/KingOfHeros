@@ -41,7 +41,7 @@ public class FormulaTool : Singleton<FormulaTool>
     {
         if ((_myattack + _targetdef) == 0)
         {
-            Logger.LogError("argument Error");
+            Debug.LogError("argument Error");
             
             return 0;
         }
@@ -65,7 +65,7 @@ public class FormulaTool : Singleton<FormulaTool>
 
         if ((tmp_levlediff / 2) == 0)
         {
-            Logger.LogError("argument Error");
+            Debug.LogError("argument Error");
             return 0;
         }
 
@@ -78,7 +78,7 @@ public class FormulaTool : Singleton<FormulaTool>
     {
         if ((_leadervalue + 7) == 0)
         {
-            Logger.LogError("argument Error");
+            Debug.LogError("argument Error");
 
             return 0;
         } 
@@ -92,7 +92,7 @@ public class FormulaTool : Singleton<FormulaTool>
     {
         if ( 1 + (_attackspeedadd / 100) == 0 )
         {
-            Logger.LogError("value can not is 0");
+            Debug.LogError("value can not is 0");
 
             return null;
         }
@@ -114,7 +114,7 @@ public class FormulaTool : Singleton<FormulaTool>
 
         if (_attackspeed == 0)
         {
-            Logger.LogError("value can not is 0");
+            Debug.LogError("value can not is 0");
 
             return null;
         }

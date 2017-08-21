@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Net.Sockets;
+using UnityEngine;
 
 namespace Network
 {
@@ -75,12 +76,12 @@ namespace Network
                     }
                     catch (System.Exception ex)
                     {
-                        Logger.LogError("exception message {0} error {1}!", msg.m_msg, ex.Message);
+                        Debug.LogError("exception message {0} error {1}!" + msg.m_msg + ex.Message);
                     }
                 }
                 else
                 {
-                    Logger.LogError("error! can not find related message type", msg.m_msg);
+                    Debug.LogError("error! can not find related message type" + msg.m_msg);
                 }
             }
 
@@ -95,7 +96,7 @@ namespace Network
 			}
 			catch(Exception e)
 			{
-                Logger.LogError("sender:" + e.Message);
+                Debug.LogError("sender:" + e.Message);
                 NetworkMgr.getInstance().getClient().setStatus(NET_STATUS.DISCONNT);
 
 				m_stream = null;

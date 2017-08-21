@@ -33,7 +33,7 @@ public class MonoSwitchImp : MonoBehaviour
 
         this.m_position = this.transform.position;
         this.m_rot = this.transform.rotation;
-        Logger.LogError("{0}   {1}", m_position, m_rot);
+		Debug.LogError(string.Format("{0}   {1}", m_position, m_rot));
     }
 
     // 相机移动的位置与朝向,切换的总时长

@@ -196,6 +196,11 @@
      <Compile Include="Assets\Plug-in\Xffect\Editor\XGradientEditor.cs" />
      <Compile Include="Assets\Plug-in\Xffect\Editor\XffectComponentCustom.cs" />
      <Compile Include="Assets\Plug-in\Xffect\Editor\XffectEventCustom.cs" />
+     <Compile Include="Assets\Scripts\AssetBundle\Editor\ABSetting.cs" />
+     <Compile Include="Assets\Scripts\AssetBundle\Editor\AssetBundlePacker.cs" />
+     <Compile Include="Assets\Scripts\AssetBundle\Editor\AssetBundleWindow.cs" />
+     <Compile Include="Assets\Scripts\AssetBundle\Editor\CopyCSV.cs" />
+     <Compile Include="Assets\Scripts\CSV\Editor\CreateClassFromCSV.cs" />
      <Compile Include="Assets\Tool Editor\Script\Editor\SkillEffectConfigEditor.cs" />
      <Compile Include="Assets\Tool Editor\Script\Editor\SkillEffectEditor.cs" />
      <Compile Include="Assets\Tool Editor\Script\Editor\ToolEditor.cs" />
@@ -224,6 +229,7 @@
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\Resources\Configs\language\Building_En.txt" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+     <None Include="Assets\Plugins\Demigiant\DOTweenPro\readme.txt" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Reflect-Parallax.shader" />
      <None Include="Assets\Data\Shader\AlphaVertexColored.shader" />
      <None Include="Assets\Plug-in\Xffect\Tutorial\Events\CameraShake\readme.txt" />
@@ -249,6 +255,7 @@
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurves.shader" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Alpha-VertexLit.shader" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\ScreenSpaceAmbientObscurance.shader" />
+     <None Include="Assets\Plugins\Demigiant\DemiLib\Core\DemiLib.xml" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Mobile\Mobile-Bumped.shader" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Mobile\Mobile-BumpSpec-1DirectionalLight.shader" />
      <None Include="Assets\Scripts\CameraSwitchEvent\script\CamerAlphaEffect.shader" />
@@ -263,6 +270,7 @@
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
      <None Include="Assets\Resources\Shader\SimpleColor.shader" />
      <None Include="Assets\Plug-in\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
+     <None Include="Assets\Plugins\Demigiant\DOTween\DOTween50.xml" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\VignetteShader.shader" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
      <None Include="Assets\Data\Scripts\Glow\readme.txt" />
@@ -319,6 +327,7 @@
      <None Include="Assets\Resources\Shader\OverlayBlendAlpha.shader" />
      <None Include="Assets\Data\Scripts\Glow\_internal\Resources\PostShaders\BlurEffectConeTap.shader" />
      <None Include="Assets\Plug-in\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
+     <None Include="Assets\Plugins\Demigiant\DOTween\DOTween46.xml" />
      <None Include="Assets\Plug-in\Xffect\Tutorial\API Usage\GravityDemo\readme.txt" />
      <None Include="Assets\Plug-in\Xffect\readme.txt" />
      <None Include="Assets\Plug-in\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
@@ -369,6 +378,7 @@
      <None Include="Assets\Plug-in\FX Maker\IGSoft_Tools\Readme\FX Maker VideoGuide Youtube.txt" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionSelective.shader" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\Bokeh34.shader" />
+     <None Include="Assets\Plugins\Demigiant\DOTween\readme.txt" />
      <None Include="Assets\Data\Scripts\ShurikenMagic\Shaders\Illumin-VertexLit.shader" />
      <None Include="Assets\Plug-in\FX Maker\IGSoft_Tools\FXMaker\ToolScript\Temp\grayShader.shader" />
      <None Include="Assets\Resources\Configs\language\Shop_en.txt" />
@@ -389,6 +399,7 @@
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\BlurEffectConeTaps.shader" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\CameraMotionBlur.shader" />
      <None Include="Assets\Resources\Configs\language\Skill_En.txt" />
+     <None Include="Assets\Plugins\Demigiant\DOTween\DOTween43.xml" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\DLAA.shader" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Normal-DiffuseFast.shader" />
      <None Include="Assets\Plug-in\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed).shader" />
@@ -444,6 +455,7 @@
      <None Include="Assets\Plug-in\Xffect\Resources\Shaders\AdvanceShader\xft_displacement_screen.shader" />
      <None Include="Assets\Plug-in\NGUI\Resources\Shaders\Unlit - Depth.shader" />
      <None Include="Assets\Data\Scripts\ShurikenMagic\Shaders\SM_2sided_transparent.shader" />
+     <None Include="Assets\Plugins\Demigiant\DemiLib\Core\Editor\DemiEditor.xml" />
      <None Include="Assets\Plug-in\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Mobile\Mobile-BumpSpec.shader" />
      <None Include="Assets\Plug-in\Xffect\UPGRADE NOTES_From3.xTo4.x.txt" />
@@ -457,6 +469,7 @@
      <None Include="Assets\Resources\Configs\language\Army_En.txt" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Alpha-Bumped.shader" />
      <None Include="Assets\Resources\Configs\language\Skill_cn.txt" />
+     <None Include="Assets\Plugins\Demigiant\readme_DOTweenPro.txt" />
      <None Include="Assets\Resources\Shader\Outline3.shader" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA3Console.shader" />
      <None Include="Assets\Plug-in\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
@@ -560,6 +573,36 @@
  <Reference Include="zlib.net">
  <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/zlib.net.dll</HintPath>
  </Reference>
+ <Reference Include="DemiLib">
+ <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/Demigiant/DemiLib/Core/DemiLib.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween43">
+ <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/Demigiant/DOTween/DOTween43.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenEditor">
+ <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween50">
+ <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/Demigiant/DOTween/DOTween50.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenProEditor">
+ <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/Demigiant/DOTweenPro/Editor/DOTweenProEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenPro">
+ <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
+ </Reference>
+ <Reference Include="DemiEditor">
+ <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/Demigiant/DemiLib/Core/Editor/DemiEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween46">
+ <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/Demigiant/DOTween/DOTween46.dll</HintPath>
+ </Reference>
+ <Reference Include="CSV">
+ <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/CSV.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity5.6.2f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
@@ -568,8 +611,12 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{3D8BDBF8-28C0-05A3-B2CE-601F8C5543EE}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{BFC58894-E2FF-E32D-196B-52BAFF345CC8}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
+      <Project>{9653B2F2-82A3-99B5-763F-EDAA209FFEB7}</Project>      <Name>Assembly-CSharp-Editor-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

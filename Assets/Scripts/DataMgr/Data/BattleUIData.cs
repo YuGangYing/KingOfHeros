@@ -211,7 +211,7 @@ namespace DataMgr
             MSG_HERO_SET_BATTLE_POS_RESPONSE msg = (MSG_HERO_SET_BATTLE_POS_RESPONSE)ar;
 
             uint error = msg.unErr;
-            Logger.LogError("onBattlePos error:" + error.ToString());
+             Debug.LogError("onBattlePos error:" + error.ToString());
         }
 
         public void onPveReward(ushort id, object ar)

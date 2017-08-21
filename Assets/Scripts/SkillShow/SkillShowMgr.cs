@@ -967,7 +967,7 @@ public class SkillShowMgr : MonoBehaviour
         else
         {
             string strError = string.Format("无效手势技能 : {0}::{1}", this.GetType(), System.Reflection.MethodBase.GetCurrentMethod().Name);
-            Logger.LogError("{0}", strError);
+			Debug.LogError(string.Format("{0}", strError));
             //throw new System.Exception(strError);
         }
 
@@ -993,7 +993,7 @@ public class SkillShowMgr : MonoBehaviour
         else
         {
             string strError = string.Format("无效手势技能 : {0}::{1}", this.GetType(), System.Reflection.MethodBase.GetCurrentMethod().Name);
-            Logger.LogError("{0}", strError);
+			Debug.LogError(string.Format("{0}", strError));
             //throw new System.Exception(strError);
         }
 
@@ -1020,7 +1020,7 @@ public class SkillShowMgr : MonoBehaviour
         else
         {
             string strError = string.Format("无效手势技能 : {0}::{1}", this.GetType(), System.Reflection.MethodBase.GetCurrentMethod().Name);
-            Logger.LogError("{0}", strError);
+			Debug.LogError(string.Format("{0}", strError));
             //throw new System.Exception(strError);
         }
 
@@ -1046,7 +1046,7 @@ public class SkillShowMgr : MonoBehaviour
         else
         {
             string strError = string.Format("无效手势技能 : {0}::{1}", this.GetType(), System.Reflection.MethodBase.GetCurrentMethod().Name);
-            Logger.LogError("{0}", strError);
+			Debug.LogError(string.Format("{0}", strError));
             //throw new System.Exception(strError);
         }
 
@@ -1073,7 +1073,7 @@ public class SkillShowMgr : MonoBehaviour
         else
         {
             string strError = string.Format("无效手势技能 : {0}::{1}", this.GetType(), System.Reflection.MethodBase.GetCurrentMethod().Name);
-            Logger.LogError("{0}", strError);
+			Debug.LogError(string.Format("{0}", strError));
             //throw new System.Exception(strError);
         }
 
