@@ -1328,12 +1328,14 @@
      <None Include="Assets\Plug-in\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
      <None Include="Assets\Plug-in\FX Maker\IGSoft_Tools\Readme\Contact.txt" />
      <None Include="Assets\Data\Scripts\Glow\_internal\Resources\PostShaders\Glow11ComposeMaxFallback.shader" />
+     <None Include="Assets\Plugins\DOTween\DOTween43.xml" />
      <None Include="Assets\Resources\Configs\language\Achievement_cn.txt" />
      <None Include="Assets\Data\Scripts\Glow\_internal\AdvancedBlur.cginc" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\Plug-in\NGUI\Resources\Shaders\Unlit - Dynamic Font (SoftClip).shader" />
      <None Include="Assets\Plug-in\Xffect\SpriteMaker\tutorial.txt" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\AlphaTest-VertexLit.shader" />
+     <None Include="Assets\Plugins\DOTween\DOTween50.xml" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Reflect-Glossy.shader" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Normal-ParallaxSpec.shader" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MobileBlur.shader" />
@@ -1378,6 +1380,7 @@
      <None Include="Assets\Resources\Configs\language\Shop_en.txt" />
      <None Include="Assets\Plug-in\Vectrosity\Extras\Vectrosity changelog.txt" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Alpha-Diffuse.shader" />
+     <None Include="Assets\Plugins\DOTween\readme.txt" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\CameraMotionBlurDX11.shader" />
      <None Include="Assets\Plug-in\FX Maker\IGSoft_Tools\FXMaker\ToolResource\UnityShader\FXMakerGrayscaleEffect.shader" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
@@ -1397,6 +1400,7 @@
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Normal-DiffuseFast.shader" />
      <None Include="Assets\Plug-in\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed).shader" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrainDX11.shader" />
+     <None Include="Assets\Plugins\DOTween\DOTween46.xml" />
      <None Include="Assets\Plug-in\Xffect\Resources\Shaders\Object\xft_volume_fog.shader" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Mobile\Illumin-Spec-VertexIllumin.shader" />
      <None Include="Assets\Plug-in\CameraShake\README.txt" />
@@ -1503,6 +1507,18 @@
  </Reference>
  <Reference Include="zlib.net">
  <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/zlib.net.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween50">
+ <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/DOTween/DOTween50.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween43">
+ <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/DOTween/DOTween43.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween46">
+ <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/DOTween/DOTween46.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
