@@ -1,6 +1,6 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Plugins/DOTween/DOTween.XML">
     <Files>
       <File FileName="Assets/Scripts/DataMgr/Logger/Logger.cs" Line="157" Column="1" />
       <File FileName="Assets/Scripts/DataMgr/Data/HeroData.cs" Line="1" Column="1" />
@@ -14,7 +14,7 @@
       <File FileName="Assets/_SLG/Scripts/Common/FormulaTool.cs" Line="60" Column="30" />
       <File FileName="Assets/_SLG/Scripts/Unit/UnitAttribute.cs" Line="44" Column="40" />
       <File FileName="Assets/_SLG/Scripts/Unit/Unit.cs" Line="10" Column="1" />
-      <File FileName="Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs" Line="6" Column="1" />
+      <File FileName="Assets/Plugins/DOTween/DOTween.XML" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
