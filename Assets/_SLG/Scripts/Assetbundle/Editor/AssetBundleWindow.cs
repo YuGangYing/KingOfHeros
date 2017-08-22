@@ -41,13 +41,13 @@ public class AssetBundleWindow : EditorWindow
 		#if UNITY_IOS
 		fullStreamPath = Application.dataPath + "/StreamingAssets/ios/";
 		fullTmpOutputPath = Application.dataPath + "/Assetbundles/ios/";
-		fullTmpVersionOutputPath = Application.dataPath + "/Assetbundles/ios_version/";
-		fullServerCSVPath = Application.dataPath + "/Assetbundles/ios_version/server.csv";
+		fullTmpVersionOutputPath = Application.dataPath + "/Assetbundles/ios/version/";
+		fullServerCSVPath = Application.dataPath + "/Assetbundles/ios/version/server.csv";
 		#elif UNITY_ANDROID
 		fullStreamPath = Application.dataPath + "/StreamingAssets/android/";
 		fullTmpOutputPath = Application.dataPath + "/Assetbundles/android/";
-		fullTmpVersionOutputPath = Application.dataPath + "/Assetbundles/android_version/";
-		fullServerCSVPath = Application.dataPath + "/Assetbundles/android_version/server.csv";
+		fullTmpVersionOutputPath = Application.dataPath + "/Assetbundles/android/version/";
+		fullServerCSVPath = Application.dataPath + "/Assetbundles/android/version/server.csv";
 		#endif
 		serverCSV = "server_resource.csv";
 	}

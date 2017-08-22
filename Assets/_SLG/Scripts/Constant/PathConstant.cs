@@ -34,39 +34,23 @@ public static class PathConstant
 	public static string SERVER_PATH =
 		#if DEVELOP
 		"http://54.64.2.40/";
-	#elif TEST
+		#elif TEST
 		"http://183.182.46.212/";
-
-		
-
-
-#elif PRODUCT
+		#elif PRODUCT
 		"http://183.182.46.212/";
-
-		
-
-
-#else
-		"http://localhost:3000/";
+		#else
+		"http://localhost/kingofhero/";
 		#endif
 
 	public static string SERVER_DOWNLOAD_PATH =
 		#if DEVELOP
 		"http://54.64.2.40/";
-	#elif TEST
+		#elif TEST
 		"http://183.182.46.212/";
-
-		
-
-
-#elif PRODUCT
+		#elif PRODUCT
 		"http://183.182.46.212/";
-
-		
-
-
-#else
-		"http://localhost:3000/";
+		#else
+		"http://localhost/kingofhero/";
 		#endif
 
 
@@ -142,7 +126,7 @@ public static class PathConstant
 
 	public static string SERVER_ASSETBUNDLES_PATH {
 		get {
-			return Path.Combine (Path.Combine (SERVER_AB_PATH, SystemConstant.GetPlatformName ()), ASSETBUNDLES_PATH);
+			return Path.Combine (SERVER_AB_PATH, SystemConstant.GetPlatformName ());
 		}
 	}
 
@@ -155,6 +139,12 @@ public static class PathConstant
 	public static string SERVER_SOUNDS_PATH {
 		get {
 		return Path.Combine (SERVER_DOWNLOAD_PATH, SOUNDS_PATH);
+		}
+	}
+
+	public static string SERVER_VERSION_CSV {
+		get {
+			return Path.Combine (SERVER_VERSION_PATH, SERVER_CSV);
 		}
 	}
 
