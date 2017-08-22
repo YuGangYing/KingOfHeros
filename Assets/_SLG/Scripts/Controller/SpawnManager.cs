@@ -329,7 +329,9 @@ public class SpawnManager : MonoBehaviour
 		attribute.MainCamera = mainCamera;
 		attribute.NGUICamera = guiCamera;
 		attribute.OverlayPrefab = unitOverlaybar; 
-        attribute.m_StaticData = _character;  
+        attribute.m_StaticData = _character; 
+		//TODO
+		_character.level = Mathf.Max(_character.level,1);
         if (_character.armyType == ARMY_TYPE.HERO)
         {
             attribute.Nature = ((Fight.Hero)_character).Nature;
