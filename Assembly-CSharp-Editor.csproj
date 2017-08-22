@@ -210,6 +210,11 @@
      <Compile Include="Assets\Tool Editor\Script\Editor\herocfg\CfgSoldierMgr.cs" />
      <Compile Include="Assets\Tool Editor\Script\Editor\herocfg\CfgSoldierMgrUI.cs" />
      <Compile Include="Assets\Tool Editor\Script\Editor\herocfg\CfgSoldierUI.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Assetbundle\Editor\ABSetting.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Assetbundle\Editor\AssetBundlePacker.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Assetbundle\Editor\AssetBundleWindow.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Assetbundle\Editor\CopyCSV.cs" />
+     <Compile Include="Assets\_SLG\Scripts\CSV\Editor\CreateClassFromCSV.cs" />
      <Compile Include="Assets\_SLG\Scripts\Editor\HierarchyIcon.cs" />
      <None Include="Assets\Data\Shader\OverlayBlendAlpha.shader" />
      <None Include="Assets\Resources\Configs\language\Chinese.txt" />
@@ -545,6 +550,9 @@
  </Reference>
  <Reference Include="PlayMakerEditor.zh-CN.resources">
  <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plug-in/PlayMaker/PlayMaker/Editor/zh-CN/PlayMakerEditor.zh-CN.resources.dll</HintPath>
+ </Reference>
+ <Reference Include="CSV">
+ <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/CSV.dll</HintPath>
  </Reference>
  <Reference Include="zlib.net">
  <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/zlib.net.dll</HintPath>

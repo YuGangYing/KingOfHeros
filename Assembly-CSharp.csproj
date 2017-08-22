@@ -1136,12 +1136,29 @@
      <Compile Include="Assets\Scripts\UI\battle\UIBattlePanel.cs" />
      <Compile Include="Assets\Scripts\UI\battle\UIBattleResult.cs" />
      <Compile Include="Assets\Scripts\UI\battle\UIbattleInit.cs" />
-     <Compile Include="Assets\Scripts\Util.cs" />
      <Compile Include="Assets\Tool Editor\Script\AnimatonTypeEditor.cs" />
      <Compile Include="Assets\Tool Editor\Script\SkillEffectTest.cs" />
      <Compile Include="Assets\Tool Editor\Script\SkillFire.cs" />
      <Compile Include="Assets\Tool Editor\Script\ToolDrawGizmos.cs" />
      <Compile Include="Assets\Tool Editor\Script\ToolUtil.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Assetbundle\AssetbundleManager.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Assetbundle\TestAB.cs" />
+     <Compile Include="Assets\_SLG\Scripts\CSV\CSVFileReader.cs" />
+     <Compile Include="Assets\_SLG\Scripts\CSV\CSVManager.cs" />
+     <Compile Include="Assets\_SLG\Scripts\CSV\CSVParser.cs" />
+     <Compile Include="Assets\_SLG\Scripts\CSV\CSVReader.cs" />
+     <Compile Include="Assets\_SLG\Scripts\CSV\VersionCSV.cs" />
+     <Compile Include="Assets\_SLG\Scripts\CSV\structure\BaseCSVStructure.cs" />
+     <Compile Include="Assets\_SLG\Scripts\CSV\structure\GeneralCSVStructure.cs" />
+     <Compile Include="Assets\_SLG\Scripts\CSV\structure\MCharacterCSVStructure.cs" />
+     <Compile Include="Assets\_SLG\Scripts\CSV\structure\MCharacterMotionCSVStructure.cs" />
+     <Compile Include="Assets\_SLG\Scripts\CSV\structure\MGiftItemCSVStructure.cs" />
+     <Compile Include="Assets\_SLG\Scripts\CSV\structure\MPRCSVStructure.cs" />
+     <Compile Include="Assets\_SLG\Scripts\CSV\structure\MProductCSVStructure.cs" />
+     <Compile Include="Assets\_SLG\Scripts\CSV\structure\MVoiceCSVStructure.cs" />
+     <Compile Include="Assets\_SLG\Scripts\CSV\structure\MVoiceCollageFrameCSVStructure.cs" />
+     <Compile Include="Assets\_SLG\Scripts\CSV\structure\MVoicePlayConditionCSVStructure.cs" />
+     <Compile Include="Assets\_SLG\Scripts\CSV\structure\VersionCSVStructure.cs" />
      <Compile Include="Assets\_SLG\Scripts\Character\CavalryAI.cs" />
      <Compile Include="Assets\_SLG\Scripts\Character\Character.cs" />
      <Compile Include="Assets\_SLG\Scripts\Character\DestroyForTime.cs" />
@@ -1161,6 +1178,8 @@
      <Compile Include="Assets\_SLG\Scripts\Common\MoveTool.cs" />
      <Compile Include="Assets\_SLG\Scripts\Common\SingleMonoBehivour.cs" />
      <Compile Include="Assets\_SLG\Scripts\Common\SpawnMgrTool.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Constant\PathConstant.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Constant\SystemConstant.cs" />
      <Compile Include="Assets\_SLG\Scripts\Controller\AudioManager.cs" />
      <Compile Include="Assets\_SLG\Scripts\Controller\BattleCameraOperator.cs" />
      <Compile Include="Assets\_SLG\Scripts\Controller\BattleController.cs" />
@@ -1172,6 +1191,7 @@
      <Compile Include="Assets\_SLG\Scripts\Debug\PopList.cs" />
      <Compile Include="Assets\_SLG\Scripts\Debug\SceneDebuger.cs" />
      <Compile Include="Assets\_SLG\Scripts\Debug\TestUI.cs" />
+     <Compile Include="Assets\_SLG\Scripts\FileManager\FileManager.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_01\INetWork.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_01\NetClient.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_01\NetReader.cs" />
@@ -1186,6 +1206,7 @@
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\Models\UpdateModel.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\UnityCookies.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\WWWNetworkManager.cs" />
+     <Compile Include="Assets\_SLG\Scripts\ResourcesManager\ResourcesManager.cs" />
      <Compile Include="Assets\_SLG\Scripts\Unit\DirctShoot.cs" />
      <Compile Include="Assets\_SLG\Scripts\Unit\ShootObject.cs" />
      <Compile Include="Assets\_SLG\Scripts\Unit\SimplePathMove.cs" />
@@ -1214,7 +1235,9 @@
      <Compile Include="Assets\_SLG\Scripts\Utility\SimpleCameraController.cs" />
      <Compile Include="Assets\_SLG\Scripts\Utility\SkillTester.cs" />
      <Compile Include="Assets\_SLG\Scripts\Utility\SpawnUtility.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Utility\StringExtension.cs" />
      <Compile Include="Assets\_SLG\Scripts\Utility\TestBuilding.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Utility\Util.cs" />
      <None Include="Assets\Data\Shader\OverlayBlendAlpha.shader" />
      <None Include="Assets\Resources\Configs\language\Chinese.txt" />
      <None Include="Assets\Plug-in\NGUI\Resources\Shaders\Unlit - Depth Cutout.shader" />
@@ -1504,6 +1527,9 @@
  </Reference>
  <Reference Include="PlayMaker">
  <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plug-in/PlayMaker/PlayMaker/PlayMaker.dll</HintPath>
+ </Reference>
+ <Reference Include="CSV">
+ <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/CSV.dll</HintPath>
  </Reference>
  <Reference Include="zlib.net">
  <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/zlib.net.dll</HintPath>
