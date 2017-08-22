@@ -1,14 +1,22 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Constant/PathConstant.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_SLG/Scripts/Common/Common.cs">
     <Files>
-      <File FileName="Assets/Scripts/AssetBundle/Editor/AssetBundleWindow.cs" Line="27" Column="30" />
-      <File FileName="Assets/_SLG/Scripts/Network/Network_02/WWWNetwork/Models/GameModel.cs" Line="1" Column="1" />
-      <File FileName="Assets/_SLG/Scripts/Network/Network_02/WWWNetwork/Models/UpdateModel.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/CSV/CSVManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/AssetBundle/Editor/ABSetting.cs" Line="25" Column="44" />
-      <File FileName="Assets/Scripts/ResourceManager/ResourceManager.cs" Line="92" Column="58" />
-      <File FileName="Assets/Scripts/Constant/PathConstant.cs" Line="42" Column="14" />
+      <File FileName="Assets/Scripts/DataMgr/Data/HeroData.cs" Line="92" Column="14" />
+      <File FileName="Assets/Scripts/DataMgr/Language/LanguageModule.cs" Line="38" Column="75" />
+      <File FileName="Assets/Scripts/DataMgr/Language/iniReader.cs" Line="40" Column="20" />
+      <File FileName="Assets/Scripts/DataMgr/ResourceCenter.cs" Line="17" Column="4" />
+      <File FileName="Assets/Scripts/Packet/MsgUtil.cs" Line="68" Column="107" />
+      <File FileName="Assets/Scripts/SkillShow/SkillShowMgr.cs" Line="1076" Column="49" />
+      <File FileName="Assets/_SLG/Scripts/Character/MonoSwitchImp.cs" Line="36" Column="63" />
+      <File FileName="Assets/Scripts/Build/PutBuild.cs" Line="65" Column="17" />
+      <File FileName="Assets/_SLG/Scripts/Common/Common.cs" Line="3" Column="1" />
+      <File FileName="Assets/_SLG/Scripts/Controller/SpawnManager.cs" Line="771" Column="49" />
+      <File FileName="Assets/_SLG/Scripts/Common/SingleMonoBehivour.cs" Line="13" Column="1" />
+      <File FileName="Assets/Resources/Configs/dict_hero.csv" Line="32" Column="1" />
+      <File FileName="Assets/_SLG/Scripts/Unit/Unit.cs" Line="76" Column="11" />
+      <File FileName="Assets/_SLG/Scripts/Unit/UnitSkill.cs" Line="699" Column="9" />
+      <File FileName="Assets/_SLG/Scripts/Common/FormulaTool.cs" Line="70" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

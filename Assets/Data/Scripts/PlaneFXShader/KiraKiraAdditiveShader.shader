@@ -1,5 +1,3 @@
-// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
 Shader "Custom/KiraKiraAdditiveShader" {
 	Properties {
 		_TintColor ("Tint Color", Color) = (0.5,0.5,0.5,0.5)
@@ -39,7 +37,7 @@ Shader "Custom/KiraKiraAdditiveShader" {
 			v2f vert (appdata_t v)
 			{
 				v2f o;
-				o.vertex = UnityObjectToClipPos(v.vertex);
+				o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
 				o.texcoord = v.texcoord.xy * _MainTex_ST.xy + _MainTex_ST.zw;//TRANSFORM_TEX(v.texcoord,_MainTex);
 				return o;
 			}

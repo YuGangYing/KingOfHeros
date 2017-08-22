@@ -1,5 +1,3 @@
-// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
     #include "UnityCG.cginc"
 
     struct v2f {
@@ -23,7 +21,7 @@
     v2f vert( appdata_glow v )
     {
         v2f o;
-        o.pos = UnityObjectToClipPos(v.vertex);
+        o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
         o.texcoord = v.texcoord.xy;
         return o;
     }

@@ -344,29 +344,29 @@
  <Reference Include="PlayMaker">
  <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plug-in/PlayMaker/PlayMaker/PlayMaker.dll</HintPath>
  </Reference>
+ <Reference Include="CSV">
+ <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/CSV.dll</HintPath>
+ </Reference>
  <Reference Include="zlib.net">
  <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/zlib.net.dll</HintPath>
  </Reference>
  <Reference Include="DemiLib">
  <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/Demigiant/DemiLib/Core/DemiLib.dll</HintPath>
  </Reference>
- <Reference Include="DOTween43">
- <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/Demigiant/DOTween/DOTween43.dll</HintPath>
- </Reference>
- <Reference Include="DOTween50">
- <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/Demigiant/DOTween/DOTween50.dll</HintPath>
- </Reference>
  <Reference Include="DOTween">
  <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
  </Reference>
- <Reference Include="DOTweenPro">
- <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
+ <Reference Include="DOTween43">
+ <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/Demigiant/DOTween/DOTween43.dll</HintPath>
  </Reference>
  <Reference Include="DOTween46">
  <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/Demigiant/DOTween/DOTween46.dll</HintPath>
  </Reference>
- <Reference Include="CSV">
- <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/CSV.dll</HintPath>
+ <Reference Include="DOTween50">
+ <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/Demigiant/DOTween/DOTween50.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenPro">
+ <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

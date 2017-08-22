@@ -1,6 +1,4 @@
-﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-//(yingyugang@gmail.com)
+﻿//(yingyugang@gmail.com)
 Shader "Custom/SimpleTextureTrans" {
 	Properties {
 		_MainTex ("Base Texture ", 2D) = "white" {} 
@@ -36,7 +34,7 @@ Shader "Custom/SimpleTextureTrans" {
 		v2f vert(appdata_t v)
 		{
 			v2f o;
-	        o.vertex = UnityObjectToClipPos(v.vertex);
+	        o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
 	        o.texcoord = v.texcoord;
 	        return o;
 		}

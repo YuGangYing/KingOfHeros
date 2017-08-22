@@ -1,5 +1,3 @@
-// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
 Shader "Hidden/PP/Xffect/glow_per_obj/replacement" {
 	Properties {
 		_MainTex ("Base (RGB)", 2D) = "white" {}
@@ -51,7 +49,7 @@ Shader "Hidden/PP/Xffect/glow_per_obj/replacement" {
 			v2f vert (appdata_t v)
 			{
 				v2f o;
-				o.pos = UnityObjectToClipPos(v.vertex);
+				o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
 				UNITY_TRANSFER_DEPTH(o.depth);
 				o.color = v.color;
 				o.texcoord = TRANSFORM_TEX(v.texcoord,_MainTex);

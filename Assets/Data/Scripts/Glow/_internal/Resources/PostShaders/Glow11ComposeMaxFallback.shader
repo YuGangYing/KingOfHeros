@@ -1,5 +1,3 @@
-// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
 // ----------------------------------------------------------------------------
 // Glow 11
 // Copyright © 2013 Sven Herrmann
@@ -26,7 +24,7 @@ Properties {
         v2f vert( appdata_img v )
         {
             v2f o;
-            o.pos = UnityObjectToClipPos(v.vertex);
+            o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
             o.uv = v.texcoord.xy;
             return o;
         }

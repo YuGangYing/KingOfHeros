@@ -38,8 +38,8 @@ public class ETPlayer : MonoBehaviour {
 	}
 	
 	void Start(){
-		model = transform.Find("Model").transform;	
-		gun = transform.Find("Gun").transform;	
+		model = transform.FindChild("Model").transform;	
+		gun = transform.FindChild("Gun").transform;	
 	}
 	
 	void On_JoystickMove( MovingJoystick move){

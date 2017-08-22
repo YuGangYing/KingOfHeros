@@ -1,5 +1,3 @@
-// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
 Shader "Hidden/GlowConeTap" {
 
 Properties {
@@ -33,7 +31,7 @@ Category {
 					float offX = _MainTex_TexelSize.x * _BlurOffsets.x;
 					float offY = _MainTex_TexelSize.y * _BlurOffsets.y;
 
-					o.pos = UnityObjectToClipPos (v.vertex);
+					o.pos = mul (UNITY_MATRIX_MVP, v.vertex);
 					float2 uv = MultiplyUV (UNITY_MATRIX_TEXTURE0, v.texcoord.xy-float2(offX, offY));
 				
 					o.uv[0].xy = uv + float2( offX, offY);

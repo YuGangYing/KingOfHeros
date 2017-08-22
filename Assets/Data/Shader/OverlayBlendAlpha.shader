@@ -1,6 +1,4 @@
-﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-//应彧刚(yingyugang@gmail.com)
+﻿//应彧刚(yingyugang@gmail.com)
 Shader "Custom/OverlayBlendAlpha" 
 {
     Properties {
@@ -41,7 +39,7 @@ Shader "Custom/OverlayBlendAlpha"
             v2f vert (appdata_t v)
             {
                 v2f o;
-                o.vertex = UnityObjectToClipPos(v.vertex);
+                o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
                 o.color = v.color;
                // o.texcoord = TRANSFORM_TEX(v.texcoord,_HighLightTex);
                 o.texcoord = v.texcoord;

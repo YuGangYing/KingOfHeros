@@ -1,5 +1,3 @@
-// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
 // ----------------------------------------------------------------------------
 // Glow 11
 // Copyright © 2013 Sven Herrmann
@@ -68,7 +66,7 @@ fixed4 _Color;
 v2f vert( appdata_color v )
 {
     v2f o;
-    o.pos = UnityObjectToClipPos(v.vertex);
+    o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
     
     #if GLOW11_GLOW_MAINTEX || ALPHA
         o.uv = TRANSFORM_TEX(v.texcoord, _MainTex).xy;
