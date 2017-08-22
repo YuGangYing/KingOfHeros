@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using Fight;
 using DataMgr;
-using KOH;
 
  
 #pragma warning disable 0168
@@ -364,8 +363,8 @@ public class SpawnManager : MonoBehaviour
 		}
 		UnitSkill skill = Common.AddObjComponent<UnitSkill>(_obj);
 		skill.HeroSkills = new List<DataMgr.Skill>();
-//		GameObject tmp_heroobj = Common.CreateGameObject(_character.strResName);
-		GameObject tmp_heroobj = ResourceManager.GetInstance.LoadHero (_character.strResName);
+		GameObject tmp_heroobj = Common.CreateGameObject(_character.strResName);
+//		GameObject tmp_heroobj = ResourceManager.GetInstance.LoadHero (_character.strResName);
 		tmp_heroobj = Instantiate (tmp_heroobj) as GameObject;
 		tmp_heroobj.SetActive(false);
 		skill.GlobalSkillHero = tmp_heroobj;
@@ -700,9 +699,9 @@ public class SpawnManager : MonoBehaviour
                     {
                         _matrixlist[i].m_Hero.strResName += "_Blue";
                     }
-					GameObject tmp_heroobj = ResourceManager.GetInstance.LoadHero (_matrixlist [i].m_Hero.strResName);
-					tmp_heroobj = Instantiate (tmp_heroobj) as GameObject;
-//                    GameObject tmp_heroobj = Common.CreateGameObject(_matrixlist[i].m_Hero.strResName);
+//					GameObject tmp_heroobj = ResourceManager.GetInstance.LoadHero (_matrixlist [i].m_Hero.strResName);
+//					tmp_heroobj = Instantiate (tmp_heroobj) as GameObject;
+                    GameObject tmp_heroobj = Common.CreateGameObject(_matrixlist[i].m_Hero.strResName);
                     tmp_heroobj.SetActive(false);
                     Common.AddChildObj(tmp_heroobj, matrix, (new Vector3(0, 0, (_rownum - 1) / 2.0f + 1)) * RowPadding);
                     //Set Tag 
@@ -768,8 +767,8 @@ public class SpawnManager : MonoBehaviour
                             }
 
                             //Instantiate Soldier GameObject
-//                            GameObject tmp_soldier = Common.CreateGameObject(tmp_soldierlist[index].strResName);
-							GameObject tmp_soldier = ResourceManager.GetInstance.LoadSolider(tmp_soldierlist[index].strResName);//.CreateGameObject(tmp_soldierlist[index].strResName);
+                            GameObject tmp_soldier = Common.CreateGameObject(tmp_soldierlist[index].strResName);
+//							GameObject tmp_soldier = ResourceManager.GetInstance.LoadSolider(tmp_soldierlist[index].strResName);//.CreateGameObject(tmp_soldierlist[index].strResName);
 							tmp_soldier = Instantiate(tmp_soldier) as GameObject;
                             tmp_soldier.SetActive(false);
                             Common.AddChildObj(tmp_soldier, Row, (new Vector3(m - (_colnum - 1) / 2.0f, 0, 0)) * ColumnPadding);
