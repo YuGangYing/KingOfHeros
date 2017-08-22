@@ -27,6 +27,10 @@ public static class PathConstant
 	private const string VERSION_PATH = "Version/";
 	private const string ID_PATH = "ID/";
 
+	public const string AB_VARIANT = "assetbundle";
+	public const string HERO_AB_PATH = "/Prefabs/Heros/";
+	public const string HERO_AB_FRONT = "hero_";
+
 	public static string SERVER_PATH =
 		#if DEVELOP
 		"http://54.64.2.40/";
