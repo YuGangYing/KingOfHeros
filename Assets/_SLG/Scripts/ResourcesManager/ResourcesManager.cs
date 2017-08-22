@@ -45,6 +45,31 @@ namespace KOH
 			return AssetbundleManager.GetInstance.GetAssetFromLocal<GameObject> (abName,heroName);
 		}
 
+		public GameObject GetSoliderObject(string resPath){
+			GameObject prefab = GetSoliderPrefab (resPath);
+			#if UNITY_EDITOR
+			Renderer[] rrs = prefab.GetComponentsInChildren<Renderer>(true);
+			for(int i=0;i<rrs.Length;i++){
+				Renderer rr = rrs[i];
+				rr.sharedMaterial.shader = Shader.Find(rr.sharedMaterial.shader.name);
+			}
+			#endif
+			GameObject go = Instantiate (prefab) as GameObject;
+			return go;
+		}
+
+		public GameObject GetSoliderPrefab(string resPath){
+			string subPath = resPath.Substring (0,resPath.LastIndexOf('/'));
+			string prefabName = resPath.Substring (resPath.LastIndexOf('/') + 1);
+			string abName = subPath.Substring (subPath.LastIndexOf('/') + 1);
+			abName = PathConstant.SOLDIER_AB_FRONT + abName;
+			return GetHeroPrefab (abName,prefabName);
+		}
+
+		GameObject GetSoliderPrefab(string abName,string prefabName){
+			return AssetbundleManager.GetInstance.GetAssetFromLocal<GameObject> (abName,prefabName);
+		}
+
 		#endregion
 
 		#region Audios

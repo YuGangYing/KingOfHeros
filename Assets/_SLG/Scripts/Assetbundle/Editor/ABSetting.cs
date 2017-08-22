@@ -11,7 +11,9 @@ public class ABSetting : EditorWindow
 	[MenuItem ("Tools/AB Name Setting")] 
 	static void InitAnimation ()
 	{
-		SetABHeroNames ();
+		SetABNames (PathConstant.HERO_AB_PATH,PathConstant.HERO_AB_FRONT);
+		SetABNames (PathConstant.SOLDIER_AB_PATH,PathConstant.SOLDIER_AB_FRONT);
+		SetABNames (PathConstant.BUILDING_AB_PATH,PathConstant.BUILDING_AB_FRONT);
 		Debug.Log ("Animation AB Reset Done!");
 	}
 
@@ -24,10 +26,6 @@ public class ABSetting : EditorWindow
 			AssetImporter assetImporter = AssetImporter.GetAtPath (subDir);
 			assetImporter.SetAssetBundleNameAndVariant (string.Format("{0}{1}",front,dirName),PathConstant.AB_VARIANT);
 		}
-	}
-
-	static void SetABHeroNames(){
-		SetABNames (PathConstant.HERO_AB_PATH,PathConstant.HERO_AB_FRONT);
 	}
 
 }

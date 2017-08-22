@@ -30,6 +30,10 @@ public static class PathConstant
 	public const string AB_VARIANT = "assetbundle";
 	public const string HERO_AB_PATH = "/Prefabs/Heros/";
 	public const string HERO_AB_FRONT = "hero_";
+	public const string SOLDIER_AB_PATH = "/Prefabs/Soldiers/";
+	public const string SOLDIER_AB_FRONT = "soldier_";
+	public const string BUILDING_AB_PATH = "/Prefabs/Buildings/";
+	public const string BUILDING_AB_FRONT = "building_";
 
 	public static string SERVER_PATH =
 		#if DEVELOP
@@ -39,7 +43,7 @@ public static class PathConstant
 		#elif PRODUCT
 		"http://183.182.46.212/";
 		#else
-		"http://192.168.102.158/kingofhero/";
+		"http://127.0.0.1/kingofhero/";
 		#endif
 
 	public static string SERVER_DOWNLOAD_PATH =
@@ -50,7 +54,7 @@ public static class PathConstant
 		#elif PRODUCT
 		"http://183.182.46.212/";
 		#else
-		"http://192.168.102.158/kingofhero/";
+		"http://127.0.0.1/kingofhero/";
 		#endif
 
 
