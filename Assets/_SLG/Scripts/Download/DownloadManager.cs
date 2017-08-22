@@ -54,6 +54,7 @@ public class DownloadManager : SingleMonoBehaviour<DownloadManager> {
 		while(true){
 			if(mVersions.Count==0 && mDownloadingCount == 0){
 				Debug.Log ("Download Done!".AliceblueColor());
+				Application.LoadLevelAsync (2);
 				yield break;
 			}
 			if (mDownloadingCount < maxDownloadCount && mVersions.Count>0) {

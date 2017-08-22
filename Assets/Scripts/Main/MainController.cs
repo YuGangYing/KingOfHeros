@@ -15,8 +15,8 @@ public class MainController : SingletonMonoBehaviourNoCreate<MainController>
     GlobalEventSet _eventCenter;
 
     public static int SCENE_LOGIN = 0;
-    public static int SCENE_MAINCITY = 1;
-    public static int SCENE_BATTLE = 2;
+    public static int SCENE_MAINCITY = 2;
+    public static int SCENE_BATTLE = 3;
 
     int _curScene = SCENE_LOGIN;
     AsyncOperation _async = null;

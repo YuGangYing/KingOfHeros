@@ -38,9 +38,9 @@ namespace WWWNetwork
 		{
 			WWW www;
 			if(cookies==null)
-				www = new WWW (APIConstant.SERVER_ROOT + apiPath, data,new Dictionary<string,string>{ { "DeviceID",SystemInfo.deviceUniqueIdentifier} });
+				www = new WWW (PathConstant.SERVER_PATH + apiPath, data,new Dictionary<string,string>{ { "DeviceID",SystemInfo.deviceUniqueIdentifier} });
 			else
-				 www = new WWW (APIConstant.SERVER_ROOT + apiPath, data, UnityCookies.GetCookieRequestHeader(cookies));
+				www = new WWW (PathConstant.SERVER_PATH + apiPath, data, UnityCookies.GetCookieRequestHeader(cookies));
 			StartCoroutine (WaitWWW (www, complete));
 		}
 	}

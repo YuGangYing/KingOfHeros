@@ -15,14 +15,9 @@ namespace KOH
 			mCachedAssetbundles = new Dictionary<string, AssetBundle> ();
 		}
 
-		void Update(){
-			if(Input.GetKeyDown(KeyCode.H)){
-				GetAssetbundleFromLocal ("hero_attila");
-			}
-		}
-
 		public AssetBundle GetAssetbundleFromLocal (string abName)
 		{
+			abName = abName.ToLower ();
 			if(mCachedAssetbundles.ContainsKey(abName))
 				return mCachedAssetbundles[abName];
 			AssetBundle ab = AssetBundle.LoadFromFile (PathConstant.CLIENT_ASSETBUNDLES_PATH + "/" + abName + "." + PathConstant.AB_VARIANT);

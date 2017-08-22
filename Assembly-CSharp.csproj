@@ -1191,6 +1191,7 @@
      <Compile Include="Assets\_SLG\Scripts\Debug\PopList.cs" />
      <Compile Include="Assets\_SLG\Scripts\Debug\SceneDebuger.cs" />
      <Compile Include="Assets\_SLG\Scripts\Debug\TestUI.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Download\Download.cs" />
      <Compile Include="Assets\_SLG\Scripts\Download\DownloadManager.cs" />
      <Compile Include="Assets\_SLG\Scripts\Download\Downloader.cs" />
      <Compile Include="Assets\_SLG\Scripts\FileManager\FileManager.cs" />

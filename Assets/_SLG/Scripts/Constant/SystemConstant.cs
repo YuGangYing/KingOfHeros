@@ -220,13 +220,13 @@ public class SystemConstant
 	{
 		switch (platform) {
 		case RuntimePlatform.Android:
-			return "Android";
+		return "android";
 
 		case RuntimePlatform.IPhonePlayer:
-			return "iOS";
+		return "ios";
 
 		case RuntimePlatform.WebGLPlayer:
-			return "WebGL";
+		return "webgl";
 
 		default:
 			return null;

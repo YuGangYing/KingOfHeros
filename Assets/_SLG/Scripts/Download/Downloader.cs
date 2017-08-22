@@ -17,8 +17,8 @@ public class Downloader : MonoBehaviour {
 		yield return www;
 		if (www.isDone && string.IsNullOrEmpty (www.error))
 		{
-			var assetBundle = www.assetBundle;
 			FileManager.WriteAllBytes (PathConstant.CLIENT_ASSETBUNDLES_PATH + "/" + assetBundleName,www.bytes);
+			Debug.Log (PathConstant.CLIENT_ASSETBUNDLES_PATH + "/" + assetBundleName);
 		}
 		else
 		{

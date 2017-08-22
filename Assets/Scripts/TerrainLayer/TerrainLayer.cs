@@ -149,7 +149,7 @@ public class TerrainLayer : SingletonMonoBehaviour<TerrainLayer>
         return CanBuild(collider, grid);
     }
 
-    // 是否有阻挡
+    // 是否有璧碧
     public static bool CanBuild(Collider collider, SolidityGrid grid)
     {
         if (collider == null)
@@ -307,7 +307,7 @@ public class TerrainLayer : SingletonMonoBehaviour<TerrainLayer>
         m_gridData = null;
         foreach (GridData data in m_gridList)
             m_buildTypeList[data.buildType] = data.ToGrid();
-
+		
         DontDestroyOnLoad(gameObject);
     }
 

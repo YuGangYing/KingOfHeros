@@ -6,7 +6,7 @@ namespace WWWNetwork
 {
 	public static class APIConstant
 	{
-		public const string SERVER_ROOT = "http://127.0.0.1/kingofhero/";
+		public const string SERVER_ROOT = "http://192.168.102.158/kingofhero/";
 		public const string SYSTEM_INFO = "index.php";
 		public const string SIGNIN = "signin.php";
 		public const string SIGNUP = "signup.php";
