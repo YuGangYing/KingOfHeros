@@ -202,13 +202,13 @@ public class SystemConstant
 	{
 		switch (target) {
 		case BuildTarget.Android:
-			return "Android";
+			return "android";
 
 		case BuildTarget.iOS:
-			return "iOS";
+			return "ios";
 
 		case BuildTarget.WebGL:
-			return "WebGL";
+			return "webgl";
 
 		default:
 			return null;

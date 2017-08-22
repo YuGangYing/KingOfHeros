@@ -42,12 +42,12 @@ public class AssetBundleWindow : EditorWindow
 		fullStreamPath = Application.dataPath + "/StreamingAssets/ios/";
 		fullTmpOutputPath = Application.dataPath + "/Assetbundles/ios/";
 		fullTmpVersionOutputPath = Application.dataPath + "/Assetbundles/ios_version/";
-		fullServerCSVPath = Application.dataPath + "/Assetbundles/ios_version/server_resource.csv";
+		fullServerCSVPath = Application.dataPath + "/Assetbundles/ios_version/server.csv";
 		#elif UNITY_ANDROID
 		fullStreamPath = Application.dataPath + "/StreamingAssets/android/";
 		fullTmpOutputPath = Application.dataPath + "/Assetbundles/android/";
 		fullTmpVersionOutputPath = Application.dataPath + "/Assetbundles/android_version/";
-		fullServerCSVPath = Application.dataPath + "/Assetbundles/android_version/server_resource.csv";
+		fullServerCSVPath = Application.dataPath + "/Assetbundles/android_version/server.csv";
 		#endif
 		serverCSV = "server_resource.csv";
 	}
@@ -197,8 +197,6 @@ public class AssetBundleWindow : EditorWindow
 	{
 		totalSize = 0;
 		for (int i = 0; i < allAssetBundleEntitys.Count; i++) {
-
-
 			allAssetBundleEntitys [i].abHash = FileManager.GetFileHash (fullTmpOutputPath + allAssetBundleEntitys [i].abName);
 			if (allAssetBundleEntitys [i].abHash != null && allAssetBundleEntitys [i].abHash.Trim () != "") {
 				allAssetBundleEntitys [i].realLength = new FileInfo (fullTmpOutputPath + allAssetBundleEntitys [i].abName).Length;
@@ -219,49 +217,47 @@ public class AssetBundleWindow : EditorWindow
 		Selection.objects = objs.ToArray ();
 	}
 
+	int  mBuildMode = 0;
 	void BuildABs ()
 	{
 		AssetDatabase.RemoveUnusedAssetBundleNames ();
 		string[] paths1 = Directory.GetFiles (fullTmpOutputPath);
 		for (int i = 0; i < paths1.Length; i++) {
-//			FileManager.DeleteFile (paths1 [i]);
+			FileManager.DeleteFile (paths1 [i]);
 		}
-		List<AssetBundleBuild> abList = new List<AssetBundleBuild> ();
-		foreach (ABBuildEntity entity in allAssetBundleEntitys) {
-			if (entity.isSelected) {
-				AssetBundleBuild abb = new AssetBundleBuild ();
-				abb.assetBundleName = entity.abName.Split ('.') [0];// entity.abName;
-				abb.assetBundleVariant = entity.abName.Split ('.') [1];// entity.abName;
-				abb.assetNames = AssetDatabase.GetAssetPathsFromAssetBundle (entity.abName);//AssetDatabase.GetAssetBundleDependencies (abb.assetBundleName,false);
-//				Debug.Log (abb.assetNames.Length);
-//				foreach(string str in abb.assetNames){
-//					Debug.Log (str);
-//				}
-				abList.Add (abb);
+
+		if (mBuildMode == 0) {
+			#if UNITY_IOS
+			BuildPipeline.BuildAssetBundles (fullTmpOutputPath, BuildAssetBundleOptions.None, BuildTarget.iOS);
+			#elif UNITY_ANDROID
+			BuildPipeline.BuildAssetBundles (fullTmpOutputPath, BuildAssetBundleOptions.None, BuildTarget.Android);
+			#else
+			BuildPipeline.BuildAssetBundles (fullTmpOutputPath,BuildAssetBundleOptions.None);
+			#endif
+		} else {
+			List<AssetBundleBuild> abList = new List<AssetBundleBuild> ();
+			foreach (ABBuildEntity entity in allAssetBundleEntitys) {
+				if (entity.isSelected) {
+					AssetBundleBuild abb = new AssetBundleBuild ();
+					abb.assetBundleName = entity.abName.Split ('.') [0];// entity.abName;
+					abb.assetBundleVariant = entity.abName.Split ('.') [1];// entity.abName;
+					abb.assetNames = AssetDatabase.GetAssetPathsFromAssetBundle (entity.abName);
+					abList.Add (abb);
+				}
 			}
+			#if UNITY_IOS
+			if (abList.Count > 0) {
+				BuildPipeline.BuildAssetBundles (fullTmpOutputPath, abList.ToArray (), BuildAssetBundleOptions.None, BuildTarget.iOS);
+			}
+			#elif UNITY_ANDROID
+			if(abList.Count>0){
+				BuildPipeline.BuildAssetBundles (fullTmpOutputPath,abList.ToArray(),BuildAssetBundleOptions.None, BuildTarget.Android);
+			}
+			#else
+			BuildPipeline.BuildAssetBundles (fullTmpOutputPath,abList.ToArray(),BuildAssetBundleOptions.None);
+			#endif
 		}
-//		InitBuild ();
-//		Debug.Log(abList.Count);
-//		if (!FileManager.DirectoryExists (fullTmpOutputPath)) {
-//			System.IO.Directory.CreateDirectory (fullTmpOutputPath);
-//		}
-		#if UNITY_IOS
-		if (abList.Count > 0) {
-			BuildPipeline.BuildAssetBundles (fullTmpOutputPath, abList.ToArray (), BuildAssetBundleOptions.None, BuildTarget.iOS);
-		}
-//		else{
-//			BuildPipeline.BuildAssetBundles (fullTmpOutputPath, BuildAssetBundleOptions.None, BuildTarget.iOS);
-//		}
-		#elif UNITY_ANDROID
-		if(abList.Count>0){
-		BuildPipeline.BuildAssetBundles (fullTmpOutputPath,abList.ToArray(),BuildAssetBundleOptions.None, BuildTarget.Android);
-		}
-//		else{
-//		BuildPipeline.BuildAssetBundles (fullTmpOutputPath, BuildAssetBundleOptions.None, BuildTarget.Android);
-//		}
-		#else
-		BuildPipeline.BuildAssetBundles (fullTmpOutputPath,BuildAssetBundleOptions.None);
-		#endif
+
 
 
 

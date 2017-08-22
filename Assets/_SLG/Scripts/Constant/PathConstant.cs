@@ -17,14 +17,14 @@ public static class PathConstant
 	public const string CSV_PATH = "CSV/";
 
 	public const string ASSETBUNDLES = "AssetBundles";
-	private const string AB_PATH = "AB/";
+	private const string AB_PATH = "Assetbundles/";
 	private const string ASSETBUNDLES_PATH = "AssetBundles/";
 	private const string IMAGE_PATH = "DownloadImages/";
 	public const string INFORMATION_IMAGE_PATH = "Information/";
 	private const string SOUNDS_PATH = "DownloadSounds/";
 
 	private const string RESOURCES_PATH = "Resources/";
-	private const string VERSION_PATH = "Version/";
+	private const string VERSION_PATH = "version/";
 	private const string ID_PATH = "ID/";
 
 	public const string AB_VARIANT = "assetbundle";
@@ -106,7 +106,7 @@ public static class PathConstant
 
 	public static string CLIENT_ASSETBUNDLES_PATH {
 		get {
-			return Path.Combine (Path.Combine (CLIENT_AB_PATH, SystemConstant.GetPlatformName ()), ASSETBUNDLES_PATH);
+			return Path.Combine (CLIENT_PATH,Path.Combine ( AB_PATH, SystemConstant.GetPlatformName ()));
 		}
 	}
 
@@ -124,7 +124,7 @@ public static class PathConstant
 
 	public static string CLIENT_VERSION_PATH {
 		get {
-			return Path.Combine (Path.Combine (CLIENT_AB_PATH, SystemConstant.GetPlatformName ()), VERSION_PATH);
+			return Path.Combine (CLIENT_PATH, Path.Combine (VERSION_PATH, SystemConstant.GetPlatformName ()));
 		}
 	}
 

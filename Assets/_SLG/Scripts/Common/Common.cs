@@ -64,7 +64,6 @@ public class Common
 
             return null;
         }
-		Debug.Log ("_strPreb:" + _strPreb);
         Object probObj = Resources.Load(_strPreb);  //ResourcesMgr.LoadAsset<GameObject>(_strPreb);   
         if (probObj == null)
         {

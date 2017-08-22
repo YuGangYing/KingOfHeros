@@ -4,11 +4,10 @@ using UnityEngine;
 using UnityEngine.Events;
 using System;
 using UnityEngine.UI;
-
-
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
+
 namespace KOH
 {
 	public class ResourcesManager : SingleMonoBehaviour<ResourcesManager>
@@ -18,6 +17,35 @@ namespace KOH
 		{
 			base.Awake ();
 		}
+
+		#region Units(hero and solider)
+
+		public GameObject GetHeroObject(string resPath){
+			GameObject prefab = GetHeroPrefab (resPath);
+			#if UNITY_EDITOR
+			Renderer[] rrs = prefab.GetComponentsInChildren<Renderer>(true);
+			for(int i=0;i<rrs.Length;i++){
+				Renderer rr = rrs[i];
+				rr.sharedMaterial.shader = Shader.Find(rr.sharedMaterial.shader.name);
+			}
+			#endif
+			GameObject go = Instantiate (prefab) as GameObject;
+			return go;
+		}
+
+		public GameObject GetHeroPrefab(string resPath){
+			string subPath = resPath.Substring (0,resPath.LastIndexOf('/'));
+			string prefabName = resPath.Substring (resPath.LastIndexOf('/') + 1);
+			string abName = subPath.Substring (subPath.LastIndexOf('/') + 1);
+			abName = PathConstant.HERO_AB_FRONT + abName;
+			return GetHeroPrefab (abName,prefabName);
+		}
+
+		GameObject GetHeroPrefab(string abName,string heroName){
+			return AssetbundleManager.GetInstance.GetAssetFromLocal<GameObject> (abName,heroName);
+		}
+
+		#endregion
 
 		#region Audios
 
