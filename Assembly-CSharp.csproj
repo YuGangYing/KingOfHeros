@@ -921,7 +921,6 @@
      <Compile Include="Assets\Scripts\CameraShowArea.cs" />
      <Compile Include="Assets\Scripts\CameraSwitchEvent\script\CameraAlphaSwitch.cs" />
      <Compile Include="Assets\Scripts\CameraSwitchEvent\script\CameraSwitchEventMgr.cs" />
-     <Compile Include="Assets\Scripts\CityCameraControl.cs" />
      <Compile Include="Assets\Scripts\Common\Part.cs" />
      <Compile Include="Assets\Scripts\Common\RequestMultiRes.cs" />
      <Compile Include="Assets\Scripts\Common\ResDownLoad.cs" />
@@ -998,8 +997,9 @@
      <Compile Include="Assets\Scripts\Login\LoginController.cs" />
      <Compile Include="Assets\Scripts\Login\LoginMgr.cs" />
      <Compile Include="Assets\Scripts\Login\SlgLogin.cs" />
-     <Compile Include="Assets\Scripts\Main.cs" />
-     <Compile Include="Assets\Scripts\MainController.cs" />
+     <Compile Include="Assets\Scripts\Main\CityCameraControl.cs" />
+     <Compile Include="Assets\Scripts\Main\Main.cs" />
+     <Compile Include="Assets\Scripts\Main\MainController.cs" />
      <Compile Include="Assets\Scripts\MessageBox\MessageBoxMgr.cs" />
      <Compile Include="Assets\Scripts\NPC\NpcAI.cs" />
      <Compile Include="Assets\Scripts\NPC\NpcConfig.cs" />
