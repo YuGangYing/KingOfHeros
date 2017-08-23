@@ -767,8 +767,8 @@ public class SpawnManager : MonoBehaviour
                             }
 
                             //Instantiate Soldier GameObject
-//                            GameObject tmp_soldier = Common.CreateGameObject(tmp_soldierlist[index].strResName);
-							GameObject tmp_soldier = ResourcesManager.GetInstance.GetSoliderObject(tmp_soldierlist[index].strResName);
+                            GameObject tmp_soldier = Common.CreateGameObject(tmp_soldierlist[index].strResName);
+//							GameObject tmp_soldier = ResourcesManager.GetInstance.GetSoliderObject(tmp_soldierlist[index].strResName);
                             tmp_soldier.SetActive(false);
                             Common.AddChildObj(tmp_soldier, Row, (new Vector3(m - (_colnum - 1) / 2.0f, 0, 0)) * ColumnPadding);
 							tmp_soldier.transform.position = tmp_soldier.transform.position + new Vector3(Random.Range(-0.3f,0.3f),0,Random.Range(-0.3f,0.3f));

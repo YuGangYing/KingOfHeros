@@ -75,17 +75,18 @@ namespace KOH
 		#region Audios
 
 		public AudioClip GetAudioClipBGM(string bgm){
-			
-			return null;
+			AudioClip clip = AssetbundleManager.GetInstance.GetAssetFromLocal<AudioClip> (ABConstant.BGM,bgm);
+			return clip;
 		}
 
 		public AudioClip GetAudioClipSE(string se){
-			return null;
+			AudioClip clip = AssetbundleManager.GetInstance.GetAssetFromLocal<AudioClip> (ABConstant.BGM,se);
+			return clip;
 		}
 
 		#endregion
 
-	
+	    
 		public Sprite GetSprite (string path)
 		{
 			return null;
