@@ -43,7 +43,7 @@ public static class PathConstant
 		#elif PRODUCT
 		"http://183.182.46.212/";
 		#else
-		"http://127.0.0.1/kingofhero/";
+		"http://192.168.102.158/kingofhero/";
 		#endif
 
 	public static string SERVER_DOWNLOAD_PATH =
@@ -54,7 +54,7 @@ public static class PathConstant
 		#elif PRODUCT
 		"http://183.182.46.212/";
 		#else
-		"http://127.0.0.1/kingofhero/";
+		"http://192.168.102.158/kingofhero/";
 		#endif
 
 

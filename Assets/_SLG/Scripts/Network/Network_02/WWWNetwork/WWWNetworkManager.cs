@@ -21,7 +21,7 @@ namespace WWWNetwork
 		IEnumerator WaitWWW (WWW www, UnityAction<WWW> callBack)
 		{
 			yield return www;
-			Debug.Log (www.text);
+//			Debug.Log (www.text);
 			if (www.error != null) {
 				Debug.LogError (www.error);
 				if (failCallBack != null)
