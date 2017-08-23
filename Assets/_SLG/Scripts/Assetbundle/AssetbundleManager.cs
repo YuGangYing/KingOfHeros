@@ -25,9 +25,9 @@ namespace KOH
 			return ab;
 		}
 
-		public GameObject GetAssetFromLocal<T>(string abName,string prefabName){
+		public T GetAssetFromLocal<T>(string abName,string assetName) where T : Object{
 			AssetBundle ab = GetAssetbundleFromLocal (abName);
-			return ab.LoadAsset<GameObject> (prefabName);
+			return ab.LoadAsset<T> (assetName);
 		}
 
 	}
