@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 // ----------------------------------------------------------------------------
 // Glow 11
 // Copyright ﾂｩ 2013 Sven Herrmann
@@ -31,7 +33,7 @@ Shader "Hidden/Glow 11/Blur" {
     v2f vertX( appdata_glow v )
     {
         v2f o;
-        o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+        o.pos = UnityObjectToClipPos(v.vertex);
         o.uv[0] = v.texcoord;
         o.uv[1] = v.texcoord;
         o.uv[2] = v.texcoord;
@@ -49,7 +51,7 @@ Shader "Hidden/Glow 11/Blur" {
     v2f vertY( appdata_glow v )
     {
         v2f o;
-        o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+        o.pos = UnityObjectToClipPos(v.vertex);
         o.uv[0] = v.texcoord;
         o.uv[1] = v.texcoord;
         o.uv[2] = v.texcoord;
