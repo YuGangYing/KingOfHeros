@@ -74,48 +74,13 @@ namespace KOH
 
 		#region Audios
 
-		public AudioClip GetAudioClip (string audioName)
-		{
+		public AudioClip GetAudioClipBGM(string bgm){
+			
 			return null;
 		}
 
-		public AudioClip LoadAudioClip (string path, string audioName)
-		{
+		public AudioClip GetAudioClipSE(string se){
 			return null;
-		}
-
-		public AudioClip GetAudioSE (string audioName)
-		{
-			return null;
-		}
-
-		public AudioClip GetAudioBGM (string audioName)
-		{
-			return null;
-		}
-
-		public AudioClip GetCharacterVoice (string name)
-		{
-			return null;
-		}
-
-		public AudioClip GetCharacterVoice (MVoiceCSVStructure voiceCSV)
-		{
-			return null;
-		}
-
-		public AudioClip GetCharacterVoice (int voiceId)
-		{
-			return null;
-		}
-
-		public float GetCharacterVoiceLength (int voiceId)
-		{
-			AudioClip clip = GetCharacterVoice (voiceId);
-			if (clip != null) {
-				return clip.length;
-			}
-			return 0;
 		}
 
 		#endregion

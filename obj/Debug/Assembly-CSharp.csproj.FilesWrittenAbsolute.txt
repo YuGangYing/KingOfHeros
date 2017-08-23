@@ -27,3 +27,5 @@
 /Users/yingyugang/KingOfHeros/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/yingyugang/KingOfHeros/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/yingyugang/KingOfHeros/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/yingyugang/KingOfHeros/Temp/bin/Debug/UnityEngine.TestRunner.dll
+/Users/yingyugang/KingOfHeros/Temp/bin/Debug/nunit.framework.dll

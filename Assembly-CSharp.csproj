@@ -1178,6 +1178,7 @@
      <Compile Include="Assets\_SLG\Scripts\Common\MoveTool.cs" />
      <Compile Include="Assets\_SLG\Scripts\Common\SingleMonoBehivour.cs" />
      <Compile Include="Assets\_SLG\Scripts\Common\SpawnMgrTool.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Constant\ABConstant.cs" />
      <Compile Include="Assets\_SLG\Scripts\Constant\PathConstant.cs" />
      <Compile Include="Assets\_SLG\Scripts\Constant\SystemConstant.cs" />
      <Compile Include="Assets\_SLG\Scripts\Controller\AudioManager.cs" />
