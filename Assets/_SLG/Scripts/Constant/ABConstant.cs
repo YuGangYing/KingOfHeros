@@ -2,5 +2,6 @@
 {
 	public const string SE = "sound_bgm";
 	public const string BGM = "sound_se";
+	public const string CITY = "city";
 }
 

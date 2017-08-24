@@ -19,7 +19,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_2;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;ENABLE_RUNTIME_GI;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_NETWORK;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_IOS_NATIVE_CRASH_REPORTING;PLAYERCONNECTION_LISTENS_FIXED_PORT;DEBUGGER_LISTENS_FIXED_PORT;PLATFORM_SUPPORTS_ADS_ID;SUPPORT_ENVIRONMENT_VARIABLES;PLATFORM_SUPPORTS_PROFILER;PLATFORM_HAS_NO_SUPPORT_FOR_BUCKET_ALLOCATOR;STRICTCPP_NEW_DELETE_SIGNATURES;HAS_NEON_SKINNIG;UNITY_GFX_USE_PLATFORM_VSYNC;UNITY_INPUT_SIMULATE_EVENTS;PLATFORM_ALWAYS_USES_STDOUT_FOR_LOG;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;UNITY_IOS;UNITY_IPHONE;UNITY_IPHONE_API;SUPPORT_MULTIPLE_DISPLAYS;ENABLE_IL2CPP;NET_2_0;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;ENABLE_IOS_ON_DEMAND_RESOURCES;ENABLE_IOS_APP_SLICING;UNITY_HAS_GOOGLEVR</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_2;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;ENABLE_RUNTIME_GI;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_NETWORK;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_IOS_NATIVE_CRASH_REPORTING;PLAYERCONNECTION_LISTENS_FIXED_PORT;DEBUGGER_LISTENS_FIXED_PORT;PLATFORM_SUPPORTS_ADS_ID;SUPPORT_ENVIRONMENT_VARIABLES;PLATFORM_SUPPORTS_PROFILER;PLATFORM_HAS_NO_SUPPORT_FOR_BUCKET_ALLOCATOR;STRICTCPP_NEW_DELETE_SIGNATURES;HAS_NEON_SKINNIG;UNITY_GFX_USE_PLATFORM_VSYNC;UNITY_INPUT_SIMULATE_EVENTS;PLATFORM_ALWAYS_USES_STDOUT_FOR_LOG;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;UNITY_IOS;UNITY_IPHONE;UNITY_IPHONE_API;SUPPORT_MULTIPLE_DISPLAYS;ENABLE_IL2CPP;NET_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;ENABLE_IOS_ON_DEMAND_RESOURCES;ENABLE_IOS_APP_SLICING;UNITY_HAS_GOOGLEVR</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -1292,7 +1292,7 @@
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Reflect-BumpSpec.shader" />
      <None Include="Assets\Plug-in\EasyTouch\Readme_first.txt" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
-     <None Include="Assets\Resources\Shader\SimpleColor.shader" />
+     <None Include="Assets\Shader\SimpleColor.shader" />
      <None Include="Assets\Plug-in\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\VignetteShader.shader" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
@@ -1329,7 +1329,7 @@
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\FisheyeShader.shader" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Unlit-Color.shader" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Reflect-ParallaxSpec.shader" />
-     <None Include="Assets\Resources\Shader\SimpleTextureTrans.shader" />
+     <None Include="Assets\Shader\SimpleTextureTrans.shader" />
      <None Include="Assets\Resources\Configs\language\Item_cn.txt" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Apply.shader" />
      <None Include="Assets\Plug-in\Xffect\Resources\Shaders\AdvanceShader\xft_displacement_additive.shader" />
@@ -1340,14 +1340,14 @@
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Illumin-ParallaxSpec.shader" />
      <None Include="Assets\Data\Scripts\PlaneFXShader\AtlasAnimationBillboardAdditiveShader.shader" />
      <None Include="Assets\Plug-in\NGUI\Resources\Shaders\Unlit - Transparent Colored (AlphaClip).shader" />
-     <None Include="Assets\Resources\Shader\VertexColor.shader" />
+     <None Include="Assets\Shader\VertexColor.shader" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Alpha-Glossy.shader" />
      <None Include="Assets\Resources\Configs\language\English.txt" />
      <None Include="Assets\Plug-in\Xffect\Resources\Shaders\AdvanceShader\xft_mask_additive.shader" />
      <None Include="Assets\Plug-in\Xffect\Resources\Shaders\ImageEffect\xft_radial_blur.shader" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\AlphaTest-Diffuse.shader" />
      <None Include="Assets\Plug-in\NGUI\Resources\Shaders\Unlit - Text (AlphaClip).shader" />
-     <None Include="Assets\Resources\Shader\OverlayBlendAlpha.shader" />
+     <None Include="Assets\Shader\OverlayBlendAlpha.shader" />
      <None Include="Assets\Data\Scripts\Glow\_internal\Resources\PostShaders\BlurEffectConeTap.shader" />
      <None Include="Assets\Plug-in\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
      <None Include="Assets\Plug-in\Xffect\Tutorial\API Usage\GravityDemo\readme.txt" />
@@ -1419,7 +1419,7 @@
      <None Include="Assets\Resources\Configs\language\Army_cn.txt" />
      <None Include="Assets\Plug-in\NGUI\Resources\Shaders\Unlit - Text.shader" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Illumin-Diffuse-VertexIllumin.shader" />
-     <None Include="Assets\Resources\Shader\Outline.shader" />
+     <None Include="Assets\Shader\Outline.shader" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\BlurEffectConeTaps.shader" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\CameraMotionBlur.shader" />
      <None Include="Assets\Resources\Configs\language\Skill_En.txt" />
@@ -1448,9 +1448,9 @@
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Particle Alpha Blend.shader" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Mobile\Mobile-Diffuse.shader" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrain.shader" />
-     <None Include="Assets\Resources\Shader\AlphaVertexColored.shader" />
+     <None Include="Assets\Shader\AlphaVertexColored.shader" />
      <None Include="Assets\Resources\Configs\language\language.txt" />
-     <None Include="Assets\Resources\Shader\SimpleTexture.shader" />
+     <None Include="Assets\Shader\SimpleTexture.shader" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Mobile\Mobile-Lightmap-Unlit.shader" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Mobile\Mobile-Particle-Alpha-VertexLit.shader" />
@@ -1492,7 +1492,7 @@
      <None Include="Assets\Resources\Configs\language\Army_En.txt" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Alpha-Bumped.shader" />
      <None Include="Assets\Resources\Configs\language\Skill_cn.txt" />
-     <None Include="Assets\Resources\Shader\Outline3.shader" />
+     <None Include="Assets\Shader\Outline3.shader" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA3Console.shader" />
      <None Include="Assets\Plug-in\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
      <None Include="Assets\Plug-in\PlayMaker\PlayMaker\Versions\readme.txt" />

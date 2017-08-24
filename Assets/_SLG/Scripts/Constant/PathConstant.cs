@@ -24,7 +24,7 @@ public static class PathConstant
 	private const string SOUNDS_PATH = "DownloadSounds/";
 
 	private const string RESOURCES_PATH = "Resources/";
-	private const string VERSION_PATH = "version/";
+	private const string VERSION_PATH = "";
 	private const string ID_PATH = "ID/";
 
 	public const string AB_VARIANT = "assetbundle";
@@ -43,6 +43,7 @@ public static class PathConstant
 		#elif PRODUCT
 		"http://183.182.46.212/";
 		#else
+//		"http://192.168.10.101/kingofhero/";
 		"http://192.168.102.158/kingofhero/";
 		#endif
 
@@ -54,6 +55,7 @@ public static class PathConstant
 		#elif PRODUCT
 		"http://183.182.46.212/";
 		#else
+//		"http://192.168.10.101/kingofhero/";
 		"http://192.168.102.158/kingofhero/";
 		#endif
 

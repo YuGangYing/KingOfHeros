@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using System;
 using UnityEngine.UI;
+
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -13,6 +14,7 @@ namespace KOH
 	public class ResourcesManager : SingleMonoBehaviour<ResourcesManager>
 	{
 
+
 		protected override void Awake ()
 		{
 			base.Awake ();
@@ -20,73 +22,96 @@ namespace KOH
 
 		#region Units(hero and solider)
 
-		public GameObject GetHeroObject(string resPath){
+		public GameObject GetHeroObject (string resPath)
+		{
 			GameObject prefab = GetHeroPrefab (resPath);
 			#if UNITY_EDITOR
-			Renderer[] rrs = prefab.GetComponentsInChildren<Renderer>(true);
-			for(int i=0;i<rrs.Length;i++){
-				Renderer rr = rrs[i];
-				rr.sharedMaterial.shader = Shader.Find(rr.sharedMaterial.shader.name);
+			Renderer[] rrs = prefab.GetComponentsInChildren<Renderer> (true);
+			for (int i = 0; i < rrs.Length; i++) {
+				Renderer rr = rrs [i];
+				rr.sharedMaterial.shader = Shader.Find (rr.sharedMaterial.shader.name);
 			}
 			#endif
 			GameObject go = Instantiate (prefab) as GameObject;
 			return go;
 		}
 
-		public GameObject GetHeroPrefab(string resPath){
-			string subPath = resPath.Substring (0,resPath.LastIndexOf('/'));
-			string prefabName = resPath.Substring (resPath.LastIndexOf('/') + 1);
-			string abName = subPath.Substring (subPath.LastIndexOf('/') + 1);
+		public GameObject GetHeroPrefab (string resPath)
+		{
+			string subPath = resPath.Substring (0, resPath.LastIndexOf ('/'));
+			string prefabName = resPath.Substring (resPath.LastIndexOf ('/') + 1);
+			string abName = subPath.Substring (subPath.LastIndexOf ('/') + 1);
 			abName = PathConstant.HERO_AB_FRONT + abName;
-			return GetHeroPrefab (abName,prefabName);
+			return AssetbundleManager.GetInstance.GetAssetFromLocal<GameObject> (abName, prefabName);
 		}
 
-		GameObject GetHeroPrefab(string abName,string heroName){
-			return AssetbundleManager.GetInstance.GetAssetFromLocal<GameObject> (abName,heroName);
-		}
-
-		public GameObject GetSoliderObject(string resPath){
+		public GameObject GetSoliderObject (string resPath)
+		{
 			GameObject prefab = GetSoliderPrefab (resPath);
 			#if UNITY_EDITOR
-			Renderer[] rrs = prefab.GetComponentsInChildren<Renderer>(true);
-			for(int i=0;i<rrs.Length;i++){
-				Renderer rr = rrs[i];
-				rr.sharedMaterial.shader = Shader.Find(rr.sharedMaterial.shader.name);
+			Renderer[] rrs = prefab.GetComponentsInChildren<Renderer> (true);
+			for (int i = 0; i < rrs.Length; i++) {
+				Renderer rr = rrs [i];
+				rr.sharedMaterial.shader = Shader.Find (rr.sharedMaterial.shader.name);
 			}
 			#endif
 			GameObject go = Instantiate (prefab) as GameObject;
 			return go;
 		}
 
-		public GameObject GetSoliderPrefab(string resPath){
-			string subPath = resPath.Substring (0,resPath.LastIndexOf('/'));
-			string prefabName = resPath.Substring (resPath.LastIndexOf('/') + 1);
-			string abName = subPath.Substring (subPath.LastIndexOf('/') + 1);
+		public GameObject GetSoliderPrefab (string resPath)
+		{
+			string subPath = resPath.Substring (0, resPath.LastIndexOf ('/'));
+			string prefabName = resPath.Substring (resPath.LastIndexOf ('/') + 1);
+			string abName = subPath.Substring (subPath.LastIndexOf ('/') + 1);
 			abName = PathConstant.SOLDIER_AB_FRONT + abName;
-			return GetHeroPrefab (abName,prefabName);
+			return AssetbundleManager.GetInstance.GetAssetFromLocal<GameObject> (abName, prefabName);
 		}
 
-		GameObject GetSoliderPrefab(string abName,string prefabName){
-			return AssetbundleManager.GetInstance.GetAssetFromLocal<GameObject> (abName,prefabName);
+		#endregion
+
+		#region Buildings
+
+		public GameObject GetCity ()
+		{
+			GameObject prefab = AssetbundleManager.GetInstance.GetAssetFromLocal<GameObject> (PathConstant.BUILDING_AB_FRONT + ABConstant.CITY, ABConstant.CITY);
+			GameObject go = Instantiate (prefab) as GameObject;
+			#if UNITY_EDITOR
+			Renderer[] rrs = go.GetComponentsInChildren<Renderer> (true);
+			for (int i = 0; i < rrs.Length; i++) {
+				Renderer rr = rrs [i];
+				rr.sharedMaterial.shader = Shader.Find (rr.sharedMaterial.shader.name);
+			}
+			#endif
+			return go;
+		}
+
+		public GameObject GetBuildingObejct (string buildingName)
+		{
+			string abName = PathConstant.BUILDING_AB_FRONT + buildingName;
+			GameObject prefab = AssetbundleManager.GetInstance.GetAssetFromLocal<GameObject> (abName, buildingName);
+			GameObject go = Instantiate (prefab) as GameObject;
+			return go;
 		}
 
 		#endregion
 
 		#region Audios
 
-		public AudioClip GetAudioClipBGM(string bgm){
-			AudioClip clip = AssetbundleManager.GetInstance.GetAssetFromLocal<AudioClip> (ABConstant.BGM,bgm);
+		public AudioClip GetAudioClipBGM (string bgm)
+		{
+			AudioClip clip = AssetbundleManager.GetInstance.GetAssetFromLocal<AudioClip> (ABConstant.BGM, bgm);
 			return clip;
 		}
 
-		public AudioClip GetAudioClipSE(string se){
-			AudioClip clip = AssetbundleManager.GetInstance.GetAssetFromLocal<AudioClip> (ABConstant.BGM,se);
+		public AudioClip GetAudioClipSE (string se)
+		{
+			AudioClip clip = AssetbundleManager.GetInstance.GetAssetFromLocal<AudioClip> (ABConstant.BGM, se);
 			return clip;
 		}
 
 		#endregion
 
-	    
 		public Sprite GetSprite (string path)
 		{
 			return null;

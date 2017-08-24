@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using KOH;
 
 public class CityController : MonoBehaviour {
 
@@ -26,6 +27,8 @@ public class CityController : MonoBehaviour {
 	public bool AreaAvaliable;
     public AudioClip backMusic;
     public AudioSource cityAudio;
+	public Transform cityPoint;
+	GameObject mCityObject;
 
 	void Awake () {
 		if(instance==null)
@@ -37,7 +40,8 @@ public class CityController : MonoBehaviour {
 
     void Start()
     {
-
+		mCityObject = ResourcesManager.GetInstance.GetCity ();
+		mCityObject.transform.position = cityPoint.position;
     }
 
     void Update()

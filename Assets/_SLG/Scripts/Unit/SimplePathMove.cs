@@ -12,9 +12,10 @@ public class SimplePathMove : MonoBehaviour {
 	public string moveState = "Walk01";
 	public string idleState = "StandBy01";
 	void Start () {
-		Anim[moveState].wrapMode = WrapMode.Loop;
-		Anim.Play(moveState);
-		Anim[idleState].wrapMode = WrapMode.Loop;
+		//TODO
+//		Anim[moveState].wrapMode = WrapMode.Loop;
+//		Anim.Play(moveState);
+//		Anim[idleState].wrapMode = WrapMode.Loop;
 	}
 	public bool IsIdle;
 	void Update () {
@@ -40,9 +41,9 @@ public class SimplePathMove : MonoBehaviour {
 
 	IEnumerator _Idle(float idleDuring)
 	{
-		Anim.Play(idleState);
+//		Anim.Play(idleState);
 		yield return new WaitForSeconds(idleDuring);
-		Anim.Play(moveState);
+//		Anim.Play(moveState);
 		IsIdle = false;
 	}
 
