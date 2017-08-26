@@ -1,7 +1,7 @@
 ﻿public static class ABConstant
 {
-	public const string SOUND_SE = "sound_bgm";
-	public const string SOUND_BGM = "sound_se";
+	public const string SOUND_SE = "sound_se";
+	public const string SOUND_BGM = "sound_bgm";
 	public const string SOUND_BATTLE = "sound_battle";
 
 	public const string TERRAIN_CITY = "terrain_city";

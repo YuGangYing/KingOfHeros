@@ -5,6 +5,7 @@ using Fight;
 using UI;
 using DataMgr;
 using ThinksquirrelSoftware.Utilities;
+using KOH;
 
 public class BattleController : MonoBehaviour {
 
@@ -160,15 +161,23 @@ public class BattleController : MonoBehaviour {
 				HitEffectPoi.SetActive(false);
 			}
 			if(GlobalEffect==null)GlobalEffect = GameObject.Find("GatheringRay");
-			if(GlobalAudio==null)GlobalAudio = Resources.Load("Audios/bf233_se_skill_action") as AudioClip;
-			if(ThunderEffect!=null)ThunderEffect = Resources.Load("Effect/CleopatraVII_Skill03_new") as GameObject;
-			if(TipFingerAudio==null)TipFingerAudio = Resources.Load("Audios/SE_skillrelease01") as AudioClip;
-
-			if(ArthurSkill01!=null)ArthurSkill01 = Resources.Load("Effect/KingArthur_Skill01_new") as GameObject;
-			if(KnifeAudioClip==null)KnifeAudioClip = Resources.Load("Audios/MetalLightSliceFlesh2") as AudioClip;
+			if(GlobalAudio==null)
+				GlobalAudio = ResourcesManager.GetInstance.GetAudioClipSE (SoundConstant.SE_SKILL_ACTION); 
+//				GlobalAudio = Resources.Load("Audios/bf233_se_skill_action") as AudioClip;
+			if (TipFingerAudio == null)
+				TipFingerAudio = ResourcesManager.GetInstance.GetAudioClipSE (SoundConstant.SE_SKILL_RELEASE01); 
+//				TipFingerAudio = Resources.Load("Audios/SE_skillrelease01") as AudioClip;
+			if(KnifeAudioClip==null)
+				KnifeAudioClip = ResourcesManager.GetInstance.GetAudioClipSE ("MetalLightSliceFlesh2"); 
+//				KnifeAudioClip = Resources.Load("Audios/MetalLightSliceFlesh2") as AudioClip;
+			if(ThunderEffect!=null)
+				ThunderEffect = Resources.Load("Effect/CleopatraVII_Skill03_new") as GameObject;
+			if(ArthurSkill01!=null)
+				ArthurSkill01 = Resources.Load("Effect/KingArthur_Skill01_new") as GameObject;
 			TerrainObj = BattleLoader.GetInstance.terrainGo;
 			TerrainRenders = TerrainObj.GetComponentsInChildren<Renderer>();
 			StartCoroutine(OnBattleCameraDone());
+			SoundManager.GetInstance.PlayBGM (SoundConstant.BGM_BATTLE3);
 		}
 	
 	}

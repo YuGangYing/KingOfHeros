@@ -121,7 +121,7 @@ namespace KOH
 
 		public AudioClip GetAudioClipSE (string se)
 		{
-			AudioClip clip = AssetbundleManager.GetInstance.GetAssetFromLocal<AudioClip> (ABConstant.SOUND_BGM, se);
+			AudioClip clip = AssetbundleManager.GetInstance.GetAssetFromLocal<AudioClip> (ABConstant.SOUND_SE, se);
 			return clip;
 		}
 
@@ -183,30 +183,4 @@ namespace KOH
 			return null;
 		}
 	}
-}
-
-public enum SoundSE
-{
-	SE01,
-	SE02,
-	SE03,
-	SE04,
-	SE05,
-	SE06,
-	SE07,
-	SE08,
-	SE09,
-	SE10,
-	SE11,
-	SE12,
-	SE13,
-	SE14,
-	SE15
-}
-
-public enum SoundBGM
-{
-	BGM01,
-	BGM02,
-	BGM03
 }

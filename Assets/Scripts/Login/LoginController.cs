@@ -42,8 +42,8 @@ public class LoginController : SingleMonoBehaviour<LoginController>
 	void Start ()
 	{
 		_login = new LoginMgr ();
-		AudioCenter.me.play (AudioMgr.AudioName.LOAD_BGM);
-
+//		AudioCenter.me.play (AudioMgr.AudioName.LOAD_BGM);
+		SoundManager.GetInstance.PlayBGM (SoundConstant.BGM_LOGIN);
 		string strTemp = PlayerPrefs.GetString (strKey);
 		if (!strTemp.Equals (string.Empty))
 			iggid = strTemp;

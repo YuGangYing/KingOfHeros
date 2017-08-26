@@ -26,7 +26,7 @@ public class CityController : MonoBehaviour {
 	public Vector3 PreviousPos;
 	public bool AreaAvaliable;
     public AudioClip backMusic;
-    public AudioSource cityAudio;
+//    public AudioSource cityAudio;
 	public Transform cityPoint;
 	GameObject mCityObject;
 
@@ -34,7 +34,6 @@ public class CityController : MonoBehaviour {
 		if(instance==null)
 		{
 			instance = this;
-            PlayCityMisic();
 		}
 	}
 
@@ -42,6 +41,7 @@ public class CityController : MonoBehaviour {
     {
 		mCityObject = ResourcesManager.GetInstance.GetCityTerrain ();
 		mCityObject.transform.position = cityPoint.position;
+		PlayCityMisic();
     }
 
     void Update()
@@ -76,22 +76,23 @@ public class CityController : MonoBehaviour {
 
     void PlayCityMisic()
     {
-        if(backMusic==null)
-            backMusic = Resources.Load<AudioClip>("Audio/dashidai");
-        if(cityAudio==null)
-        {
-            if(GetComponent<AudioSource>() == null)
-            {
-                cityAudio = gameObject.AddComponent<AudioSource>();
-            }
-            else
-            {
-                cityAudio = GetComponent<AudioSource>();
-            }
-        }
-        cityAudio.clip = backMusic;
-        cityAudio.Play();
-        cityAudio.loop = true;
+//        if(backMusic==null)
+//            backMusic = Resources.Load<AudioClip>("Audio/dashidai");
+		SoundManager.GetInstance.PlayBGM (SoundConstant.BGM_MENU);
+//        if(cityAudio==null)
+//        {
+//            if(GetComponent<AudioSource>() == null)
+//            {
+//                cityAudio = gameObject.AddComponent<AudioSource>();
+//            }
+//            else
+//            {
+//                cityAudio = GetComponent<AudioSource>();
+//            }
+//        }
+//        cityAudio.clip = backMusic;
+//        cityAudio.Play();
+//        cityAudio.loop = true;
     }
 
 //	void Update () {
