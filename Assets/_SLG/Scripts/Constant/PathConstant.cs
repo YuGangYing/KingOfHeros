@@ -34,6 +34,9 @@ public static class PathConstant
 	public const string SOLDIER_AB_FRONT = "soldier_";
 	public const string BUILDING_AB_PATH = "/Prefabs/Buildings/";
 	public const string BUILDING_AB_FRONT = "building_";
+	public const string ALTAS_AB_PATH = "/Altas/";
+	public const string ALTAS_AB_FRONT = "altas_";
+
 
 	public static string SERVER_PATH =
 		#if DEVELOP
@@ -43,8 +46,12 @@ public static class PathConstant
 		#elif PRODUCT
 		"http://183.182.46.212/";
 		#else
-//		"http://192.168.10.101/kingofhero/";
-		"http://192.168.102.158/kingofhero/";
+		#if UNITY_EDITOR
+		"http://127.0.0.1/kingofhero/";
+		#else
+		"http://192.168.10.101/kingofhero/";
+		#endif
+//		"http://192.168.102.158/kingofhero/";
 		#endif
 
 	public static string SERVER_DOWNLOAD_PATH =
@@ -55,8 +62,12 @@ public static class PathConstant
 		#elif PRODUCT
 		"http://183.182.46.212/";
 		#else
-//		"http://192.168.10.101/kingofhero/";
-		"http://192.168.102.158/kingofhero/";
+		#if UNITY_EDITOR
+		"http://127.0.0.1/kingofhero/";
+		#else
+		"http://192.168.10.101/kingofhero/";
+		#endif
+//		"http://192.168.102.158/kingofhero/";
 		#endif
 
 

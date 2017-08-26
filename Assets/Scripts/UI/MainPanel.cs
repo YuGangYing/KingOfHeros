@@ -318,7 +318,7 @@ namespace UI
 
         protected void OnFightClick()
         {
-            Application.LoadLevel("Battlefield_Gobi01");
+            Application.LoadLevel("Battlefield");
             return;
             if (m_sword1Btn.active)
             {

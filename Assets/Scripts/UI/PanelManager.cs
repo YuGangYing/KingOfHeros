@@ -87,7 +87,8 @@ namespace UI
             List<GameObject> objList = new List<GameObject>();
             foreach(string item in srcList)
             {
-                GameObject obj = DataMgr.ResourceCenter.LoadAsset<GameObject>(DataMgr.ResourceCenter.panelPrebPath + item);
+//                GameObject obj = DataMgr.ResourceCenter.LoadAsset<GameObject>(DataMgr.ResourceCenter.panelPrebPath + item);
+				GameObject obj = KOH.ResourcesManager.GetInstance.GetUIInterface(item);
                 if (obj != null)
                     objList.Add(obj);
             }

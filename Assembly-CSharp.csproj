@@ -39,10 +39,10 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>/Applications/Unity5.6.2f1-1/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+      <HintPath>/Applications/Unity5.6.2f1/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>/Applications/Unity5.6.2f1-1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+      <HintPath>/Applications/Unity5.6.2f1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -911,16 +911,8 @@
      <Compile Include="Assets\Plug-in\Xffect\Tutorial\RopeRenderer\XftRopeDemo.cs" />
      <Compile Include="Assets\Plug-in\Xffect\demo.cs" />
      <Compile Include="Assets\Resources\Effect\EffectDestry.cs" />
-     <Compile Include="Assets\Scripts\AudioMgr\AudioCenter.cs" />
-     <Compile Include="Assets\Scripts\AudioMgr\AudioItem.cs" />
-     <Compile Include="Assets\Scripts\AudioMgr\AudioList.cs" />
-     <Compile Include="Assets\Scripts\AudioMgr\AudioName.cs" />
-     <Compile Include="Assets\Scripts\AudioMgr\AudioPlayer.cs" />
      <Compile Include="Assets\Scripts\Build\Build.cs" />
      <Compile Include="Assets\Scripts\Build\PutBuild.cs" />
-     <Compile Include="Assets\Scripts\CameraShowArea.cs" />
-     <Compile Include="Assets\Scripts\CameraSwitchEvent\script\CameraAlphaSwitch.cs" />
-     <Compile Include="Assets\Scripts\CameraSwitchEvent\script\CameraSwitchEventMgr.cs" />
      <Compile Include="Assets\Scripts\Common\Part.cs" />
      <Compile Include="Assets\Scripts\Common\RequestMultiRes.cs" />
      <Compile Include="Assets\Scripts\Common\ResDownLoad.cs" />
@@ -1024,12 +1016,9 @@
      <Compile Include="Assets\Scripts\Parser\SkillConfig.cs" />
      <Compile Include="Assets\Scripts\PathFinding.cs" />
      <Compile Include="Assets\Scripts\PathFollowing.cs" />
-     <Compile Include="Assets\Scripts\RPGCamera.cs" />
-     <Compile Include="Assets\Scripts\RPGInputUtils.cs" />
      <Compile Include="Assets\Scripts\Scene\CameraPoint.cs" />
      <Compile Include="Assets\Scripts\Scene\MainCameraController.cs" />
      <Compile Include="Assets\Scripts\Scene\MainCityAnim.cs" />
-     <Compile Include="Assets\Scripts\Singleton.cs" />
      <Compile Include="Assets\Scripts\SkillShow\ConfigMgr.cs" />
      <Compile Include="Assets\Scripts\SkillShow\DrawMapLine.cs" />
      <Compile Include="Assets\Scripts\SkillShow\Drawer.cs" />
@@ -1143,6 +1132,16 @@
      <Compile Include="Assets\Tool Editor\Script\ToolUtil.cs" />
      <Compile Include="Assets\_SLG\Scripts\Assetbundle\AssetbundleManager.cs" />
      <Compile Include="Assets\_SLG\Scripts\Assetbundle\TestAB.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Audio\AudioCenter.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Audio\AudioItem.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Audio\AudioList.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Audio\AudioManager.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Audio\AudioName.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Audio\AudioPlayer.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Battle\BattleCameraOperator.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Battle\BattleController.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Battle\BattleLoader.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Battle\SpawnManager.cs" />
      <Compile Include="Assets\_SLG\Scripts\CSV\CSVFileReader.cs" />
      <Compile Include="Assets\_SLG\Scripts\CSV\CSVManager.cs" />
      <Compile Include="Assets\_SLG\Scripts\CSV\CSVParser.cs" />
@@ -1159,6 +1158,11 @@
      <Compile Include="Assets\_SLG\Scripts\CSV\structure\MVoiceCollageFrameCSVStructure.cs" />
      <Compile Include="Assets\_SLG\Scripts\CSV\structure\MVoicePlayConditionCSVStructure.cs" />
      <Compile Include="Assets\_SLG\Scripts\CSV\structure\VersionCSVStructure.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Camera\CameraShowArea.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Camera\CameraSwitchEvent\script\CameraAlphaSwitch.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Camera\CameraSwitchEvent\script\CameraSwitchEventMgr.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Camera\RPGCamera.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Camera\RPGInputUtils.cs" />
      <Compile Include="Assets\_SLG\Scripts\Character\CavalryAI.cs" />
      <Compile Include="Assets\_SLG\Scripts\Character\Character.cs" />
      <Compile Include="Assets\_SLG\Scripts\Character\DestroyForTime.cs" />
@@ -1170,6 +1174,7 @@
      <Compile Include="Assets\_SLG\Scripts\Character\SkillResultBase.cs" />
      <Compile Include="Assets\_SLG\Scripts\Character\SkillReusltData.cs" />
      <Compile Include="Assets\_SLG\Scripts\Character\Soldier.cs" />
+     <Compile Include="Assets\_SLG\Scripts\City\CityController.cs" />
      <Compile Include="Assets\_SLG\Scripts\Common\AnimEventCall.cs" />
      <Compile Include="Assets\_SLG\Scripts\Common\AnimationEventMgr.cs" />
      <Compile Include="Assets\_SLG\Scripts\Common\Common.cs" />
@@ -1180,12 +1185,8 @@
      <Compile Include="Assets\_SLG\Scripts\Common\SpawnMgrTool.cs" />
      <Compile Include="Assets\_SLG\Scripts\Constant\ABConstant.cs" />
      <Compile Include="Assets\_SLG\Scripts\Constant\PathConstant.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Constant\SoundConstant.cs" />
      <Compile Include="Assets\_SLG\Scripts\Constant\SystemConstant.cs" />
-     <Compile Include="Assets\_SLG\Scripts\Controller\AudioManager.cs" />
-     <Compile Include="Assets\_SLG\Scripts\Controller\BattleCameraOperator.cs" />
-     <Compile Include="Assets\_SLG\Scripts\Controller\BattleController.cs" />
-     <Compile Include="Assets\_SLG\Scripts\Controller\CityController.cs" />
-     <Compile Include="Assets\_SLG\Scripts\Controller\SpawnManager.cs" />
      <Compile Include="Assets\_SLG\Scripts\Debug\CityTest.cs" />
      <Compile Include="Assets\_SLG\Scripts\Debug\MatrixUI.cs" />
      <Compile Include="Assets\_SLG\Scripts\Debug\OverlayBar.cs" />
@@ -1211,6 +1212,7 @@
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\UnityCookies.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\WWWNetworkManager.cs" />
      <Compile Include="Assets\_SLG\Scripts\ResourcesManager\ResourcesManager.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Sound\SoundManager.cs" />
      <Compile Include="Assets\_SLG\Scripts\Unit\DirctShoot.cs" />
      <Compile Include="Assets\_SLG\Scripts\Unit\ShootObject.cs" />
      <Compile Include="Assets\_SLG\Scripts\Unit\SimplePathMove.cs" />
@@ -1237,6 +1239,7 @@
      <Compile Include="Assets\_SLG\Scripts\Utility\RealTimeUtility.cs" />
      <Compile Include="Assets\_SLG\Scripts\Utility\ShowFrame.cs" />
      <Compile Include="Assets\_SLG\Scripts\Utility\SimpleCameraController.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Utility\Singleton.cs" />
      <Compile Include="Assets\_SLG\Scripts\Utility\SkillTester.cs" />
      <Compile Include="Assets\_SLG\Scripts\Utility\SpawnUtility.cs" />
      <Compile Include="Assets\_SLG\Scripts\Utility\StringExtension.cs" />
@@ -1282,13 +1285,12 @@
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\ScreenSpaceAmbientObscurance.shader" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Mobile\Mobile-Bumped.shader" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Mobile\Mobile-BumpSpec-1DirectionalLight.shader" />
-     <None Include="Assets\Scripts\CameraSwitchEvent\script\CamerAlphaEffect.shader" />
+     <None Include="Assets\_SLG\Scripts\Camera\CameraSwitchEvent\script\CamerAlphaEffect.shader" />
      <None Include="Assets\Data\Scripts\SplineTrailRenderer\Samples\Shaders\Scrolling.shader" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\NFAA.shader" />
      <None Include="Assets\Plug-in\NGUI\Resources\Shaders\Unlit - Dynamic Font (AlphaClip).shader" />
      <None Include="Assets\Plug-in\NGUI\Resources\Shaders\Unlit - Masked Colored.shader" />
      <None Include="Assets\Plug-in\Xffect\Resources\Shaders\ImageEffect\xft_color_inverse.shader" />
-     <None Include="Assets\Data\ArtResources\UI\UI.txt" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Reflect-BumpSpec.shader" />
      <None Include="Assets\Plug-in\EasyTouch\Readme_first.txt" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
@@ -1509,25 +1511,25 @@
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendForBloom.shader" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Mobile\Mobile-Particle-Alpha.shader" />
  <Reference Include="UnityEngine.UI">
- <HintPath>/Applications/Unity5.6.2f1-1/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Applications/Unity5.6.2f1/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>/Applications/Unity5.6.2f1-1/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>/Applications/Unity5.6.2f1/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.TestRunner">
- <HintPath>/Applications/Unity5.6.2f1-1/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ <HintPath>/Applications/Unity5.6.2f1/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>/Applications/Unity5.6.2f1-1/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>/Applications/Unity5.6.2f1/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
- <HintPath>/Applications/Unity5.6.2f1-1/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ <HintPath>/Applications/Unity5.6.2f1/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
- <HintPath>/Applications/Unity5.6.2f1-1/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ <HintPath>/Applications/Unity5.6.2f1/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.VR">
- <HintPath>/Applications/Unity5.6.2f1-1/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ <HintPath>/Applications/Unity5.6.2f1/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="Glow11">
  <HintPath>/Users/yingyugang/KingOfHeros/Assets/Data/Scripts/Glow/_internal/Plugins/Glow11.dll</HintPath>

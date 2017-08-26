@@ -72,9 +72,9 @@ namespace KOH
 
 		#region Buildings
 
-		public GameObject GetCity ()
+		public GameObject GetCityTerrain ()
 		{
-			GameObject prefab = AssetbundleManager.GetInstance.GetAssetFromLocal<GameObject> (PathConstant.BUILDING_AB_FRONT + ABConstant.CITY, ABConstant.CITY);
+			GameObject prefab = AssetbundleManager.GetInstance.GetAssetFromLocal<GameObject> (ABConstant.TERRAIN_CITY, ABConstant.TERRAIN_CITY);
 			GameObject go = Instantiate (prefab) as GameObject;
 			#if UNITY_EDITOR
 			Renderer[] rrs = go.GetComponentsInChildren<Renderer> (true);
@@ -85,6 +85,21 @@ namespace KOH
 			#endif
 			return go;
 		}
+
+		public GameObject GetBattleTerrain ()
+		{
+			GameObject prefab = AssetbundleManager.GetInstance.GetAssetFromLocal<GameObject> (ABConstant.TERRAIN_GOBI, ABConstant.TERRAIN_GOBI);
+			GameObject go = Instantiate (prefab) as GameObject;
+			#if UNITY_EDITOR
+			Renderer[] rrs = go.GetComponentsInChildren<Renderer> (true);
+			for (int i = 0; i < rrs.Length; i++) {
+				Renderer rr = rrs [i];
+				rr.sharedMaterial.shader = Shader.Find (rr.sharedMaterial.shader.name);
+			}
+			#endif
+			return go;
+		}
+
 
 		public GameObject GetBuildingObejct (string buildingName)
 		{
@@ -100,14 +115,49 @@ namespace KOH
 
 		public AudioClip GetAudioClipBGM (string bgm)
 		{
-			AudioClip clip = AssetbundleManager.GetInstance.GetAssetFromLocal<AudioClip> (ABConstant.BGM, bgm);
+			AudioClip clip = AssetbundleManager.GetInstance.GetAssetFromLocal<AudioClip> (ABConstant.SOUND_BGM, bgm);
 			return clip;
 		}
 
 		public AudioClip GetAudioClipSE (string se)
 		{
-			AudioClip clip = AssetbundleManager.GetInstance.GetAssetFromLocal<AudioClip> (ABConstant.BGM, se);
+			AudioClip clip = AssetbundleManager.GetInstance.GetAssetFromLocal<AudioClip> (ABConstant.SOUND_BGM, se);
 			return clip;
+		}
+
+		#endregion
+
+		#region UI
+
+		public GameObject GetUIInterface (string prefabName)
+		{
+			GameObject go = AssetbundleManager.GetInstance.GetAssetFromLocal<GameObject> (ABConstant.PREFAB_INTERFACE, prefabName);
+			return go;
+		}
+
+		#endregion
+
+		#region Battles
+
+		public GameObject GetBattleRoot ()
+		{
+			GameObject prefab = AssetbundleManager.GetInstance.GetAssetFromLocal<GameObject> (ABConstant.BATTLE, "BattleRoot");
+			GameObject go = Instantiate (prefab) as GameObject;
+			return go;
+		}
+
+		public GameObject GetBattleUIRoot ()
+		{
+			GameObject prefab = AssetbundleManager.GetInstance.GetAssetFromLocal<GameObject> (ABConstant.BATTLE, "BattleUIRoot");
+			GameObject go = Instantiate (prefab) as GameObject;
+			return go;
+		}
+
+		public GameObject GetBattleGlobalSkillEffect ()
+		{
+			GameObject prefab = AssetbundleManager.GetInstance.GetAssetFromLocal<GameObject> (ABConstant.BATTLE, "GlobalSkillEffect");
+			GameObject go = Instantiate (prefab) as GameObject;
+			return go;
 		}
 
 		#endregion

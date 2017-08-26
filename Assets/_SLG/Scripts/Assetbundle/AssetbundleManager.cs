@@ -27,7 +27,8 @@ namespace KOH
 
 		public T GetAssetFromLocal<T>(string abName,string assetName) where T : Object{
 			AssetBundle ab = GetAssetbundleFromLocal (abName);
-			return ab.LoadAsset<T> (assetName);
+			T t = ab.LoadAsset<T> (assetName);
+			return t;
 		}
 
 	}

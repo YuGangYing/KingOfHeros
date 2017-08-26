@@ -12,7 +12,7 @@ public class CityTest : MonoBehaviour {
 	void Update () {
 		if(Input.GetKey(KeyCode.H))
 		{
-			Application.LoadLevel("Battlefield_Gobi01");
+			Application.LoadLevel("Battlefield");
 		}
 	}
 }

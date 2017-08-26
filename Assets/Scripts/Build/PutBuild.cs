@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UI;
 using DataMgr;
+using KOH;
 
 #pragma warning disable 0168
 #pragma warning disable 0219
@@ -55,14 +56,18 @@ public class PutBuild : MonoBehaviour
     {
         DataManager.getBuildData().CreatBuildingByBuildList();
         camera = Camera.main;
-        string strPath = "Prefabs/UI/960X640/Interface3/buildMoveTitle";
-        m_buildMovePanelPre = DataMgr.ResourceCenter.LoadAsset<GameObject>(strPath);
+//        string strPath = "Prefabs/UI/960X640/Interface/buildMoveTitle";
+//        m_buildMovePanelPre = DataMgr.ResourceCenter.LoadAsset<GameObject>(strPath);
+		m_buildMovePanelPre = ResourcesManager.GetInstance.GetUIInterface ("buildMoveTitle");
 
-        string strPro = "Prefabs/UI/960X640/Interface3/buildProTitle";
-        m_buildProTitlePre = DataMgr.ResourceCenter.LoadAsset<GameObject>(strPro);
+//        string strPro = "Prefabs/UI/960X640/Interface/buildProTitle";
+//        m_buildProTitlePre = DataMgr.ResourceCenter.LoadAsset<GameObject>(strPro);
+		m_buildProTitlePre = ResourcesManager.GetInstance.GetUIInterface ("buildProTitle");
 
         string strMaterial = "Prefabs/Buildings/BuildingProcess";
         Material buildingMaterial = DataMgr.ResourceCenter.LoadAsset<Material>(strMaterial);
+
+
     }
 
     void OnDestroy()
