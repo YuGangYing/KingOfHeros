@@ -61,9 +61,10 @@ public class MainCameraController : MonoBehaviour
             prePt = item;
             haveCount++;
         }
-
+		//ddd
         if(haveCount >= 2)
             Gizmos.DrawLine(begin.transform.position, end.transform.position);
+		
     }
 
 

@@ -26,6 +26,14 @@ public class BattleLoader : SingleMonoBehaviour<BattleLoader>
 		terrainGo.transform.localEulerAngles = new Vector3 (0, 180, 0);
 		terrainGo.transform.localPosition = new Vector3 (0, 0.03f, 0);
 		battleGlobalSkillEffect = ResourcesManager.GetInstance.GetBattleGlobalSkillEffect ();
+		Renderer[] rss = battleGlobalSkillEffect.GetComponentsInChildren<Renderer> (true);
+		#if UNITY_EDITOR
+		for (int i = 0; i < rss.Length; i++) {
+			string shaderName = rss [i].sharedMaterial.shader.name; 
+			Debug.Log (shaderName);
+			rss [i].sharedMaterial.shader = Shader.Find (shaderName);
+		}
+		#endif
 		battleUIRoot = ResourcesManager.GetInstance.GetBattleUIRoot ();
 		battleRoot = ResourcesManager.GetInstance.GetBattleRoot ();
 	}

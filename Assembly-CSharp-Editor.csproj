@@ -190,7 +190,7 @@
      <Compile Include="Assets\_SLG\Scripts\Assetbundle\Editor\CopyCSV.cs" />
      <Compile Include="Assets\_SLG\Scripts\CSV\Editor\CreateClassFromCSV.cs" />
      <Compile Include="Assets\_SLG\Scripts\Editor\HierarchyIcon.cs" />
-     <None Include="Assets\Data\Shader\OverlayBlendAlpha.shader" />
+     <None Include="Assets\Shader\OverlayBlendAlpha1.shader" />
      <None Include="Assets\Resources\Configs\language\Chinese.txt" />
      <None Include="Assets\Plug-in\NGUI\Resources\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Unlit-AlphaTest.shader" />
@@ -204,7 +204,7 @@
      <None Include="Assets\Resources\Configs\language\Building_En.txt" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Reflect-Parallax.shader" />
-     <None Include="Assets\Data\Shader\AlphaVertexColored.shader" />
+     <None Include="Assets\Shader\AlphaVertexColored1.shader" />
      <None Include="Assets\Plug-in\Xffect\Tutorial\Events\CameraShake\readme.txt" />
      <None Include="Assets\Plug-in\NGUI\Examples\Models\Orc\Orc Skin.shader" />
      <None Include="Assets\Plug-in\Xffect\EffectLibrary\readme.txt" />
@@ -259,7 +259,7 @@
      <None Include="Assets\Plug-in\CameraShake\CHANGELOG.txt" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\MinMaxReduction.shader" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\SSAA.shader" />
-     <None Include="Assets\Data\Shader\VertexColor.shader" />
+     <None Include="Assets\Shader\VertexColor1.shader" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\RadialBlur.shader" />
      <None Include="Assets\Resources\Configs\language\Battle_En.txt" />
      <None Include="Assets\Plug-in\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />

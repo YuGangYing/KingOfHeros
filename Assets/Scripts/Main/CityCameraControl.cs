@@ -99,7 +99,7 @@ public class CityCameraControl : MonoBehaviour
                 glo.SetActive(false);
             }
         }
-
+		//ddd
         if (PutBuild.me.m_build != null || UI.PanelManage.me.IsHaveShowPanel())
             return;
 

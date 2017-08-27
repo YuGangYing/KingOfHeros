@@ -48,7 +48,7 @@ public class Swipe : MonoBehaviour {
 		}
 	}
 	
-	// During the swipe
+	// During the swipe ddd
 	private void On_Swipe(Gesture gesture){
 		
 		if (trail!=null){
