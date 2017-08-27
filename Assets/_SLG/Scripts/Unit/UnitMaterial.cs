@@ -7,6 +7,11 @@ public class UnitMaterial : MonoBehaviour {
 	public Material OutlineMaterial;
 	public Renderer CurrentRenderer;
 
+	void Awake(){
+		DefaultMaterial.shader = Shader.Find (DefaultMaterial.shader.name);
+		OutlineMaterial.shader = Shader.Find (OutlineMaterial.shader.name);
+	}
+
 	public void ShowOutlineMaterial()
 	{
 		CurrentRenderer.material = OutlineMaterial;
