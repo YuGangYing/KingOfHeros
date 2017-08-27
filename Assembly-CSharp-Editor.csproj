@@ -163,32 +163,6 @@
      <Compile Include="Assets\Plug-in\NGUI\Scripts\Editor\UITweenerEditor.cs" />
      <Compile Include="Assets\Plug-in\NGUI\Scripts\Editor\UIWidgetContainerEditor.cs" />
      <Compile Include="Assets\Plug-in\NGUI\Scripts\Editor\UIWidgetInspector.cs" />
-     <Compile Include="Assets\Plug-in\PlayMaker\PlayMaker\Actions\Editor\LookAtActionEditor.cs" />
-     <Compile Include="Assets\Plug-in\PlayMaker\PlayMaker\Actions\Editor\MoveTowardsActionEditor.cs" />
-     <Compile Include="Assets\Plug-in\PlayMaker\PlayMaker\Actions\Editor\SetCameraFOVActionEditor.cs" />
-     <Compile Include="Assets\Plug-in\PlayMaker\PlayMaker\Editor\AboutWindow.cs" />
-     <Compile Include="Assets\Plug-in\PlayMaker\PlayMaker\Editor\ContextToolWindow.cs" />
-     <Compile Include="Assets\Plug-in\PlayMaker\PlayMaker\Editor\FsmActionWindow.cs" />
-     <Compile Include="Assets\Plug-in\PlayMaker\PlayMaker\Editor\FsmComponentInspector.cs" />
-     <Compile Include="Assets\Plug-in\PlayMaker\PlayMaker\Editor\FsmEditorHelpers.cs" />
-     <Compile Include="Assets\Plug-in\PlayMaker\PlayMaker\Editor\FsmEditorWindow.cs" />
-     <Compile Include="Assets\Plug-in\PlayMaker\PlayMaker\Editor\FsmErrorWindow.cs" />
-     <Compile Include="Assets\Plug-in\PlayMaker\PlayMaker\Editor\FsmEventsWindow.cs" />
-     <Compile Include="Assets\Plug-in\PlayMaker\PlayMaker\Editor\FsmGlobalsWindow.cs" />
-     <Compile Include="Assets\Plug-in\PlayMaker\PlayMaker\Editor\FsmLogWindow.cs" />
-     <Compile Include="Assets\Plug-in\PlayMaker\PlayMaker\Editor\FsmSelectorWindow.cs" />
-     <Compile Include="Assets\Plug-in\PlayMaker\PlayMaker\Editor\FsmStateWindow.cs" />
-     <Compile Include="Assets\Plug-in\PlayMaker\PlayMaker\Editor\FsmTemplate.cs" />
-     <Compile Include="Assets\Plug-in\PlayMaker\PlayMaker\Editor\FsmTemplateEditor.cs" />
-     <Compile Include="Assets\Plug-in\PlayMaker\PlayMaker\Editor\FsmTemplateWindow.cs" />
-     <Compile Include="Assets\Plug-in\PlayMaker\PlayMaker\Editor\PlayMakerBugReportWindow.cs" />
-     <Compile Include="Assets\Plug-in\PlayMaker\PlayMaker\Editor\PlayMakerCustomActionWizard.cs" />
-     <Compile Include="Assets\Plug-in\PlayMaker\PlayMaker\Editor\PlayMakerGUIInspector.cs" />
-     <Compile Include="Assets\Plug-in\PlayMaker\PlayMaker\Editor\PlayMakerGlobalsInspector.cs" />
-     <Compile Include="Assets\Plug-in\PlayMaker\PlayMaker\Editor\PlayMakerMainMenu.cs" />
-     <Compile Include="Assets\Plug-in\PlayMaker\PlayMaker\Editor\PlayMakerWelcomeWindow.cs" />
-     <Compile Include="Assets\Plug-in\PlayMaker\PlayMaker\Editor\ReportWindow.cs" />
-     <Compile Include="Assets\Plug-in\PlayMaker\iTween\PlayMaker\Editor\iTweenMoveToActionEditor.cs" />
      <Compile Include="Assets\Plug-in\Xffect\Editor\EffectLayerCustom.cs" />
      <Compile Include="Assets\Plug-in\Xffect\Editor\Patch\XffectPatch300.cs" />
      <Compile Include="Assets\Plug-in\Xffect\Editor\Patch\XffectPatch400.cs" />
@@ -245,7 +219,6 @@
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Normal-DiffuseDetail.shader" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Reflect-Bumped.shader" />
      <None Include="Assets\Plug-in\FX Maker\IGSoft_Resources\ToolResources\EffectShader\FXMaker_Mask Additive Tint.shader" />
-     <None Include="Assets\Plug-in\PlayMaker\PlayMaker\Readme.txt" />
      <None Include="Assets\Plug-in\Xffect\Resources\Shaders\AdvanceShader\xft_displacement-dissolve_additive.shader" />
      <None Include="Assets\Plug-in\CameraPath2\readme.txt" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\SunShaftsComposite.shader" />
@@ -384,7 +357,6 @@
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\CameraMotionBlurDX11.shader" />
      <None Include="Assets\Plug-in\FX Maker\IGSoft_Tools\FXMaker\ToolResource\UnityShader\FXMakerGrayscaleEffect.shader" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
-     <None Include="Assets\Plug-in\PlayMaker\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Normal-Glossy.shader" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
      <None Include="Assets\Resources\Configs\language\Achievement_En.txt" />
@@ -405,7 +377,6 @@
      <None Include="Assets\Data\Scripts\Glow\Shaders\Mobile\Illumin-Spec-VertexIllumin.shader" />
      <None Include="Assets\Plug-in\CameraShake\README.txt" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
-     <None Include="Assets\Plug-in\PlayMaker\PlayMaker\Resources\PlayMakerAssemblies.txt" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableBlur.shader" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\AlphaTest-Glossy.shader" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\MotionBlurClear.shader" />
@@ -468,7 +439,6 @@
      <None Include="Assets\Shader\Outline3.shader" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA3Console.shader" />
      <None Include="Assets\Plug-in\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
-     <None Include="Assets\Plug-in\PlayMaker\PlayMaker\Versions\readme.txt" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Mobile\Mobile-VertexLit-OnlyDirectionalLights.shader" />
      <None Include="Assets\Data\Scripts\Glow\_internal\Resources\PostShaders\Glow11Blur.shader" />
      <None Include="Assets\Resources\Configs\language\HeroDescription_cn.txt" />
@@ -552,18 +522,6 @@
  </Reference>
  <Reference Include="Glow11">
  <HintPath>/Users/yingyugang/KingOfHeros/Assets/Data/Scripts/Glow/_internal/Plugins/Glow11.dll</HintPath>
- </Reference>
- <Reference Include="PlayMaker">
- <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plug-in/PlayMaker/PlayMaker/PlayMaker.dll</HintPath>
- </Reference>
- <Reference Include="PlayMakerEditor">
- <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plug-in/PlayMaker/PlayMaker/Editor/PlayMakerEditor.dll</HintPath>
- </Reference>
- <Reference Include="PlayMakerEditorResources">
- <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plug-in/PlayMaker/PlayMaker/Editor/PlayMakerEditorResources.dll</HintPath>
- </Reference>
- <Reference Include="PlayMakerEditor.zh-CN.resources">
- <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plug-in/PlayMaker/PlayMaker/Editor/zh-CN/PlayMakerEditor.zh-CN.resources.dll</HintPath>
  </Reference>
  <Reference Include="CSV">
  <HintPath>/Users/yingyugang/KingOfHeros/Assets/Plugins/CSV.dll</HintPath>
