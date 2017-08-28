@@ -307,7 +307,9 @@ public class PutBuild : MonoBehaviour
             }
             else
             {
-                prefab2 = DataMgr.ResourceCenter.LoadAsset<GameObject>(strPrefab);
+				Debug.Log (strPrefab);
+				prefab2 = KOH.ResourcesManager.GetInstance.GetBuildingObejct (strPrefab);
+//                prefab2 = DataMgr.ResourceCenter.LoadAsset<GameObject>(strPrefab);
                 objBuild = (GameObject)Object.Instantiate(prefab2);
             }
 

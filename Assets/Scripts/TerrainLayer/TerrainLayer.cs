@@ -148,9 +148,8 @@ public class TerrainLayer : SingletonMonoBehaviour<TerrainLayer>
 
         return CanBuild(collider, grid);
     }
-
-    //  «∑Ò”–Ëµ±Ã
-    public static bool CanBuild(Collider collider, SolidityGrid grid)
+ 
+	public static bool CanBuild(Collider collider, SolidityGrid grid)
     {
         if (collider == null)
         {
@@ -307,8 +306,8 @@ public class TerrainLayer : SingletonMonoBehaviour<TerrainLayer>
         m_gridData = null;
         foreach (GridData data in m_gridList)
             m_buildTypeList[data.buildType] = data.ToGrid();
-		
-        DontDestroyOnLoad(gameObject);
+		if(Application.isPlaying)
+        	DontDestroyOnLoad(gameObject);
     }
 
     public void ToGridData()

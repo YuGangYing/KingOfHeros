@@ -101,9 +101,12 @@ namespace KOH
 		}
 
 
-		public GameObject GetBuildingObejct (string buildingName)
+		public GameObject GetBuildingObejct (string resPath)
 		{
-			string abName = PathConstant.BUILDING_AB_FRONT + buildingName;
+			string buildingName = resPath.Substring (resPath.LastIndexOf ('/') + 1);
+			string subBuildingName = buildingName;
+			subBuildingName = buildingName.Substring (0,buildingName.IndexOf('_'));
+			string abName = PathConstant.BUILDING_AB_FRONT + subBuildingName.ToLower();
 			GameObject prefab = AssetbundleManager.GetInstance.GetAssetFromLocal<GameObject> (abName, buildingName);
 			GameObject go = Instantiate (prefab) as GameObject;
 			return go;
