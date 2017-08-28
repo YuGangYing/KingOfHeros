@@ -9,5 +9,6 @@
 	public const string SPRITE_BACKGROUND = "sprite_background";
 	public const string PREFAB_INTERFACE = "prefab_interface";
 	public const string BATTLE = "prefab_battles";
+	public const string CITY = "prefab_citys";
 }
 

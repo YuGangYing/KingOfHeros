@@ -105,8 +105,8 @@ namespace KOH
 		{
 			string buildingName = resPath.Substring (resPath.LastIndexOf ('/') + 1);
 			string subBuildingName = buildingName;
-			subBuildingName = buildingName.Substring (0,buildingName.IndexOf('_'));
-			string abName = PathConstant.BUILDING_AB_FRONT + subBuildingName.ToLower();
+			subBuildingName = buildingName.Substring (0, buildingName.IndexOf ('_'));
+			string abName = PathConstant.BUILDING_AB_FRONT + subBuildingName.ToLower ();
 			GameObject prefab = AssetbundleManager.GetInstance.GetAssetFromLocal<GameObject> (abName, buildingName);
 			GameObject go = Instantiate (prefab) as GameObject;
 			return go;
@@ -159,6 +159,17 @@ namespace KOH
 		public GameObject GetBattleGlobalSkillEffect ()
 		{
 			GameObject prefab = AssetbundleManager.GetInstance.GetAssetFromLocal<GameObject> (ABConstant.BATTLE, "GlobalSkillEffect");
+			GameObject go = Instantiate (prefab) as GameObject;
+			return go;
+		}
+
+		#endregion
+
+		#region Battles
+
+		public GameObject GetCityRoot ()
+		{
+			GameObject prefab = AssetbundleManager.GetInstance.GetAssetFromLocal<GameObject> (ABConstant.CITY, "CityRoot");
 			GameObject go = Instantiate (prefab) as GameObject;
 			return go;
 		}

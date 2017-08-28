@@ -30,7 +30,6 @@ public class BattleLoader : SingleMonoBehaviour<BattleLoader>
 		#if UNITY_EDITOR
 		for (int i = 0; i < rss.Length; i++) {
 			string shaderName = rss [i].sharedMaterial.shader.name; 
-			Debug.Log (shaderName);
 			rss [i].sharedMaterial.shader = Shader.Find (shaderName);
 		}
 		#endif

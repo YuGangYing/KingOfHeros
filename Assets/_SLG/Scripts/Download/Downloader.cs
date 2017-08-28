@@ -14,7 +14,14 @@ public class Downloader : MonoBehaviour {
 		string URL = PathConstant.SERVER_ASSETBUNDLES_PATH + "/" + assetBundleName;
 		Debug.Log (URL);
 		var www = new WWW (URL);
-		yield return www;
+		int size = 0;
+		while(!www.isDone){
+			int deltaSize = www.bytesDownloaded - size;
+			size = www.bytesDownloaded;
+			DownloadManager.GetInstance.totalDownloadedSize += deltaSize;
+			yield return null;
+		}
+		yield return null;
 		if (www.isDone && string.IsNullOrEmpty (www.error))
 		{
 			FileManager.WriteAllBytes (PathConstant.CLIENT_ASSETBUNDLES_PATH + "/" + assetBundleName,www.bytes);

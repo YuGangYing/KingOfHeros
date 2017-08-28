@@ -672,6 +672,7 @@
      <Compile Include="Assets\_SLG\Scripts\Character\SkillReusltData.cs" />
      <Compile Include="Assets\_SLG\Scripts\Character\Soldier.cs" />
      <Compile Include="Assets\_SLG\Scripts\City\CityController.cs" />
+     <Compile Include="Assets\_SLG\Scripts\City\CityLoader.cs" />
      <Compile Include="Assets\_SLG\Scripts\Common\AnimEventCall.cs" />
      <Compile Include="Assets\_SLG\Scripts\Common\AnimationEventMgr.cs" />
      <Compile Include="Assets\_SLG\Scripts\Common\Common.cs" />

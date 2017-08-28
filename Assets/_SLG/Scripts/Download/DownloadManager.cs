@@ -9,6 +9,10 @@ public class DownloadManager : SingleMonoBehaviour<DownloadManager>
 
 	public int maxDownloadCount = 5;
 
+	public int totalDownloadSize = 0;
+	public int totalDownloadedSize = 0;
+	public bool isDownloading = false;
+
 	protected override void Awake ()
 	{
 		base.Awake ();
@@ -37,9 +41,11 @@ public class DownloadManager : SingleMonoBehaviour<DownloadManager>
 				string hashCode = FileManager.GetFileHash (path);
 				if (hashCode.Trim () != versionCSV.HashCode.Trim ()) {
 					filtedVersionList.Add (versionCSV);
+					totalDownloadSize += versionCSV.FileSize;
 				}
 			} else {
 				filtedVersionList.Add (versionCSV);
+				totalDownloadSize += versionCSV.FileSize;
 			}
 		}
 		mVersions = filtedVersionList;
@@ -71,6 +77,7 @@ public class DownloadManager : SingleMonoBehaviour<DownloadManager>
 	IEnumerator _DownloadAssets ()
 	{
 		Debug.Log ("_DownloadAssets".AliceblueColor ());
+		isDownloading = true;
 		while (true) {
 			if (mVersions.Count == 0 && mDownloadingCount == 0) {
 				Debug.Log ("Download Done!".AliceblueColor ());
