@@ -278,12 +278,12 @@ public class AssetBundleWindow : EditorWindow
 			//if(entity.isSelected)
 			setStrs.Add (entity.abName);
 		}
-		string[] paths = Directory.GetFiles (fullTmpOutputPath);
-		for (int i = 0; i < paths.Length; i++) {
-			string fileName = paths [i].Substring (paths [i].LastIndexOf ("/") + 1);
-			if (!setStrs.Contains (fileName) && fileName != serverCSV)
-				FileManager.DeleteFile (paths [i]);
-		}
+//		string[] paths = Directory.GetFiles (fullTmpOutputPath);
+//		for (int i = 0; i < paths.Length; i++) {
+//			string fileName = paths [i].Substring (paths [i].LastIndexOf ("/") + 1);
+//			if (!setStrs.Contains (fileName) && fileName != serverCSV)
+//				FileManager.DeleteFile (paths [i]);
+//		}
 		AssetDatabase.Refresh ();
 		GetHash ();
 		CreateVersion ();
