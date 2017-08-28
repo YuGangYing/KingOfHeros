@@ -34,7 +34,7 @@ public class LoginController : SingleMonoBehaviour<LoginController>
 			_loginAnimation.playAutomatically = false;
 		signin = gameObject.GetOrAddComponent<SigninAPI> ();
 		signin.Send ((WWW www) => {
-			Debug.Log (www.text);
+			
 		});
 	}
 

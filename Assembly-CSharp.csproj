@@ -704,9 +704,13 @@
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\APIs\BaseAPI.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\APIs\SigninAPI.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\APIs\SystemInfoAPI.cs" />
-     <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\Models\APIModel.cs" />
-     <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\Models\GameModel.cs" />
-     <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\Models\UpdateModel.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\Models\BuildingModel.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\Models\HeroModel.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\Models\Model.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\Models\RegionModel.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\Models\TechnologyModel.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\Models\TroopModel.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\Models\UserInfo.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\UnityCookies.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\WWWNetworkManager.cs" />
      <Compile Include="Assets\_SLG\Scripts\ResourcesManager\ResourcesManager.cs" />

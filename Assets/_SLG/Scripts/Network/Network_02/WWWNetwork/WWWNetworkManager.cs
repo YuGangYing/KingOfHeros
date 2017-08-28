@@ -2,15 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using Network;
 
 
 namespace WWWNetwork
 {
 	public class WWWNetworkManager : SingleMonoBehaviour<WWWNetworkManager>
 	{
+		public Model model;
+
 		public  Dictionary<string,string> cookies;
 
 		public UnityAction<WWW> failCallBack;
+
+
+		protected override void Awake ()
+		{
+			base.Awake ();
+			model = new Model ();
+		}
 
 		public void CommonCallBack (WWW www)
 		{
@@ -21,14 +31,15 @@ namespace WWWNetwork
 		IEnumerator WaitWWW (WWW www, UnityAction<WWW> callBack)
 		{
 			yield return www;
-//			Debug.Log (www.text);
 			if (www.error != null) {
 				Debug.LogError (www.error);
 				if (failCallBack != null)
 					failCallBack (www);
 			} else {
+				Debug.Log (www.text);
 				if (cookies == null)
 					cookies = www.ParseCookies ();//获取服务端Session
+				JsonUtility.FromJsonOverwrite(www.text,model);
 				if (callBack != null)
 					callBack (www);
 			}
