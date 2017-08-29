@@ -40,6 +40,7 @@ public class CityController : MonoBehaviour {
     void Start()
     {
 		mCityObject = ResourcesManager.GetInstance.GetCityTerrain ();
+		Common.SetShaderForEditor (mCityObject);
 		mCityObject.transform.position = cityPoint.position;
 		PlayCityMisic();
     }

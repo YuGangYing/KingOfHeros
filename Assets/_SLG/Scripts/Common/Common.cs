@@ -3,6 +3,17 @@ using System.Collections;
 
 public class Common
 {
+	public static void SetShaderForEditor(GameObject go){
+		#if UNITY_EDITOR
+		Renderer[] rss = go.GetComponentsInChildren<Renderer>(true);
+		for(int i=0;i<rss.Length;i++){
+			for(int j=0;j<rss[i].sharedMaterials.Length;j++){
+				rss[i].sharedMaterials[j].shader = Shader.Find(rss[i].sharedMaterials[j].shader.name);
+			}
+		}
+		#endif
+	}
+
 	public static void SetMaterial (GameObject _obj, Material _material)
 	{ 
 		#if UNITY_EDITOR

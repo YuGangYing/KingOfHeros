@@ -9,7 +9,7 @@ namespace Network
 	{
 		public int id;
 		public int user_id;
-		public string type;
+		public int type;
 		public int level;
 		public int status;
 		public int start_time;

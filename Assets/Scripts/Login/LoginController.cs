@@ -62,7 +62,6 @@ public class LoginController : SingleMonoBehaviour<LoginController>
 				m_wndConfirm.gameObject.AddMissingComponent<UIEventTrigger> ().onClick.Add (new EventDelegate (login));
 			}
 
-
 			m_wndMsg = UISoldierPanel.findChild<UILabel> (loginMain.transform, "msgLabel");
 			m_wndInfo = UISoldierPanel.findChild<UILabel> (loginMain.transform, "InfoLabel");
 			if (m_wndInfo != null)

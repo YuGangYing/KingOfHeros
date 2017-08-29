@@ -25,13 +25,7 @@ namespace KOH
 		public GameObject GetHeroObject (string resPath)
 		{
 			GameObject prefab = GetHeroPrefab (resPath);
-			#if UNITY_EDITOR
-			Renderer[] rrs = prefab.GetComponentsInChildren<Renderer> (true);
-			for (int i = 0; i < rrs.Length; i++) {
-				Renderer rr = rrs [i];
-				rr.sharedMaterial.shader = Shader.Find (rr.sharedMaterial.shader.name);
-			}
-			#endif
+			Common.SetShaderForEditor(prefab);
 			GameObject go = Instantiate (prefab) as GameObject;
 			return go;
 		}
@@ -76,13 +70,7 @@ namespace KOH
 		{
 			GameObject prefab = AssetbundleManager.GetInstance.GetAssetFromLocal<GameObject> (ABConstant.TERRAIN_CITY, ABConstant.TERRAIN_CITY);
 			GameObject go = Instantiate (prefab) as GameObject;
-			#if UNITY_EDITOR
-			Renderer[] rrs = go.GetComponentsInChildren<Renderer> (true);
-			for (int i = 0; i < rrs.Length; i++) {
-				Renderer rr = rrs [i];
-				rr.sharedMaterial.shader = Shader.Find (rr.sharedMaterial.shader.name);
-			}
-			#endif
+			Common.SetShaderForEditor(go);
 			return go;
 		}
 
@@ -90,13 +78,7 @@ namespace KOH
 		{
 			GameObject prefab = AssetbundleManager.GetInstance.GetAssetFromLocal<GameObject> (ABConstant.TERRAIN_GOBI, ABConstant.TERRAIN_GOBI);
 			GameObject go = Instantiate (prefab) as GameObject;
-			#if UNITY_EDITOR
-			Renderer[] rrs = go.GetComponentsInChildren<Renderer> (true);
-			for (int i = 0; i < rrs.Length; i++) {
-				Renderer rr = rrs [i];
-				rr.sharedMaterial.shader = Shader.Find (rr.sharedMaterial.shader.name);
-			}
-			#endif
+			Common.SetShaderForEditor(go);
 			return go;
 		}
 
@@ -105,10 +87,12 @@ namespace KOH
 		{
 			string buildingName = resPath.Substring (resPath.LastIndexOf ('/') + 1);
 			string subBuildingName = buildingName;
-			subBuildingName = buildingName.Substring (0, buildingName.IndexOf ('_'));
+			if (buildingName.IndexOf ('_') != -1)
+				subBuildingName = buildingName.Substring (0, buildingName.IndexOf ('_'));
 			string abName = PathConstant.BUILDING_AB_FRONT + subBuildingName.ToLower ();
 			GameObject prefab = AssetbundleManager.GetInstance.GetAssetFromLocal<GameObject> (abName, buildingName);
 			GameObject go = Instantiate (prefab) as GameObject;
+			Common.SetShaderForEditor(go);
 			return go;
 		}
 

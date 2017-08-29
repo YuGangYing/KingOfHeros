@@ -14,8 +14,10 @@ namespace KOH
 			Init ();
 		}
 
-		void Init(){
+		void Init ()
+		{
 			cityRoot = ResourcesManager.GetInstance.GetCityRoot ();
+			Common.SetShaderForEditor (cityRoot);
 		}
 
 
