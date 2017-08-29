@@ -8,7 +8,8 @@ public class Common
 		Renderer[] rss = go.GetComponentsInChildren<Renderer>(true);
 		for(int i=0;i<rss.Length;i++){
 			for(int j=0;j<rss[i].sharedMaterials.Length;j++){
-				rss[i].sharedMaterials[j].shader = Shader.Find(rss[i].sharedMaterials[j].shader.name);
+				if(rss[i].sharedMaterials[j]!=null)
+					rss[i].sharedMaterials[j].shader = Shader.Find(rss[i].sharedMaterials[j].shader.name);
 			}
 		}
 		#endif

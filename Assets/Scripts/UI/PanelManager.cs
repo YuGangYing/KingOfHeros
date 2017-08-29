@@ -89,6 +89,7 @@ namespace UI
             {
 //                GameObject obj = DataMgr.ResourceCenter.LoadAsset<GameObject>(DataMgr.ResourceCenter.panelPrebPath + item);
 				GameObject obj = KOH.ResourcesManager.GetInstance.GetUIInterface(item);
+				Debug.Log (item);
                 if (obj != null)
                     objList.Add(obj);
             }

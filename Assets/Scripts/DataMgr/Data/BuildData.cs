@@ -5,6 +5,7 @@ using UI;
 using Packet;
 using Network;
 //using Config;
+using WWWNetwork;
 
 namespace DataMgr
 {
@@ -442,13 +443,19 @@ namespace DataMgr
 		// 发送移动建筑消息
 		public void SendMoveBuild(uint idBuilding, float x, float y)
 		{
-			MSG_BUILDING_MOVE_REQUEST msg_struct = new MSG_BUILDING_MOVE_REQUEST();
-			msg_struct.idBuilding = idBuilding;
-			msg_struct.fPosX = x;
-			msg_struct.fPosY = 0;
-
-            m_dicBuilding[msg_struct.idBuilding].m_buildFound = (uint)x;
-			NetworkMgr.me.getClient().Send(ref msg_struct);
+			ChangeBuildingPosAPI api = WWWNetworkManager.GetInstance.gameObject.GetOrAddComponent<ChangeBuildingPosAPI> ();
+			api.data = new ChangeBuildingPosModel ();
+			api.data.id = (int)idBuilding;
+			api.data.pos = (int)x;
+			api.Send ((WWW www)=>{
+				Debug.Log(www.text);
+			});
+//			MSG_BUILDING_MOVE_REQUEST msg_struct = new MSG_BUILDING_MOVE_REQUEST();
+//			msg_struct.idBuilding = idBuilding;
+//			msg_struct.fPosX = x;
+//			msg_struct.fPosY = 0;
+//          m_dicBuilding[msg_struct.idBuilding].m_buildFound = (uint)x;
+//			NetworkMgr.me.getClient().Send(ref msg_struct);
 		}
 		
 		// 发送升级建筑消息

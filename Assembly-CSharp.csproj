@@ -702,6 +702,7 @@
      <Compile Include="Assets\_SLG\Scripts\Network\Network_01\NetworkMgr.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\APIConstant.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\APIs\BaseAPI.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\APIs\ChangeBuildingPosAPI.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\APIs\SigninAPI.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\APIs\SystemInfoAPI.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\Models\BuildingModel.cs" />
