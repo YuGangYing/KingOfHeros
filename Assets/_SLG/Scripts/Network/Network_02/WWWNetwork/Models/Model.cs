@@ -7,6 +7,7 @@ namespace Network
 	public class Model
 	{
 		//public Notice update_done_list;//升级完成的通知（在home场景的时候）
+		public BuildingModel create_building;
 		public UserInfo user_info;
 		public UserInfo enemy_info;
 		public List<BuildingModel> building_list;

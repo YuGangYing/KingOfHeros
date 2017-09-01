@@ -10,7 +10,7 @@ public class SingleMonoBehaviour<T> : MonoBehaviour where T : MonoBehaviour{
 			if (t == null) {
 				t = GameObject.FindObjectOfType (typeof(T)) as T;
 				if (t == null) {
-					GameObject go = new GameObject (t.name);
+					GameObject go = new GameObject ();
 					t = go.AddComponent<T> ();
 				}
 			}

@@ -31,7 +31,6 @@ namespace UI
             PanelManage.me.GetPanel<MessageBoxPanel>(PanelID.MessageBoxPannel).SetVisible(false);
             if (MainController.me.loadCityTimes > 1)
                 PanelManage.me.GetPanel<BattlefieldPanel>(PanelID.BattlefieldPanel).SetVisible(true);
-            //             PanelManage.me.GetPanel<CheckinPanel>(PanelID.CheckInPanel);
             PanelManage.me.GetPanel<BuildInfoPanel>(PanelID.BuildInfoPanel);
             PanelManage.me.GetPanel<SettingPanel>(PanelID.SettingPanel);
             AudioCenter.me.play(AudioMgr.AudioName.MAINCITY_BMG);

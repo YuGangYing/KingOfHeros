@@ -5,6 +5,7 @@ using UI;
 using DataMgr;
 using KOH;
 using Network;
+using WWWNetwork;
 
 #pragma warning disable 0168
 #pragma warning disable 0219
@@ -169,8 +170,8 @@ public class PutBuild : MonoBehaviour
 			//buildTemp.CleanRoundTree();
 
 			if (info.fPosX != (float)buildTemp.m_buildFound) {
-				// 更正服务器位置
-				DataManager.getBuildData ().SendMoveBuild (buildTemp.m_idBuilding, (float)buildTemp.m_buildFound, 0);
+				//更正服务器位置
+				WWWAPIManager.GetInstance.SendMoveBuilding (buildTemp.m_idBuilding, (float)buildTemp.m_buildFound, 0);
 			}
 
 			return buildTemp;

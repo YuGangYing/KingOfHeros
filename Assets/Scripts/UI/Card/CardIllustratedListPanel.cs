@@ -237,12 +237,6 @@ namespace UI
 				HeroModel heroModel = WWWNetworkManager.GetInstance.model.hero_list[i];
 				revAddCard ((uint)heroModel.id, (uint)heroModel.hero_id);
 			}
-//			for (int i = 0; i < DataManager.getHeroData ().Amount; i++) {
-//				bool bRet = HeroData.getHeroData (i, ref hi);
-//				if (!bRet)
-//					continue;
-//				revAddCard (hi.idHero, hi.idType);
-//			}
 
 			UICardMgr.CItemData cid = UICardMgr.singleton.getIllustratedItemById (mnCurSelId);
 			if (cid != null) {

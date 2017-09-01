@@ -210,6 +210,7 @@
      <None Include="Assets\Plug-in\Xffect\EffectLibrary\readme.txt" />
      <None Include="Assets\Resources\Configs\language\errcode_en.txt" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Alpha-ParallaxSpec.shader" />
+     <None Include="Assets\Shader\CustomGhost.shader" />
      <None Include="Assets\Plug-in\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
      <None Include="Assets\Resources\Xml\String.xml" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\ShowAlphaChannel.shader" />
@@ -370,6 +371,7 @@
      <None Include="Assets\Resources\Configs\language\Skill_En.txt" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\DLAA.shader" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Normal-DiffuseFast.shader" />
+     <None Include="Assets\Shader\SimpleTextureAlpha.shader" />
      <None Include="Assets\Plug-in\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed).shader" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrainDX11.shader" />
      <None Include="Assets\Plugins\DOTween\DOTween46.xml" />

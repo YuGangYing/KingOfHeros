@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using Packet;
 using UI;
 using DataMgr;
+using WWWNetwork;
+
+
 #pragma warning disable 0168
 #pragma warning disable 0219
 #pragma warning disable 0414
@@ -341,8 +344,8 @@ public class Build : MonoBehaviour
                 // 发送创建建筑信息
                 Reposition(new Vector3(transform.position.x, transform.position.y, transform.position.z));
                 m_buildFound = (uint)PutBuild.me.GetBuildFoundByPos();
-
 				DataManager.getBuildData().SendBuildingBuild(this);
+				WWWAPIManager.GetInstance.SendCreateBuilding (this.m_idBuildingType,this.m_buildFound,this.m_buildFound);
                 PutBuild.me.m_bCreateBuild = false;
                 ShowSelectedPanel(false);
                 PutBuild.me.m_selectedBuild = null;
@@ -352,8 +355,7 @@ public class Build : MonoBehaviour
                 // 发送移动信息
                 Reposition(new Vector3(transform.position.x, transform.position.y, transform.position.z));
                 m_buildFound = (uint)PutBuild.me.GetBuildFoundByPos();
-
-				DataManager.getBuildData().SendMoveBuild(m_idBuilding, m_buildFound, 0);
+				WWWAPIManager.GetInstance.SendMoveBuilding(m_idBuilding, m_buildFound, 0);
                 m_startPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
                 PutBuild.me.m_selectedBuild = null;
             }

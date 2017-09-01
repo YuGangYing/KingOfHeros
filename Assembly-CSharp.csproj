@@ -409,6 +409,9 @@
      <Compile Include="Assets\Plug-in\Xffect\demo.cs" />
      <Compile Include="Assets\Resources\Effect\EffectDestry.cs" />
      <Compile Include="Assets\Scripts\Build\Build.cs" />
+     <Compile Include="Assets\Scripts\Build\BuildController.cs" />
+     <Compile Include="Assets\Scripts\Build\GridAgent.cs" />
+     <Compile Include="Assets\Scripts\Build\GridManager.cs" />
      <Compile Include="Assets\Scripts\Build\PutBuild.cs" />
      <Compile Include="Assets\Scripts\Common\Part.cs" />
      <Compile Include="Assets\Scripts\Common\RequestMultiRes.cs" />
@@ -655,6 +658,7 @@
      <Compile Include="Assets\_SLG\Scripts\CSV\structure\MVoiceCollageFrameCSVStructure.cs" />
      <Compile Include="Assets\_SLG\Scripts\CSV\structure\MVoicePlayConditionCSVStructure.cs" />
      <Compile Include="Assets\_SLG\Scripts\CSV\structure\VersionCSVStructure.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Camera\CameraController.cs" />
      <Compile Include="Assets\_SLG\Scripts\Camera\CameraShowArea.cs" />
      <Compile Include="Assets\_SLG\Scripts\Camera\CameraSwitchEvent\script\CameraAlphaSwitch.cs" />
      <Compile Include="Assets\_SLG\Scripts\Camera\CameraSwitchEvent\script\CameraSwitchEventMgr.cs" />
@@ -702,9 +706,13 @@
      <Compile Include="Assets\_SLG\Scripts\Network\Network_01\NetworkMgr.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\APIConstant.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\APIs\BaseAPI.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\APIs\CancelBuildingAPI.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\APIs\ChangeBuildingPosAPI.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\APIs\CreateBuildingAPI.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\APIs\RemoveBuildingAPI.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\APIs\SigninAPI.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\APIs\SystemInfoAPI.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\APIs\UpgradeBuildingAPI.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\Models\BuildingModel.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\Models\HeroModel.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\Models\Model.cs" />
@@ -713,6 +721,7 @@
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\Models\TroopModel.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\Models\UserInfo.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\UnityCookies.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\WWWAPIManager.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\WWWNetworkManager.cs" />
      <Compile Include="Assets\_SLG\Scripts\ResourcesManager\ResourcesManager.cs" />
      <Compile Include="Assets\_SLG\Scripts\Sound\SoundManager.cs" />
@@ -768,6 +777,7 @@
      <None Include="Assets\Plug-in\Xffect\EffectLibrary\readme.txt" />
      <None Include="Assets\Resources\Configs\language\errcode_en.txt" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Alpha-ParallaxSpec.shader" />
+     <None Include="Assets\Shader\CustomGhost.shader" />
      <None Include="Assets\Plug-in\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
      <None Include="Assets\Resources\Xml\String.xml" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\ShowAlphaChannel.shader" />
@@ -928,6 +938,7 @@
      <None Include="Assets\Resources\Configs\language\Skill_En.txt" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\DLAA.shader" />
      <None Include="Assets\Data\Scripts\Glow\Shaders\Unity\Normal-DiffuseFast.shader" />
+     <None Include="Assets\Shader\SimpleTextureAlpha.shader" />
      <None Include="Assets\Plug-in\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed).shader" />
      <None Include="Assets\Data\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrainDX11.shader" />
      <None Include="Assets\Plugins\DOTween\DOTween46.xml" />
