@@ -170,6 +170,7 @@
      <Compile Include="Assets\Plug-in\Xffect\Editor\XGradientEditor.cs" />
      <Compile Include="Assets\Plug-in\Xffect\Editor\XffectComponentCustom.cs" />
      <Compile Include="Assets\Plug-in\Xffect\Editor\XffectEventCustom.cs" />
+     <Compile Include="Assets\Scripts\XCodeBuild\Editor\XCodeBuild.cs" />
      <Compile Include="Assets\Tool Editor\Script\Editor\SkillEffectConfigEditor.cs" />
      <Compile Include="Assets\Tool Editor\Script\Editor\SkillEffectEditor.cs" />
      <Compile Include="Assets\Tool Editor\Script\Editor\ToolEditor.cs" />
