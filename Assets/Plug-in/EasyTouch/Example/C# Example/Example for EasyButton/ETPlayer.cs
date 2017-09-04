@@ -68,7 +68,7 @@ public class ETPlayer : MonoBehaviour {
 	void On_ButtonUp (string buttonName)
 	{
 		if (buttonName=="Exit"){
-			Application.LoadLevel("StartMenu");	
+			UnityEngine.SceneManagement.SceneManager.LoadScene("StartMenu");	
 		}
 	}	
 }

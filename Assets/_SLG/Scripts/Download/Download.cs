@@ -24,6 +24,8 @@ namespace KOH
 
 		void Update(){
 			if(DownloadManager.GetInstance.isDownloading){
+				if (!slider.gameObject.activeInHierarchy)
+					slider.gameObject.SetActive (true);
 				slider.value = (float)DownloadManager.GetInstance.totalDownloadedSize / DownloadManager.GetInstance.totalDownloadSize;
 			}
 		}

@@ -91,7 +91,8 @@ namespace UI
         {
 			DataManager.getBattleUIData().battleResult.SetVisible(false);
             DataManager.getBattleUIData().isBattleReturn = true;
-            Application.LoadLevel("Main");
+//            UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
+			KOH.SceneManager.LoadMain ();
             //SLG.GlobalEventSet.FireEvent(SLG.eEventType.ChangeScene, new SLG.EventArgs(MainController.SCENE_MAINCITY));
         }
 

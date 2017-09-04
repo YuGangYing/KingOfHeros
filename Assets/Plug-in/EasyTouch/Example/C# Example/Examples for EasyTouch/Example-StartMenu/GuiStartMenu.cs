@@ -21,25 +21,25 @@ public class GuiStartMenu : MonoBehaviour {
 			string levelName= gesture.pickObject.name;
 
 			if (levelName=="OneFinger")
-				Application.LoadLevel("Onefinger");
+				UnityEngine.SceneManagement.SceneManager.LoadScene("Onefinger");
 			else if (levelName=="TwoFinger")		
-				Application.LoadLevel("TwoFinger");
+				UnityEngine.SceneManagement.SceneManager.LoadScene("TwoFinger");
 			else if (levelName=="MultipleFinger")		
-				Application.LoadLevel("MultipleFingers");	
+				UnityEngine.SceneManagement.SceneManager.LoadScene("MultipleFingers");	
 			else if (levelName=="MultiLayer")
-				Application.LoadLevel("MultiLayers");
+				UnityEngine.SceneManagement.SceneManager.LoadScene("MultiLayers");
 			else if (levelName=="GameController")
-				Application.LoadLevel("GameController");
+				UnityEngine.SceneManagement.SceneManager.LoadScene("GameController");
 			else if (levelName=="FreeCamera")
-				Application.LoadLevel("FreeCam");			
+				UnityEngine.SceneManagement.SceneManager.LoadScene("FreeCam");			
 			else if (levelName=="ImageManipulation")
-				Application.LoadLevel("ManipulationImage");
+				UnityEngine.SceneManagement.SceneManager.LoadScene("ManipulationImage");
 			else if (levelName=="Joystick1")
-				Application.LoadLevel("FirstPerson-DirectMode-DoubleJoystick");		
+				UnityEngine.SceneManagement.SceneManager.LoadScene("FirstPerson-DirectMode-DoubleJoystick");		
 			else if (levelName=="Joystick2")
-				Application.LoadLevel("ThirdPerson-DirectEventMode-DoubleJoystick");
+				UnityEngine.SceneManagement.SceneManager.LoadScene("ThirdPerson-DirectEventMode-DoubleJoystick");
 			else if (levelName=="Button")
-				Application.LoadLevel("ButtonExample");			
+				UnityEngine.SceneManagement.SceneManager.LoadScene("ButtonExample");			
 			else if (levelName=="Exit")
 				Application.Quit();						
 		}

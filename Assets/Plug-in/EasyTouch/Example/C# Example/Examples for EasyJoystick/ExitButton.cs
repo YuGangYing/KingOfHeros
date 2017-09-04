@@ -17,7 +17,7 @@ public class ExitButton : MonoBehaviour {
 	
 	void On_ButtonUp (string buttonName)
 	{
-		Application.LoadLevel("StartMenu");	
+		UnityEngine.SceneManagement.SceneManager.LoadScene("StartMenu");	
 	}
 
 }

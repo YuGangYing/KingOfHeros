@@ -61,7 +61,8 @@ public class NcSafeTool : MonoBehaviour
 			Instance();
 		m_bLoadLevel = true;
 		Debug.Log("Safe LoadLevel start " + nLoadLevel);
-		Application.LoadLevel(nLoadLevel);
+//		UnityEngine.SceneManagement.SceneManager.LoadScene(nLoadLevel);
+		UnityEngine.SceneManagement.SceneManager.LoadScene (nLoadLevel);
 		Debug.Log("Safe LoadLevel end");
 		m_bLoadLevel = false;
 	}

@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using SLG;
 using DataMgr;
-//-
+
 namespace UI
 {
     public class GoldUpgradePanel : BuildUpgradePanelBase

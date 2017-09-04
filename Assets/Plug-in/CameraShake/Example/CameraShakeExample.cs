@@ -136,9 +136,10 @@ public class CameraShakeExample : MonoBehaviour {
 		
 		GUILayout.EndHorizontal();
 			
-		if (GUILayout.Button("Reset"))
-			Application.LoadLevel(Application.loadedLevel);
-		
+		if (GUILayout.Button ("Reset")) {
+//			UnityEngine.SceneManagement.SceneManager.LoadScene (Application.loadedLevel);
+			UnityEngine.SceneManagement.SceneManager.LoadScene (Application.loadedLevel);
+		}
 		GUILayout.EndVertical();
 		GUILayout.FlexibleSpace();
 		GUILayout.EndHorizontal();

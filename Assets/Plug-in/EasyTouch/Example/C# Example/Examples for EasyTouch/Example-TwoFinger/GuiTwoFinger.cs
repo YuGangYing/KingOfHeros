@@ -13,7 +13,7 @@ public class GuiTwoFinger : MonoBehaviour {
 		GUILayout.Label("For the 3 last balls, you need first positioning the orange target on the sphere, with the CTRL key, and next, press the ALT key, and do the action.");
 		// Back to menu menu
 		if (GUI.Button( new Rect(412,700,200,50),"Main menu")){
-			Application.LoadLevel("StartMenu");
+			UnityEngine.SceneManagement.SceneManager.LoadScene("StartMenu");
 		}	
 	}
 }

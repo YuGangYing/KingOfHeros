@@ -7,6 +7,7 @@ using DataMgr;
 using Login;
 using UI;
 using WWWNetwork;
+using KOH;
 
 public class LoginController : SingleMonoBehaviour<LoginController>
 {
@@ -33,9 +34,6 @@ public class LoginController : SingleMonoBehaviour<LoginController>
 		if (_loginAnimation != null)
 			_loginAnimation.playAutomatically = false;
 		signin = gameObject.GetOrAddComponent<SigninAPI> ();
-		signin.Send ((WWW www) => {
-			
-		});
 	}
 
 	// Use this for initialization
@@ -59,43 +57,56 @@ public class LoginController : SingleMonoBehaviour<LoginController>
 			m_wndConfirm = UISoldierPanel.findChild<UIButton> (loginMain.transform, "confirmBtn");
 			if (m_wndConfirm != null) {
 //              UIEventListener.Get(m_wndConfirm.gameObject).onClick = login;
-				m_wndConfirm.gameObject.AddMissingComponent<UIEventTrigger> ().onClick.Add (new EventDelegate (login));
+				m_wndConfirm.gameObject.AddMissingComponent<UIEventTrigger> ().onClick.Add (new EventDelegate (SignIn));
 			}
 
 			m_wndMsg = UISoldierPanel.findChild<UILabel> (loginMain.transform, "msgLabel");
 			m_wndInfo = UISoldierPanel.findChild<UILabel> (loginMain.transform, "InfoLabel");
 			if (m_wndInfo != null)
 				m_wndInfo.gameObject.SetActive (false);
-			showMsg ("");
+			ShowMsg ("");
 		}
+
+		#if !Release
+		m_wndIp.value = PlayerPrefs.GetString ("IP");
+		Debug.Log(m_wndIp.value);
+		#endif
 	}
 
-	void login ()
+	void SignIn ()
 	{
 		ip = m_wndIp.value;
-		iggid = m_wndIgg.value;
-		PlayerPrefs.SetString (strKey, iggid);
+//		iggid = m_wndIgg.value;
+//		PlayerPrefs.SetString (strKey, iggid);
 		this._login.Iggid = iggid;
-//        this._login.login(ip, port, LoginResult);
-		StartCoroutine ("ChangeScene");
-		if (m_wndInfo != null) {
-			m_wndInfo.gameObject.SetActive (true);
-			m_wndInfo.text = "Logining...";
-		}
-		if (m_wndConfirm != null)
-			m_wndConfirm.gameObject.SetActive (false);
+		#if !Release
+		PathConstant.SERVER_DOWNLOAD_PATH = string.Format("http://{0}/kingofhero/",ip.Trim());
+		PathConstant.SERVER_PATH = string.Format("http://{0}/kingofhero/",ip.Trim());
+		PlayerPrefs.SetString ("IP", ip);
+		PlayerPrefs.Save ();
+		#endif
 
-		if (_loginAnimation != null)
-			_loginAnimation.Play ();
+		signin.Send ((WWW www)=>{
+			if (m_wndInfo != null) {
+				m_wndInfo.gameObject.SetActive (true);
+				m_wndInfo.text = "Logining...";
+			}
+			if (m_wndConfirm != null)
+				m_wndConfirm.gameObject.SetActive (false);
+			StartCoroutine ("ChangeScene");
+		});
 	}
 
 	IEnumerator ChangeScene ()
 	{
-		yield return new WaitForSeconds (3);
-		Application.LoadLevelAsync (1);
+		if (_loginAnimation != null)
+			_loginAnimation.Play ();
+		float animLength = _loginAnimation.clip.length;
+		yield return new WaitForSeconds (animLength);
+		SceneManager.LoadDownload ();
 	}
 
-	void showMsg (string strMsg)
+	void ShowMsg (string strMsg)
 	{
 		if (m_wndMsg != null)
 			m_wndMsg.text = strMsg;
@@ -112,7 +123,7 @@ public class LoginController : SingleMonoBehaviour<LoginController>
 			SLG.GlobalEventSet.FireEvent (SLG.eEventType.ChangeScene, new SLG.EventArgs (MainController.SCENE_MAINCITY));
 		} else {
 			// 登陆失败了
-			showMsg (strErrmsg);
+			ShowMsg (strErrmsg);
 			Logger.LogDebug ("login fail! {0}", strErrmsg);
 			if (m_wndInfo != null) {
 				m_wndInfo.gameObject.SetActive (false);

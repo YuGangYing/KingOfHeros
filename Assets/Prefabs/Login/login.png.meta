@@ -1,7 +1,11 @@
 fileFormatVersion: 2
 guid: fe9839e5f130c6b4b87932bb9dd7678c
+timeCreated: 1504519142
+licenseType: Pro
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: login_0
+    21300002: login_1
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -29,10 +33,10 @@ TextureImporter:
     aniso: 4
     mipBias: -1
     wrapMode: 1
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -90,7 +94,33 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: login_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 223
+        width: 354
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: login_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 801
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 

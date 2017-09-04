@@ -87,7 +87,8 @@ public class SceneDebuger : MonoBehaviour {
 
 	void ReStart()
 	{
-		Application.LoadLevel(0);
+//		UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+		UnityEngine.SceneManagement.SceneManager.LoadScene (0);
 	}
 
 	public bool IsReady;

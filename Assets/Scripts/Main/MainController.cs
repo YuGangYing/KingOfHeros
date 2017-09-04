@@ -90,7 +90,7 @@ public class MainController : SingletonMonoBehaviourNoCreate<MainController>
     {
         if (nSceneid == SCENE_MAINCITY )
             this.loadCityTimes++;
-        _async = Application.LoadLevelAsync(nSceneid);
+        _async = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(nSceneid);
         _async.allowSceneActivation = false;
         while (!_async.isDone && _async.progress < 0.9f)
         {

@@ -318,7 +318,8 @@ namespace UI
 
         protected void OnFightClick()
         {
-            Application.LoadLevel("Battlefield");
+//            UnityEngine.SceneManagement.SceneManager.LoadScene("Battlefield");
+			KOH.SceneManager.LoadBattlefield ();
             return;
             if (m_sword1Btn.active)
             {

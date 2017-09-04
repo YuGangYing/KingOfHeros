@@ -37,38 +37,37 @@ public static class PathConstant
 	public const string ALTAS_AB_PATH = "/Altas/";
 	public const string ALTAS_AB_FRONT = "altas_";
 
-
 	public static string SERVER_PATH =
-		#if DEVELOP
-		"http://54.64.2.40/";
-		#elif TEST
-		"http://183.182.46.212/";
-		#elif PRODUCT
-		"http://183.182.46.212/";
-		#else
+//		#if DEVELOP
+//		"http://54.64.2.40/";
+//		#elif TEST
+//		"http://183.182.46.212/";
+//		#elif PRODUCT
+//		"http://183.182.46.212/";
+//		#else
 		#if UNITY_EDITOR
 		"http://127.0.0.1/kingofhero/";
 		#else
 		"http://192.168.10.101/kingofhero/";
 		#endif
 //		"http://192.168.102.158/kingofhero/";
-		#endif
+//		#endif
 
 	public static string SERVER_DOWNLOAD_PATH =
-		#if DEVELOP
-		"http://54.64.2.40/";
-		#elif TEST
-		"http://183.182.46.212/";
-		#elif PRODUCT
-		"http://183.182.46.212/";
-		#else
+//		#if DEVELOP
+//		"http://54.64.2.40/";
+//		#elif TEST
+//		"http://183.182.46.212/";
+//		#elif PRODUCT
+//		"http://183.182.46.212/";
+//		#else
 		#if UNITY_EDITOR
 		"http://127.0.0.1/kingofhero/";
 		#else
 		"http://192.168.10.101/kingofhero/";
 		#endif
 //		"http://192.168.102.158/kingofhero/";
-		#endif
+//		#endif
 
 
 	public static string CLIENT_PATH {

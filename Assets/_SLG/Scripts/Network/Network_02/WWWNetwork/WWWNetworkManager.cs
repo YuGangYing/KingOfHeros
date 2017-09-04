@@ -56,7 +56,6 @@ namespace WWWNetwork
 			StartCoroutine (WaitWWW (www, complete));
 		}
 
-
 		//TODO 读取cookie的部分还要修改，也许可以不用cookie
 		public void Send(string apiPath, byte[] data, UnityAction complete){
 			UnityWebRequest request = new UnityWebRequest (PathConstant.SERVER_PATH + apiPath, UnityWebRequest.kHttpVerbPOST);//  CreateUnityWebRequest (PathConstant.SERVER_PATH + apiPath, wwwForm);

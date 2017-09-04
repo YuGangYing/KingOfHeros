@@ -12,7 +12,7 @@ public class CityTest : MonoBehaviour {
 	void Update () {
 		if(Input.GetKey(KeyCode.H))
 		{
-			Application.LoadLevel("Battlefield");
+			UnityEngine.SceneManagement.SceneManager.LoadScene("Battlefield");
 		}
 	}
 }

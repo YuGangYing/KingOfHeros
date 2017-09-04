@@ -687,6 +687,7 @@
      <Compile Include="Assets\_SLG\Scripts\Common\SpawnMgrTool.cs" />
      <Compile Include="Assets\_SLG\Scripts\Constant\ABConstant.cs" />
      <Compile Include="Assets\_SLG\Scripts\Constant\PathConstant.cs" />
+     <Compile Include="Assets\_SLG\Scripts\Constant\SceneConstant.cs" />
      <Compile Include="Assets\_SLG\Scripts\Constant\SoundConstant.cs" />
      <Compile Include="Assets\_SLG\Scripts\Constant\SystemConstant.cs" />
      <Compile Include="Assets\_SLG\Scripts\Debug\CityTest.cs" />
@@ -724,6 +725,7 @@
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\WWWAPIManager.cs" />
      <Compile Include="Assets\_SLG\Scripts\Network\Network_02\WWWNetwork\WWWNetworkManager.cs" />
      <Compile Include="Assets\_SLG\Scripts\ResourcesManager\ResourcesManager.cs" />
+     <Compile Include="Assets\_SLG\Scripts\SceneManager\SceneManager.cs" />
      <Compile Include="Assets\_SLG\Scripts\Sound\SoundManager.cs" />
      <Compile Include="Assets\_SLG\Scripts\Unit\DirctShoot.cs" />
      <Compile Include="Assets\_SLG\Scripts\Unit\ShootObject.cs" />

@@ -924,7 +924,7 @@ public class BattleController : MonoBehaviour {
 	public void BackToMainCity()
 	{
         SLG.GlobalEventSet.FireEvent(SLG.eEventType.ChangeScene, new SLG.EventArgs(MainController.SCENE_MAINCITY));
-		//Application.LoadLevel("MainCity");
+		//UnityEngine.SceneManagement.SceneManager.LoadScene("MainCity");
 	}
 
 //	void OnGUI()
@@ -935,7 +935,7 @@ public class BattleController : MonoBehaviour {
 //		}
 //		if(GUI.Button(new Rect(10,70,100,30),"Reload!"))
 //		{
-//			Application.LoadLevel(2);
+//			UnityEngine.SceneManagement.SceneManager.LoadScene(2);
 //		}
 //		if(GUI.Button(new Rect(10,100,100,30),"Pause!"))
 //		{

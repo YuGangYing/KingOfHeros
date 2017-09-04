@@ -548,7 +548,7 @@ namespace DataMgr
             return true;
         }
 		
-        Unit m_curHero = new Unit();
+		Unit m_curHero;// = new Unit();
 		public int m_nCurHeroId = -1;
 		
 		public void SetCurHero(int nIndex, int id)

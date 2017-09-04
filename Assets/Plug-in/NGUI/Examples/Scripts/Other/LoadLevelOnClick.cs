@@ -9,7 +9,7 @@ public class LoadLevelOnClick : MonoBehaviour
 	{
 		if (!string.IsNullOrEmpty(levelName))
 		{
-			Application.LoadLevel(levelName);
+			UnityEngine.SceneManagement.SceneManager.LoadScene(levelName);
 		}
 	}
 }
