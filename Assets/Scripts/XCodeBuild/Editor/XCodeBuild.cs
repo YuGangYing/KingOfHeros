@@ -20,6 +20,7 @@ public class XCodeBuild  {
 		proj.ReadFromString (File.ReadAllText (projPath));
 		string target = proj.TargetGuidByName ("Unity-iPhone");
 		proj.SetBuildProperty (target, "ENABLE_BITCODE", "NO");
+		proj.SetBuildPropertyForConfig(target, "DEBUG_INFORMATION_FORMAT", "DWARF");
 		File.WriteAllText (projPath, proj.WriteToString ());
 	}
 }
