@@ -26,18 +26,16 @@ public class Pos2D
 	}
 }
 // 放置建筑
-public class PutBuild : MonoBehaviour
+public class PutBuild : SingleMonoBehaviour<PutBuild>
 {
-	public static PutBuild me;
+//	public static PutBuild GetInstance;
 	// Fake singleton
-
 	public GameObject m_buildNamePanelPre;
 	public GameObject m_buildingCDPanelPre;
 	public GameObject m_buildProTitlePre;
 	public GameObject m_buildSelectedPanelPre;
 	public GameObject m_buildMovePanelPre;
 	public Material buildingMaterial;
-
 	public Camera camera;
 	public Build m_build;
 	// 要放置的建筑
@@ -45,12 +43,8 @@ public class PutBuild : MonoBehaviour
 	public AudioClip m_audioClick;
 	public List<Transform> BuildTrans;
 
-	[HideInInspector]
-
-	void Awake ()
+	protected override void Awake ()
 	{
-		me = this;
-
 		if (m_objSenceRoot == null) {
 			m_objSenceRoot = GameObject.Find ("SceneRoot");
 		}
@@ -71,11 +65,6 @@ public class PutBuild : MonoBehaviour
 			}
 			OnPutBuild (model);
 		}
-	}
-
-	void OnDestroy ()
-	{
-		me = null;
 	}
 
 	//客户端主动创建
@@ -147,6 +136,11 @@ public class PutBuild : MonoBehaviour
 			return buildTemp;
 		}
 		return null;
+	}
+
+	//TODO
+	public int GetWorkingBuild(){
+		return 0;
 	}
 
 	//服务器下发创建

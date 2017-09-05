@@ -94,9 +94,9 @@ public class Build : MonoBehaviour
             return;
         }
 
-        if (PutBuild.me.m_buildNamePanelPre != null)
+        if (PutBuild.GetInstance.m_buildNamePanelPre != null)
         {
-            m_buildName = (GameObject)Object.Instantiate(PutBuild.me.m_buildNamePanelPre);
+            m_buildName = (GameObject)Object.Instantiate(PutBuild.GetInstance.m_buildNamePanelPre);
             m_buildName.transform.parent = root.transform;
             Bounds bounds = m_collider.bounds;
             float offset = bounds.size.y + bounds.center.y;
@@ -131,11 +131,11 @@ public class Build : MonoBehaviour
             return;
         }
 
-        if (PutBuild.me.m_buildingCDPanelPre != null)
+        if (PutBuild.GetInstance.m_buildingCDPanelPre != null)
         {
             Bounds bounds = m_collider.bounds;
             float offset = bounds.size.y + bounds.center.y;
-            m_buildingCD = (GameObject)Object.Instantiate(PutBuild.me.m_buildingCDPanelPre);
+            m_buildingCD = (GameObject)Object.Instantiate(PutBuild.GetInstance.m_buildingCDPanelPre);
             m_buildingCD.transform.parent = PanelManage.me.getRoot().transform;
             m_buildingCD.transform.localScale = Vector3.one;
 
@@ -148,14 +148,14 @@ public class Build : MonoBehaviour
     GameObject m_objPop = null;
     public void CreateBuildPop()
     {
-        if (m_idBuildingType != (uint)BuildType.STONE && m_idBuildingType != (uint)BuildType.MINT && PutBuild.me.m_buildProTitlePre != null)
+        if (m_idBuildingType != (uint)BuildType.STONE && m_idBuildingType != (uint)BuildType.MINT && PutBuild.GetInstance.m_buildProTitlePre != null)
         {
             return;
         }
 
         Bounds bounds = m_collider.bounds;
         float offset = bounds.size.y + bounds.center.y;
-        m_objPop = (GameObject)Object.Instantiate(PutBuild.me.m_buildProTitlePre);
+        m_objPop = (GameObject)Object.Instantiate(PutBuild.GetInstance.m_buildProTitlePre);
         m_objPop.transform.parent = root.transform;
         m_objPop.transform.localPosition = new Vector3(transform.position.x, transform.position.y + offset, transform.position.z);
         m_objPop.transform.localRotation = Quaternion.identity;
@@ -259,9 +259,9 @@ public class Build : MonoBehaviour
             return;
         }
 
-        if (PutBuild.me.m_buildSelectedPanelPre != null)
+        if (PutBuild.GetInstance.m_buildSelectedPanelPre != null)
         {
-            m_Selected = (GameObject)Object.Instantiate(PutBuild.me.m_buildSelectedPanelPre);
+            m_Selected = (GameObject)Object.Instantiate(PutBuild.GetInstance.m_buildSelectedPanelPre);
 
             m_Selected.transform.parent = root.transform;
             m_Selected.transform.position = transform.position;
@@ -307,21 +307,21 @@ public class Build : MonoBehaviour
 
         if (config == null || !config.isMove || m_cbState == 2)
         {
-            PutBuild.me.m_selectedBuild = null;
+            PutBuild.GetInstance.m_selectedBuild = null;
             return;
         }
 
         if (m_buildMove != null)
         {
             m_buildMove.SetActive(true);
-            PutBuild.me.m_selectedBuild = this;
-            PutBuild.me.m_bMoveBuild = true;
+            PutBuild.GetInstance.m_selectedBuild = this;
+            PutBuild.GetInstance.m_bMoveBuild = true;
             return;
         }
 
-        if (PutBuild.me.m_buildMovePanelPre != null)
+        if (PutBuild.GetInstance.m_buildMovePanelPre != null)
         {
-            m_buildMove = (GameObject)Object.Instantiate(PutBuild.me.m_buildMovePanelPre);
+            m_buildMove = (GameObject)Object.Instantiate(PutBuild.GetInstance.m_buildMovePanelPre);
             m_buildMove.transform.parent = PanelManage.me.getRoot().transform;
             m_buildMove.transform.localScale = new Vector3(0.5f, 0.5f, 1f);
             m_buildMove.transform.localRotation = Quaternion.identity;
@@ -330,8 +330,8 @@ public class Build : MonoBehaviour
             UIEventListener.Get(PanelTools.FindChild(m_buildMove, "Cancel")).onClick = MoveCancelClick;
 
             m_startPosition = transform.position;
-            PutBuild.me.m_selectedBuild = this;
-            PutBuild.me.m_bMoveBuild = true;
+            PutBuild.GetInstance.m_selectedBuild = this;
+            PutBuild.GetInstance.m_bMoveBuild = true;
         }
     }
 
@@ -339,37 +339,37 @@ public class Build : MonoBehaviour
     {
         if (m_state == BuildState.Normal)
         {
-            if (PutBuild.me.m_bCreateBuild)
+            if (PutBuild.GetInstance.m_bCreateBuild)
             {
                 // 发送创建建筑信息
                 Reposition(new Vector3(transform.position.x, transform.position.y, transform.position.z));
-                m_buildFound = (uint)PutBuild.me.GetBuildFoundByPos();
+                m_buildFound = (uint)PutBuild.GetInstance.GetBuildFoundByPos();
 				DataManager.getBuildData().SendBuildingBuild(this);
 				WWWAPIManager.GetInstance.SendCreateBuilding (this.m_idBuildingType,this.m_buildFound,this.m_buildFound);
-                PutBuild.me.m_bCreateBuild = false;
+                PutBuild.GetInstance.m_bCreateBuild = false;
                 ShowSelectedPanel(false);
-                PutBuild.me.m_selectedBuild = null;
+                PutBuild.GetInstance.m_selectedBuild = null;
             }
             else
             {
                 // 发送移动信息
                 Reposition(new Vector3(transform.position.x, transform.position.y, transform.position.z));
-                m_buildFound = (uint)PutBuild.me.GetBuildFoundByPos();
+                m_buildFound = (uint)PutBuild.GetInstance.GetBuildFoundByPos();
 				WWWAPIManager.GetInstance.SendMoveBuilding(m_idBuilding, m_buildFound, 0);
                 m_startPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-                PutBuild.me.m_selectedBuild = null;
+                PutBuild.GetInstance.m_selectedBuild = null;
             }
 
             m_buildMove.SetActive(false);
-            PutBuild.me.m_bMoveBuild = false;
+            PutBuild.GetInstance.m_bMoveBuild = false;
         }
     }
 
     void MoveCancelClick(GameObject go)
     {
-        if (PutBuild.me.m_bCreateBuild)
+        if (PutBuild.GetInstance.m_bCreateBuild)
         {
-            PutBuild.me.m_bCreateBuild = false;
+            PutBuild.GetInstance.m_bCreateBuild = false;
             Destroy(transform.parent.gameObject);
         }
         else
@@ -378,15 +378,15 @@ public class Build : MonoBehaviour
         }
 
         m_buildMove.SetActive(false);
-        PutBuild.me.m_bMoveBuild = false;
-        PutBuild.me.m_selectedBuild = null;
+        PutBuild.GetInstance.m_bMoveBuild = false;
+        PutBuild.GetInstance.m_selectedBuild = null;
     }
 
     public void MoveCancel()
     {
-        if (PutBuild.me.m_bCreateBuild)
+        if (PutBuild.GetInstance.m_bCreateBuild)
         {
-            PutBuild.me.m_bCreateBuild = false;
+            PutBuild.GetInstance.m_bCreateBuild = false;
             Destroy(transform.parent.gameObject);
         }
         else
@@ -395,8 +395,8 @@ public class Build : MonoBehaviour
         }
 
         m_buildMove.SetActive(false);
-        PutBuild.me.m_bMoveBuild = false;
-        PutBuild.me.m_selectedBuild = null;
+        PutBuild.GetInstance.m_bMoveBuild = false;
+        PutBuild.GetInstance.m_selectedBuild = null;
     }
 
     public void Reposition(Vector3 pos)
@@ -587,7 +587,7 @@ public class Build : MonoBehaviour
         if (Vector3.zero != m_startPosition)
         {
             transform.position = m_startPosition;
-            m_startPosition = PutBuild.me.GetEmptyFoundPos();
+            m_startPosition = PutBuild.GetInstance.GetEmptyFoundPos();
         }
     }
 
@@ -731,7 +731,7 @@ public class Build : MonoBehaviour
 
             if (renderer != null)
             {
-                Material m = PutBuild.me.buildingMaterial;
+                Material m = PutBuild.GetInstance.buildingMaterial;
 
                 Material[] materials = new Material[t.gameObject.GetComponent<Renderer>().materials.Length];
                 for (int i = 0; i < t.gameObject.GetComponent<Renderer>().materials.Length; ++i)

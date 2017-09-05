@@ -24,7 +24,7 @@ public class BuildNamePanel : MonoBehaviour
     {
         transform.LookAt(camera.transform);
 
-        float dis = Vector3.Distance(PutBuild.me.camera.transform.position, transform.position);
+        float dis = Vector3.Distance(PutBuild.GetInstance.camera.transform.position, transform.position);
         float scale = dis / 200;
         transform.localScale = new Vector3(scale, scale, scale);
 	}

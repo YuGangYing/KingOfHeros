@@ -254,7 +254,7 @@ namespace DataMgr
             
             foreach (KeyValuePair<uint, BUILDING_INFO> kvi in m_dicBuildInfo)
             {
-                Build build = PutBuild.me.OnPutBuild(kvi.Value);
+                Build build = PutBuild.GetInstance.OnPutBuild(kvi.Value);
  				if (build != null)
  				{
                     m_dicBuilding[kvi.Value.idBuilding] = build;
@@ -355,7 +355,7 @@ namespace DataMgr
 		
 		public Build ChangeBuild(Build build)
 		{
-			Build buildTemp = PutBuild.me.OnChangeBuild(build);
+			Build buildTemp = PutBuild.GetInstance.OnChangeBuild(build);
 			if (buildTemp != null)
 			{
 				m_dicBuilding[buildTemp.m_idBuilding] = buildTemp;

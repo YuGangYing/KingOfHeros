@@ -89,7 +89,7 @@ namespace UI
             if (item.itemData.count < item.itemData.maxCount && DataManager.getBuildData().GetLordHallLevel() >= item.itemData.CastleLevel)
             {
                 SetVisible(false);
-                PutBuild.me.OnPutBuild(item.itemData.id);
+                PutBuild.GetInstance.OnPutBuild(item.itemData.id);
             }
             else
             {

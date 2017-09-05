@@ -234,7 +234,7 @@ namespace UI
                     {
                         panel.ShowPanel(m_build);
 
-                        PutBuild.me.m_selectedBuild = null;
+                        PutBuild.GetInstance.m_selectedBuild = null;
                     }
                 }
             }

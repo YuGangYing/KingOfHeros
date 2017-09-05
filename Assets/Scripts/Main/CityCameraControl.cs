@@ -100,7 +100,7 @@ public class CityCameraControl : MonoBehaviour
             }
         }
 		//ddd
-        if (PutBuild.me.m_build != null || UI.PanelManage.me.IsHaveShowPanel())
+        if (PutBuild.GetInstance.m_build != null || UI.PanelManage.me.IsHaveShowPanel())
             return;
 
         if (Input.GetMouseButton(1))
@@ -206,7 +206,7 @@ public class CityCameraControl : MonoBehaviour
 
     void OnDrag(Gesture gesture)
     {
-        if (PutBuild.me.m_build != null)
+        if (PutBuild.GetInstance.m_build != null)
             return;
 
         if (gesture.touchCount == 1)
@@ -272,7 +272,7 @@ public class CityCameraControl : MonoBehaviour
 
     void OnPinchIn(Gesture gesture)
     {
-        if (PutBuild.me.m_build != null)
+        if (PutBuild.GetInstance.m_build != null)
             return;
 
         ConsoleSelf.me.addText("OnPinchIn(Gesture gesture)");
@@ -290,7 +290,7 @@ public class CityCameraControl : MonoBehaviour
 
     void OnPinchOut(Gesture gesture)
     {
-        if (PutBuild.me.m_build != null)
+        if (PutBuild.GetInstance.m_build != null)
             return;
 
         ConsoleSelf.me.addText("OnPinchOut(Gesture gesture)");

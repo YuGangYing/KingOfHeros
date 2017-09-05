@@ -45,7 +45,6 @@ public class UserInfo {
 	public int exp_count; //当前绿星标数  exp_count
 	public int exp_level; //当前绿星标级别  exp_level
 	
-	
 	public int worker_count; //工人数	worker_count	
 	//public int shield_expire; //盾牌到期时间 shield_expire	
 	

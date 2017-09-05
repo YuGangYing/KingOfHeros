@@ -204,7 +204,7 @@ public class MainCameraController : MonoBehaviour
     //判断是否可以操作
     bool isCanOper()
     {
-        if (PutBuild.me.m_build != null)
+        if (PutBuild.GetInstance.m_build != null)
             return false;
         if (UI.PanelManage.me.IsHaveShowPanel())
             return false;

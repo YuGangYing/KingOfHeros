@@ -6,6 +6,9 @@ using Packet;
 using Network;
 using SLG;
 using DataMgr;
+using KOH;
+
+
 #pragma warning disable 0168
 #pragma warning disable 0219
 #pragma warning disable 0414
@@ -188,7 +191,7 @@ namespace UI
             SetVisible(true);
             ShowCover(false);
 
-            InitPlayerData();
+            RefreshPlayerData();
         }
 
 		public bool OnRefresh(SLG.EventArgs obj)
@@ -206,23 +209,29 @@ namespace UI
 			return true;
 		}
 
-        public void InitPlayerData()
+        public void RefreshPlayerData()
         {
-            lbs[1].text = string.Format("{0}", (long)DataManager.getUserData().Data.coin);
-            lbs[2].text = string.Format("{0}", (long)DataManager.getUserData().Data.stone);
-            lbs[3].text = string.Format("{0}", (long)DataManager.getUserData().Data.rmb);
-        }
+			lbs [0].text = string.Format ("{0}", WWWNetwork.WWWNetworkManager.GetInstance.model.user_info.exp_level);
+			lbs [1].text = string.Format ("{0}", WWWNetwork.WWWNetworkManager.GetInstance.model.user_info.gold_count);//   (long)DataManager.getUserData().Data.coin);
+			lbs[2].text = string.Format("{0}",WWWNetwork.WWWNetworkManager.GetInstance.model.user_info.stone_count);//  (long)DataManager.getUserData().Data.stone);
+			lbs[3].text = string.Format("{0}", WWWNetwork.WWWNetworkManager.GetInstance.model.user_info.diamond_count);// (long)DataManager.getUserData().Data.rmb);
+			pbs [0].fillAmount = WWWNetwork.WWWNetworkManager.GetInstance.model.user_info.gold_count / (float)WWWNetwork.WWWNetworkManager.GetInstance.model.user_info.max_gold_count;
+			pbs [1].fillAmount = WWWNetwork.WWWNetworkManager.GetInstance.model.user_info.stone_count / (float)WWWNetwork.WWWNetworkManager.GetInstance.model.user_info.max_stone_count;
+			workerNoLabel.text = string.Format("{0} / {1}",PutBuild.GetInstance.GetWorkingBuild (),WWWNetwork.WWWNetworkManager.GetInstance.model.user_info.worker_count) ;
+		}
 
+		//TODO 
         public void UpdateBuildQueue(float fTime)
         {
+			
             if (fTime > 0)
             {
-                workerNoLabel.text = "1 / 1";
+				workerNoLabel.text = string.Format("1 / {0}",WWWNetwork.WWWNetworkManager.GetInstance.model.user_info.worker_count) ;
                 labelBuildQueue.text = "建筑冷却时间：" + ((uint)fTime + 1).ToString() + "s";
             }
             else
             {
-                workerNoLabel.text = "0 / 1";
+				workerNoLabel.text = string.Format("0 / {0}",WWWNetwork.WWWNetworkManager.GetInstance.model.user_info.worker_count) ;
                 labelBuildQueue.text = "建筑队列空闲";
             }
         }

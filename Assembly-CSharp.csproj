@@ -514,8 +514,8 @@
      <Compile Include="Assets\Scripts\Packet\MsgUser.cs" />
      <Compile Include="Assets\Scripts\Packet\MsgUtil.cs" />
      <Compile Include="Assets\Scripts\Parser\SkillConfig.cs" />
-     <Compile Include="Assets\Scripts\PathFinding.cs" />
-     <Compile Include="Assets\Scripts\PathFollowing.cs" />
+     <Compile Include="Assets\Scripts\PathFinding\PathFinding.cs" />
+     <Compile Include="Assets\Scripts\PathFinding\PathFollowing.cs" />
      <Compile Include="Assets\Scripts\Scene\CameraPoint.cs" />
      <Compile Include="Assets\Scripts\Scene\MainCameraController.cs" />
      <Compile Include="Assets\Scripts\Scene\MainCityAnim.cs" />
