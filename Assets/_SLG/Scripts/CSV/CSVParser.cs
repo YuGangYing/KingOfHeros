@@ -11,6 +11,8 @@ public class CSVParser : MonoBehaviour
 	private void Awake ()
 	{
 		csvContext = new CsvContext ();
+		CsvColumnAttribute attri;
+		CsvFileDescription csv = new CsvFileDescription ();
 
 	}
 

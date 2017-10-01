@@ -9,7 +9,6 @@ public class DownloadManager : SingleMonoBehaviour<DownloadManager>
 {
 
 	public int maxDownloadCount = 5;
-
 	public int totalDownloadSize = 0;
 	public int totalDownloadedSize = 0;
 	public bool isDownloading = false;

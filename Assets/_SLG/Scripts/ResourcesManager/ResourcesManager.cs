@@ -82,7 +82,6 @@ namespace KOH
 			return go;
 		}
 
-
 		public GameObject GetBuildingObejct (string resPath)
 		{
 			string buildingName = resPath.Substring (resPath.LastIndexOf ('/') + 1);
@@ -149,7 +148,7 @@ namespace KOH
 
 		#endregion
 
-		#region Battles
+		#region Citys
 
 		public GameObject GetCityRoot ()
 		{

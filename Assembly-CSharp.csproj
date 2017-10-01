@@ -474,7 +474,6 @@
      <Compile Include="Assets\Scripts\HeroSkill\HeroSkillLevel.cs" />
      <Compile Include="Assets\Scripts\HeroSkill\HeroSkillMgr.cs" />
      <Compile Include="Assets\Scripts\HeroSkill\HeroSkillStatus.cs" />
-     <Compile Include="Assets\Scripts\LineupReckon.cs" />
      <Compile Include="Assets\Scripts\Login\IggLogin.cs" />
      <Compile Include="Assets\Scripts\Login\LitJson\IJsonWrapper.cs" />
      <Compile Include="Assets\Scripts\Login\LitJson\JsonData.cs" />
@@ -514,6 +513,7 @@
      <Compile Include="Assets\Scripts\Packet\MsgUser.cs" />
      <Compile Include="Assets\Scripts\Packet\MsgUtil.cs" />
      <Compile Include="Assets\Scripts\Parser\SkillConfig.cs" />
+     <Compile Include="Assets\Scripts\PathFinding\LineupReckon.cs" />
      <Compile Include="Assets\Scripts\PathFinding\PathFinding.cs" />
      <Compile Include="Assets\Scripts\PathFinding\PathFollowing.cs" />
      <Compile Include="Assets\Scripts\Scene\CameraPoint.cs" />
