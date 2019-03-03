@@ -18,9 +18,12 @@ namespace KOH
 		}
 
 		void LoadManifestAssetbundle(){
-			mManifestAB = AssetBundle.LoadFromFile (PathConstant.CLIENT_ASSETBUNDLES_PATH + "/" + SystemConstant.GetPlatformName());
-			if (mManifestAB != null) {
-				mManifest = mManifestAB.LoadAsset<AssetBundleManifest> ("assetbundlemanifest");
+			string path = PathConstant.CLIENT_ASSETBUNDLES_PATH + "/" + SystemConstant.GetPlatformName();
+			if (FileManager.Exists (path)) {
+				mManifestAB = AssetBundle.LoadFromFile (path);
+				if (mManifestAB != null) {
+					mManifest = mManifestAB.LoadAsset<AssetBundleManifest> ("assetbundlemanifest");
+				}
 			}
 		}
 
@@ -32,17 +35,16 @@ namespace KOH
 
 			if (mManifestAB == null)
 				LoadManifestAssetbundle ();
-
-			if (mManifest == null)
-				return null;
-			
-			string[] dependABs = mManifest.GetAllDependencies (abName);
-			for(int i=0;i<dependABs.Length;i++){
-				if (!mCachedAssetbundles.ContainsKey (dependABs[i])) {
-					AssetBundle ab = AssetBundle.LoadFromFile (PathConstant.CLIENT_ASSETBUNDLES_PATH + "/" + dependABs[i]);
-					mCachedAssetbundles.Add (dependABs[i],ab);
+			if (mManifest != null) {
+				string[] dependABs = mManifest.GetAllDependencies (abName);
+				for (int i = 0; i < dependABs.Length; i++) {
+					if (!mCachedAssetbundles.ContainsKey (dependABs [i])) {
+						AssetBundle ab = AssetBundle.LoadFromFile (PathConstant.CLIENT_ASSETBUNDLES_PATH + "/" + dependABs [i]);
+						mCachedAssetbundles.Add (dependABs [i], ab);
+					}
 				}
 			}
+			Debug.Log (PathConstant.CLIENT_ASSETBUNDLES_PATH + "/" + abName);
 			AssetBundle ab0 = AssetBundle.LoadFromFile (PathConstant.CLIENT_ASSETBUNDLES_PATH + "/" + abName);
 			mCachedAssetbundles.Add (abName,ab0);
 			return ab0;

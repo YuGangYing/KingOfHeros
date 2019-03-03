@@ -1,2 +1,6 @@
 Assets/Assetbundles
 build
+.vs
+KingOfHeros.csproj
+KingOfHeros.Editor.csproj
+CleopatraVIIEffect.unitypackage

@@ -49,6 +49,8 @@ namespace WWWNetwork
 		public void Send (string apiPath, byte[] data, UnityAction<WWW> complete)
 		{
 			WWW www;
+			Debug.Log (PathConstant.SERVER_PATH + apiPath);
+			Debug.Log (SystemInfo.deviceUniqueIdentifier);
 			if(cookies==null)
 				www = new WWW (PathConstant.SERVER_PATH + apiPath, data,new Dictionary<string,string>{ { "DeviceID",SystemInfo.deviceUniqueIdentifier} });
 			else
